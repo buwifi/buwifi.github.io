@@ -50,9 +50,9 @@ google_analytics: G-CQBBWRN64F #Tracking ID
 #recaptcha2_sitekey: 6Leo-3IiAAAAANO2sQOcwv1-3LrK49YCMr3lYlH3
 
 # DEVELOPMEN
-url    : "http://localhost"
-baseurl: "/Landrick/_site"
-recaptcha2_sitekey: 6LcldnIiAAAAAK1Nl81Hj0cTqpgBlX4YCYp6yfUn
+url    : "https://buwifi.github.io"
+baseurl: ""
+#recaptcha2_sitekey: 6LcldnIiAAAAAK1Nl81Hj0cTqpgBlX4YCYp6yfUn
 ############################################################
 
 

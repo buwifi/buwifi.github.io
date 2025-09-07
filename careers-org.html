@@ -1,0 +1,586 @@
+---
+layout: default
+title: CAREER
+slogan: Start working with BuWiFi
+background: /images/company/network-management-systems.jpg
+cta: Please e-mail your resume in Word/PDF to <a href="mailto:murat@buwifi.com?subject=Python Developer and WiFi Radius-AAA Engineer">murat@buwifi.com</a>. We appreciate every applicant’s interest, but only those under consideration will be contacted.
+---
+{% include servicesheader.html %}
+
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="section-title mb-4 pb-2">
+                    <h4 class="title mb-4">Join The Team</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Start working with <span
+                            class="text-primary fw-bold">BuWiFi</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                </div>
+            </div>
+
+            {% for item in site.jobs %}
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="card job-box rounded shadow border-0 overflow-hidden">
+                    <div class="border-bottom">
+                        <div class="position-relative">
+                            <img src="images/job/full.jpg" class="img-fluid" alt="">
+                            <div class="job-overlay bg-white"></div>
+                        </div>
+                        <div class="mb-0 position"><a href="page-job-detail.html" class="text-dark h5">{{item.title}}</a>
+                            <ul class="list-unstyled h6 mb-0 text-warning">
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                            </ul>
+                        </div>
+                        <ul class="list-unstyled head mb-0">
+                            {% if item.type == "Full Time" %}
+                                <li class="badge bg-success rounded-pill">{{item.type}}</li>
+                            {% elsif item.type == "Part Time" %}
+                                <li class="badge bg-warning rounded-pill">{{item.type}}</li>
+                            {% elsif item.type == "Intern" %}
+                                <li class="badge bg-danger rounded-pill">{{item.type}}</li>
+                            {% else %}
+                            {% endif %}
+                        </ul>
+
+                    </div>
+
+                    <div class="card-body content position-relative">
+                        <div class="firm-logo rounded-circle shadow bg-light text-center">
+                            <img src="images/BuWiFi-logo-only-black.svg" class="avatar avatar-md-sm" alt="">
+                        </div>
+                        <div class="company-detail text-center mt-3">
+                            <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">{{item.company}}</a></h5>
+                            <p class="text-muted"><a href="#" class="text-muted"><i data-feather="map-pin" class="fea icon-sm"></i> {{item.location}}</a></p>
+                        </div>
+                        <ul class="job-facts list-unstyled">
+                            <li class="list-inline-item text-muted"><i data-feather="check" class="fea icon-sm text-success me-1"></i>{{item.experience}}</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check" class="fea icon-sm text-success me-1"></i> Working Hours- 6hr</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check" class="fea icon-sm text-success me-1"></i> Information strategy</li>
+                        </ul>
+                        <div class="d-grid">
+                            <a href="{{item.url | relative_url}}" class="btn btn-outline-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% endfor %}
+<!-- 
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="card job-box rounded shadow border-0 overflow-hidden">
+                    <div class="border-bottom">
+                        <div class="position-relative">
+                            <img src="images/job/full.jpg" class="img-fluid" alt="">
+                            <div class="job-overlay bg-white"></div>
+                        </div>
+                        <div class="mb-0 position"><a href="page-job-detail.html" class="text-dark h5">Web Developer</a>
+                            <ul class="list-unstyled h6 mb-0 text-warning">
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                            </ul>
+                        </div>
+                        <ul class="list-unstyled head mb-0">
+                            <li class="badge bg-success rounded-pill">Full Time</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body content position-relative">
+                        <div class="firm-logo rounded-circle shadow bg-light text-center">
+                            <img src="images/job/Codepen.svg" class="avatar avatar-md-sm" alt="">
+                        </div>
+                        <div class="company-detail text-center mt-3">
+                            <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">Codepen</a>
+                            </h5>
+                            <p class="text-muted"><a href="#" class="text-muted"><i data-feather="map-pin"
+                                        class="fea icon-sm"></i> San Francisco</a></p>
+                        </div>
+                        <ul class="job-facts list-unstyled">
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> 2 Year Expirence</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Working Hours- 6hr</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Information strategy</li>
+                        </ul>
+                        <div class="d-grid">
+                            <a href="page-job-detail.html" class="btn btn-outline-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="card job-box rounded shadow border-0 overflow-hidden">
+                    <div class="border-bottom">
+                        <div class="position-relative">
+                            <img src="images/job/part.jpg" class="img-fluid" alt="">
+                            <div class="job-overlay bg-white"></div>
+                        </div>
+                        <div class="mb-0 position"><a href="page-job-detail.html" class="text-dark h5">UX Designer</a>
+                            <ul class="list-unstyled h6 mb-0 text-warning">
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                            </ul>
+                        </div>
+                        <ul class="list-unstyled head mb-0">
+                            <li class="badge bg-warning rounded-pill">Part Time</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body content position-relative">
+                        <div class="firm-logo rounded-circle shadow bg-light text-center">
+                            <img src="images/job/Discord.svg" class="avatar avatar-md-sm" alt="">
+                        </div>
+                        <div class="company-detail text-center mt-3">
+                            <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">Discord</a>
+                            </h5>
+                            <p class="text-muted"><a href="#" class="text-muted"><i data-feather="map-pin"
+                                        class="fea icon-sm"></i> San Francisco</a></p>
+                        </div>
+                        <ul class="job-facts list-unstyled">
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> 2 Year Expirence</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Working Hours- 6hr</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Information strategy</li>
+                        </ul>
+                        <div class="d-grid">
+                            <a href="page-job-detail.html" class="btn btn-outline-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="card job-box rounded shadow border-0 overflow-hidden">
+                    <div class="border-bottom">
+                        <div class="position-relative">
+                            <img src="images/job/full.jpg" class="img-fluid" alt="">
+                            <div class="job-overlay bg-white"></div>
+                        </div>
+                        <div class="mb-0 position"><a href="page-job-detail.html" class="text-dark h5">UI Designer</a>
+                            <ul class="list-unstyled h6 mb-0 text-warning">
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                            </ul>
+                        </div>
+                        <ul class="list-unstyled head mb-0">
+                            <li class="badge bg-success rounded-pill">Full Time</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body content position-relative">
+                        <div class="firm-logo rounded-circle shadow bg-light text-center">
+                            <img src="images/job/Eslint.svg" class="avatar avatar-md-sm" alt="">
+                        </div>
+                        <div class="company-detail text-center mt-3">
+                            <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">Eslint</a>
+                            </h5>
+                            <p class="text-muted"><a href="#" class="text-muted"><i data-feather="map-pin"
+                                        class="fea icon-sm"></i> San Francisco</a></p>
+                        </div>
+                        <ul class="job-facts list-unstyled">
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> 2 Year Expirence</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Working Hours- 6hr</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Information strategy</li>
+                        </ul>
+                        <div class="d-grid">
+                            <a href="page-job-detail.html" class="btn btn-outline-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="card job-box rounded shadow border-0 overflow-hidden">
+                    <div class="border-bottom">
+                        <div class="position-relative">
+                            <img src="images/job/remote.jpg" class="img-fluid" alt="">
+                            <div class="job-overlay bg-white"></div>
+                        </div>
+                        <div class="mb-0 position"><a href="page-job-detail.html" class="text-dark h5">Back-End
+                                Developer</a>
+                            <ul class="list-unstyled h6 mb-0 text-warning">
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                            </ul>
+                        </div>
+                        <ul class="list-unstyled head mb-0">
+                            <li class="badge bg-danger rounded-pill">Remote</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body content position-relative">
+                        <div class="firm-logo rounded-circle shadow bg-light text-center">
+                            <img src="images/job/Gitlab.svg" class="avatar avatar-md-sm" alt="">
+                        </div>
+                        <div class="company-detail text-center mt-3">
+                            <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">Gitlab</a>
+                            </h5>
+                            <p class="text-muted"><a href="#" class="text-muted"><i data-feather="map-pin"
+                                        class="fea icon-sm"></i> San Francisco</a></p>
+                        </div>
+                        <ul class="job-facts list-unstyled">
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> 2 Year Expirence</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Working Hours- 6hr</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Information strategy</li>
+                        </ul>
+                        <div class="d-grid">
+                            <a href="page-job-detail.html" class="btn btn-outline-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="card job-box rounded shadow border-0 overflow-hidden">
+                    <div class="border-bottom">
+                        <div class="position-relative">
+                            <img src="images/job/part.jpg" class="img-fluid" alt="">
+                            <div class="job-overlay bg-white"></div>
+                        </div>
+                        <div class="mb-0 position"><a href="page-job-detail.html" class="text-dark h5">Photographer</a>
+                            <ul class="list-unstyled h6 mb-0 text-warning">
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                            </ul>
+                        </div>
+                        <ul class="list-unstyled head mb-0">
+                            <li class="badge bg-warning rounded-pill">Part Time</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body content position-relative">
+                        <div class="firm-logo rounded-circle shadow bg-light text-center">
+                            <img src="images/job/Gradle.svg" class="avatar avatar-md-sm" alt="">
+                        </div>
+                        <div class="company-detail text-center mt-3">
+                            <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">Gradle</a>
+                            </h5>
+                            <p class="text-muted"><a href="#" class="text-muted"><i data-feather="map-pin"
+                                        class="fea icon-sm"></i> San Francisco</a></p>
+                        </div>
+                        <ul class="job-facts list-unstyled">
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> 2 Year Expirence</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Working Hours- 6hr</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Information strategy</li>
+                        </ul>
+                        <div class="d-grid">
+                            <a href="page-job-detail.html" class="btn btn-outline-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="card job-box rounded shadow border-0 overflow-hidden">
+                    <div class="border-bottom">
+                        <div class="position-relative">
+                            <img src="images/job/full.jpg" class="img-fluid" alt="">
+                            <div class="job-overlay bg-white"></div>
+                        </div>
+                        <div class="mb-0 position"><a href="page-job-detail.html" class="text-dark h5">Mechanic</a>
+                            <ul class="list-unstyled h6 mb-0 text-warning">
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                            </ul>
+                        </div>
+                        <ul class="list-unstyled head mb-0">
+                            <li class="badge bg-success rounded-pill">Full Time</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body content position-relative">
+                        <div class="firm-logo rounded-circle shadow bg-light text-center">
+                            <img src="images/job/Mg.svg" class="avatar avatar-md-sm" alt="">
+                        </div>
+                        <div class="company-detail text-center mt-3">
+                            <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">Mg</a></h5>
+                            <p class="text-muted"><a href="#" class="text-muted"><i data-feather="map-pin"
+                                        class="fea icon-sm"></i> San Francisco</a></p>
+                        </div>
+                        <ul class="job-facts list-unstyled">
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> 2 Year Expirence</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Working Hours- 6hr</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Information strategy</li>
+                        </ul>
+                        <div class="d-grid">
+                            <a href="page-job-detail.html" class="btn btn-outline-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="card job-box rounded shadow border-0 overflow-hidden">
+                    <div class="border-bottom">
+                        <div class="position-relative">
+                            <img src="images/job/part.jpg" class="img-fluid" alt="">
+                            <div class="job-overlay bg-white"></div>
+                        </div>
+                        <div class="mb-0 position"><a href="page-job-detail.html" class="text-dark h5">Frontend
+                                Developer</a>
+                            <ul class="list-unstyled h6 mb-0 text-warning">
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                            </ul>
+                        </div>
+                        <ul class="list-unstyled head mb-0">
+                            <li class="badge bg-warning rounded-pill">Part Time</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body content position-relative">
+                        <div class="firm-logo rounded-circle shadow bg-light text-center">
+                            <img src="images/job/Sketch.svg" class="avatar avatar-md-sm" alt="">
+                        </div>
+                        <div class="company-detail text-center mt-3">
+                            <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">Sketch</a>
+                            </h5>
+                            <p class="text-muted"><a href="#" class="text-muted"><i data-feather="map-pin"
+                                        class="fea icon-sm"></i> San Francisco</a></p>
+                        </div>
+                        <ul class="job-facts list-unstyled">
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> 2 Year Expirence</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Working Hours- 6hr</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Information strategy</li>
+                        </ul>
+                        <div class="d-grid">
+                            <a href="page-job-detail.html" class="btn btn-outline-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="card job-box rounded shadow border-0 overflow-hidden">
+                    <div class="border-bottom">
+                        <div class="position-relative">
+                            <img src="images/job/remote.jpg" class="img-fluid" alt="">
+                            <div class="job-overlay bg-white"></div>
+                        </div>
+                        <div class="mb-0 position"><a href="page-job-detail.html" class="text-dark h5">Web Designer</a>
+                            <ul class="list-unstyled h6 mb-0 text-warning">
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                            </ul>
+                        </div>
+                        <ul class="list-unstyled head mb-0">
+                            <li class="badge bg-danger rounded-pill">Remote</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body content position-relative">
+                        <div class="firm-logo rounded-circle shadow bg-light text-center">
+                            <img src="images/job/Twilio.svg" class="avatar avatar-md-sm" alt="">
+                        </div>
+                        <div class="company-detail text-center mt-3">
+                            <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">Twilio</a>
+                            </h5>
+                            <p class="text-muted"><a href="#" class="text-muted"><i data-feather="map-pin"
+                                        class="fea icon-sm"></i> San Francisco</a></p>
+                        </div>
+                        <ul class="job-facts list-unstyled">
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> 2 Year Expirence</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Working Hours- 6hr</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Information strategy</li>
+                        </ul>
+                        <div class="d-grid">
+                            <a href="page-job-detail.html" class="btn btn-outline-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="card job-box rounded shadow border-0 overflow-hidden">
+                    <div class="border-bottom">
+                        <div class="position-relative">
+                            <img src="images/job/part.jpg" class="img-fluid" alt="">
+                            <div class="job-overlay bg-white"></div>
+                        </div>
+                        <div class="mb-0 position"><a href="page-job-detail.html" class="text-dark h5">Php Developer</a>
+                            <ul class="list-unstyled h6 mb-0 text-warning">
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                            </ul>
+                        </div>
+                        <ul class="list-unstyled head mb-0">
+                            <li class="badge bg-warning rounded-pill">Part Time</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body content position-relative">
+                        <div class="firm-logo rounded-circle shadow bg-light text-center">
+                            <img src="images/job/Udemy.svg" class="avatar avatar-md-sm" alt="">
+                        </div>
+                        <div class="company-detail text-center mt-3">
+                            <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">Udemy</a>
+                            </h5>
+                            <p class="text-muted"><a href="#" class="text-muted"><i data-feather="map-pin"
+                                        class="fea icon-sm"></i> San Francisco</a></p>
+                        </div>
+                        <ul class="job-facts list-unstyled">
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> 2 Year Expirence</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Working Hours- 6hr</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Information strategy</li>
+                        </ul>
+                        <div class="d-grid">
+                            <a href="page-job-detail.html" class="btn btn-outline-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="card job-box rounded shadow border-0 overflow-hidden">
+                    <div class="border-bottom">
+                        <div class="position-relative">
+                            <img src="images/job/full.jpg" class="img-fluid" alt="">
+                            <div class="job-overlay bg-white"></div>
+                        </div>
+                        <div class="mb-0 position"><a href="page-job-detail.html" class="text-dark h5">Web Designer</a>
+                            <ul class="list-unstyled h6 mb-0 text-warning">
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                            </ul>
+                        </div>
+                        <ul class="list-unstyled head mb-0">
+                            <li class="badge bg-success rounded-pill">Full Time</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body content position-relative">
+                        <div class="firm-logo rounded-circle shadow bg-light text-center">
+                            <img src="images/job/Webhooks.svg" class="avatar avatar-md-sm" alt="">
+                        </div>
+                        <div class="company-detail text-center mt-3">
+                            <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">Webhooks</a>
+                            </h5>
+                            <p class="text-muted"><a href="#" class="text-muted"><i data-feather="map-pin"
+                                        class="fea icon-sm"></i> San Francisco</a></p>
+                        </div>
+                        <ul class="job-facts list-unstyled">
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> 2 Year Expirence</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Working Hours- 6hr</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Information strategy</li>
+                        </ul>
+                        <div class="d-grid">
+                            <a href="page-job-detail.html" class="btn btn-outline-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="card job-box rounded shadow border-0 overflow-hidden">
+                    <div class="border-bottom">
+                        <div class="position-relative">
+                            <img src="images/job/remote.jpg" class="img-fluid" alt="">
+                            <div class="job-overlay bg-white"></div>
+                        </div>
+                        <div class="mb-0 position"><a href="page-job-detail.html" class="text-dark h5">Python
+                                Developer</a>
+                            <ul class="list-unstyled h6 mb-0 text-warning">
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                            </ul>
+                        </div>
+                        <ul class="list-unstyled head mb-0">
+                            <li class="badge bg-danger rounded-pill">Remote</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body content position-relative">
+                        <div class="firm-logo rounded-circle shadow bg-light text-center">
+                            <img src="images/job/Circleci.svg" class="avatar avatar-md-sm" alt="">
+                        </div>
+                        <div class="company-detail text-center mt-3">
+                            <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">CircleCi</a>
+                            </h5>
+                            <p class="text-muted"><a href="#" class="text-muted"><i data-feather="map-pin"
+                                        class="fea icon-sm"></i> San Francisco</a></p>
+                        </div>
+                        <ul class="job-facts list-unstyled">
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> 2 Year Expirence</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Working Hours- 6hr</li>
+                            <li class="list-inline-item text-muted"><i data-feather="check"
+                                    class="fea icon-sm text-success me-1"></i> Information strategy</li>
+                        </ul>
+                        <div class="d-grid">
+                            <a href="page-job-detail.html" class="btn btn-outline-primary">Apply Now</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div> -->
+
+
+        </div>
+    </div>
+</section>

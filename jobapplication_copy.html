@@ -1,0 +1,107 @@
+---
+layout: default
+title:  Job Application
+slogan: We are looking for A+ team member. Do you have what it takes?
+background: /images/company/network-management-systems.jpg
+form: true
+---
+{% include servicesheader.html %}
+
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-md-7">
+                <div class="card custom-form border-0">
+                    <div class="card-body">
+                        <!-- <form class="rounded shadow p-4"> -->
+                        <form id="jobappForm" class="contact-form-recaptcha-v3 custom-contact-form-style-1" action="php/jobapp-form-recaptcha-v6.php" method="POST" enctype="multipart/form-data">
+
+                            <div class="contact-form-success alert alert-success d-none mt-4"><strong>Success!</strong> Your message has been sent to us.</div>
+                            <div class="contact-form-error alert alert-danger d-none mt-4"><strong>Error!</strong> There was an error sending your message.<span class="mail-error-message text-1 d-block"></span></div>
+                            <p id="error-msg" class="mb-0"></p>
+
+                            <div id="simple-msg"></div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Name:<span class="text-danger">*</span></label>
+                                        <div class="form-icon position-relative">
+                                            <i data-feather="user" class="fea icon-sm icons"></i>
+                                            <input name="name" id="name" type="text" class="form-control ps-5" placeholder="First and Last Name :" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Email:<span class="text-danger">*</span></label>
+                                        <div class="form-icon position-relative">
+                                            <i data-feather="mail" class="fea icon-sm icons"></i>
+                                            <input name="email" id="email" type="email" class="form-control ps-5" placeholder="Your email :" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Mobile no.:<span
+                                                class="text-danger">*</span></label>
+                                        <div class="form-icon position-relative">
+                                            <i data-feather="phone" class="fea icon-sm icons"></i>
+                                            <input name="number" id="number" type="number" class="form-control ps-5" placeholder="Your phone no. :">
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Position you are applying for:</label>
+                                        <select class="form-control custom-select" name="subject" id="subject" required>
+                                            <option>Open Positions</option>
+                                            {% for item in site.jobs %}
+                                                <option>{{ item.title }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Cover Letter:</label>
+                                        <div class="form-icon position-relative">
+                                            <i data-feather="message-circle" class="fea icon-sm icons"></i>
+                                            <textarea name="message" id="message" rows="4" class="form-control ps-5" placeholder="Briefly explain why you are applying for this position"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Upload Your CV / Resume :</label>
+                                        <input class="form-control" type="file" name="attachment"required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <div class="g-recaptcha" data-sitekey="6LdeQ6obAAAAAGYNZP3nIQymmmbSLhcLMmZMt5IC"></div>
+                                    </div>
+                                </div>
+                
+                                <!-- <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">I Accept <a href="#" class="text-primary">Terms And Condition</a></label>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <!-- <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary" value="Apply Now"> -->
+                                    <button type="submit" id="submit" name="send" class="btn btn-primary">Apply Now</button>
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

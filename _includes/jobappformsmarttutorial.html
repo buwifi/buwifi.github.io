@@ -1,0 +1,142 @@
+<div id="loader">
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
+</div>
+
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-md-7">
+                <div class="card custom-form border-0">
+
+                    <div class="card-body">
+                        <h4 class="card-title">Job Application Form</h4>
+                        <div class="custom-form mt-3">
+                            <form id="contactForm" action = "mail.php" method="POST" autocomplete="on" enctype="multipart/form-data">
+                                <p id="error-msg" class="mb-0"></p>
+                                <div id="simple-msg"></div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">Your Name :<span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="user" class="fea icon-sm icons"></i>
+                                                <input name="name" id="name" type="text" class="form-control ps-5" placeholder="First Name :">
+                                                <small class="form-text"></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Your Email :<span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="mail" class="fea icon-sm icons"></i>
+                                                <input name="email" id="email" type="email" class="form-control ps-5" placeholder="Your email :">
+                                                <small class="form-text"></small>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="phone" class="form-label">Your Phone no. :<span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="phone" class="fea icon-sm icons"></i>
+                                                <!-- <input name="number" id="number" type="number" class="form-control ps-5" placeholder="Your phone no. :"> -->
+                                                <!-- <input type="tel" id="number" name="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control ps-5" placeholder="Format: 123-456-7890"> -->
+                                                <input type="tel" id="phone" name="phone" pattern="^\d{3}-\d{3}-\d{4}$" class="form-control ps-5" placeholder="Format: 123-456-7890">
+                                                <small class="form-text"></small>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="subject" class="form-label">Subject :</label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="book" class="fea icon-sm icons"></i>
+                                                <input name="subject" id="subject" class="form-control ps-5" placeholder="Subject :">
+                                                <small class="form-text"></small>
+                                            </div>
+                                        </div>                                                                               
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Position you are applying for:</label>
+                                            <select class="form-control custom-select" name="position" id="position">
+                                                <option disabled selected value style="display:none;">--Open Positions</option>
+                                                {% for item in site.jobs %}
+                                                    <option>{{ item.title }}</option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label for="message" class="form-label">Cover Letter:</label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="message-circle" class="fea icon-sm icons"></i>
+                                                <textarea name="message" id="message" rows="4" class="form-control ps-5" placeholder="Briefly explain why you are applying for this position"></textarea>
+                                                <small class="form-text"></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label for="resume" class="form-label">Upload Your Cv / Resume :</label>
+                                            <input class="form-control" type="file" id="resume" name="resume[]" multiple>
+                                            <small class="form-text"></small>
+                                        </div>                                                                               
+                                    </div>
+                                    <!-- <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">I Accept <a href="#" class="text-primary">Terms And Condition</a></label>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <div class="g-recaptcha" data-sitekey="6LdeQ6obAAAAAGYNZP3nIQymmmbSLhcLMmZMt5IC"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <button type="submit" class="submitBnt btn btn-primary">Apply Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div> 
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="messageModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="messageModalLabel">Info!!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div id="messageModalContent" class="alert alert-success">
+
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>

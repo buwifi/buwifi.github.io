@@ -1,0 +1,10 @@
+{% for post in site.posts %}
+{% if post.tags contains page.tag-name %}
+
+    {% include bloglist.html %}
+
+{% endif %}
+{% endfor %}
+
+
+

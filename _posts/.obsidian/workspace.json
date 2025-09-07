@@ -1,0 +1,131 @@
+{
+  "main": {
+    "id": "90b6c7881105aae6",
+    "type": "split",
+    "children": [
+      {
+        "id": "88e03bc4b57b82d1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "867a90190a676c76",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2022-01-15-what-is-wifi-analytics.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "2022-01-15-what-is-wifi-analytics"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ff2623f4592cfa10",
+    "type": "split",
+    "children": [
+      {
+        "id": "1e8af70c87ab4e10",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a880578d7193379a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f3907e0e728599cf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "e871b00c96ce001c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 297.5
+  },
+  "right": {
+    "id": "7af212af788b7710",
+    "type": "split",
+    "children": [
+      {
+        "id": "4fa7005618514d55",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "353c5283d01bb1fe",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "daily-notes:Open today's daily note": false
+    }
+  },
+  "active": "a880578d7193379a",
+  "lastOpenFiles": [
+    "2025-02-11.md",
+    "2022-01-15-what-is-wifi-analytics.md"
+  ]
+}

@@ -1,0 +1,136 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="footer-py-60 text-center">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card border-0 text-center features feature-primary feature-clean bg-transparent">
+                                <div class="icons text-center mx-auto">
+                                    <i class="uil uil-phone rounded h3 mb-0"></i>
+                                </div>
+                                <div class="content mt-4">
+                                    <h5 class="footer-head">Phone</h5>
+                                    <p class="text-muted">Let's talk to create game-changing experiences for your customers</p>
+                                    <a href="tel:{{site.phone}}" class="text-primary">{{site.phone}}</a>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+                
+                        <div class="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                            <div class="card border-0 text-center features feature-primary feature-clean bg-transparent">
+                                <div class="icons text-center mx-auto">
+                                    <i class="uil uil-envelope rounded h3 mb-0"></i>
+                                </div>
+                                <div class="content mt-4">
+                                    <h5 class="footer-head">Email</h5>
+                                    <p class="text-muted"><span class="text-primary fw-bold">BuWiFi</span> will help you deliver personalized customer experiences</p>
+                                    <a href="mailto:{{site.email}}" class="text-primary">{{site.email}}</a>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+                
+                        <div class="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                            <div class="card border-0 text-center features feature-primary feature-clean bg-transparent">
+                                <div class="icons text-center mx-auto">
+                                    <i class="uil uil-map-marker rounded h3 mb-0"></i>
+                                </div>
+                                <div class="content mt-4">
+                                    <h5 class="footer-head">Location</h5>
+                                    <p class="text-muted">{{site.address}}</p>
+                                    <a href="{{site.jdlocation}}" data-type="iframe" class="video-play-icon text-primary lightbox">View on Google map</a>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="footer-py-60 footer-border">
+                    <div class="row">
+                        <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                            <a href="#" class="logo-footer">
+                                <img src="{{ site.logowhite | absolute_url }}" height="40" alt="">
+                            </a>
+                            <p class="mt-4">We help brick-and-mortar retailers to build relationships with their visitors and create the best possible in-store customer experience.</p>
+                            <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                                <!-- <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li> -->
+                                <li class="list-inline-item mb-0"><a href="{{ site.linkedin }}" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                                <li class="list-inline-item mb-0"><a href="{{ site.twitter }}" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                                <li class="list-inline-item mb-0"><a href="{{ site.instagram }}" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                                <li class="list-inline-item mb-0"><a href="{{ '/feed.xml' | absolute_url }}" class="rounded"><i data-feather="rss" class="fea icon-sm fea-social"></i></a></li>
+                            </ul>
+                        </div><!--end col-->
+
+                        {% assign links = site.data.nav.navigation %}
+                        {% for link in links %}
+                            {% if link.title == 'Services' %}
+
+                            <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <h5 class="text-light footer-head">{{ link.title }}</h5>
+                                <ul class="list-unstyled footer-list mt-4">
+                                    {% for submenu in link.children %}
+                                        <!-- <li><a href="{{ site.url }}{{ site.baseurl }}{{ submenu.url }}" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>{{ submenu.title }}</a></li> -->
+                                        <li><a href="{{ submenu.url | absolute_url }}" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>{{ submenu.title }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            {% endif %}
+                        {% endfor %}
+
+
+                        {% assign links = site.data.nav.navigation %}
+                        {% for link in links %}
+                            {% if link.title == 'Industries' %}
+
+                            <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <h5 class="text-light footer-head">{{ link.title }}</h5>
+                                <ul class="list-unstyled footer-list mt-4">
+                                    {% for submenu in link.children %}
+                                        <li><a href="{{ submenu.url | absolute_url }}" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>{{ submenu.title }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            {% endif %}
+                        {% endfor %}
+
+                        {% assign links = site.data.nav.navigation %}
+                        {% for link in links %}
+                            {% if link.title == 'Company' %}
+
+                            <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <h5 class="text-light footer-head">{{ link.title }}</h5>
+                                <ul class="list-unstyled footer-list mt-4">
+                                    {% for submenu in link.children %}
+                                        <li><a href="{{ submenu.url | absolute_url }}" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>{{ submenu.title }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            {% endif %}
+                        {% endfor %}
+
+                    </div><!--end row-->
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="footer-py-30 footer-bar">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="text-sm-start">
+                        <p class="mb-0">© <script> document.write(new Date().getFullYear()) </script>
+                            <a href="{{ site.web }}" target="_blank" class="text-reset">{{ site.name }}</a>
+                        </p>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </div>
+</footer><!--end footer-->

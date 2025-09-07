@@ -1,0 +1,35 @@
+<!-- <section class="section bg-light"> -->
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="section-title mb-4 pb-2">
+                    <span class="badge bg-soft-primary rounded-pill fw-bold">{{site.data.master.intro-industries.smalltitle}}</span>
+                    <h4 class="title mt-3 mb-4">{{site.data.master.intro-industries.header}}</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">{{site.data.master.intro-industries.text}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row">
+                {% for item in site.industry %}
+                <div class="col-lg-4 col-md-6 col-12 mt-5 pt-3">
+                    <div class="features">
+                        <div class="image position-relative d-inline-block">
+                            <img src="{{item.svg}}" class="avatar avatar-small" alt="{{item.title}}">
+                            <!-- <i class="uil uil-browser h1 text-primary"></i> -->
+                        </div>
+                        <div class="content mt-4">
+                            <h5>{{item.title}}</h5>
+                            <p class="text-muted">{{item.slogan}}</p>
+                            <a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}" class="text-primary">Read more <i
+                                    class="uil uil-angle-right-b"></i></a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,40 @@
+<ul class="list-unstyled d-flex justify-content-between">
+    <li class="list-inline-item user me-2"><i class="uil uil-user"></i>{{ page.author }}</li>
+    <li class="list-inline-item date me-2"><i class="uil uil-calendar-alt"></i>{{ page.date | date: "%B %d, %Y"}}</li>
+
+    <ul class="list-unstyled d-flex social-icon">
+        <li class="list-inline-item me-2"><span class="text-muted"></span>Share Now </span></li>
+        <li class="list-inline-item me-2">
+            <a href="https://twitter.com/intent/tweet?
+                text={{ page.title }}
+                &url={{ page.url | absolute_url }}
+                &via={{ site.twitter_username }}&related={{ site.twitter_username }}"
+                onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+                rel="nofollow" target="_blank" title="Share on Twitter" class="rounded">
+                <i data-feather="twitter" class="fea icon-sm fea-social"></i>
+            </a>
+        </li>
+
+        <li class="list-inline-item me-2">
+                <a href="https://www.linkedin.com/shareArticle?mini=true
+                &url={{ page.url | absolute_url }}
+                &title={{ page.title }}
+                &summary={{ page.description }}
+                &source=buwifi"
+                    onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+                    title="Share on LinkedIn" class="rounded">
+                    <i data-feather="linkedin" class="fea icon-sm fea-social"></i>
+                </a>
+        </li>
+
+        <li class="list-inline-item me-2">
+            <a href="mailto:?subject={{ page.title }}&amp;body=Check out this site {{ page.url | absolute_url }}"
+                title="Share via Email" class="rounded">
+                <i data-feather="mail" class="fea icon-sm fea-social"></i>
+            </a>
+        </li>
+    </ul>
+</ul>
+
+
+

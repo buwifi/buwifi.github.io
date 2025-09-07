@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+
+            function formatCurrency(f) {
+                return "$" + parseFloat(f).toFixed(2);
+            }
+
+            function refreshTotals() {
+                var vTotalPrice = 0;
+                var r;
+
+                $(".UnitTotal").each(function (index, element) {
+                    r = parseFloat($(element).text().trim().substring(1));
+                    vTotalPrice += r;
+                });
+
+                $('#TotalPrice_Total').text(formatCurrency(vTotalPrice));
+            }
+
+            function changePrice(Row) {
+                var Quantity = parseInt($(".Quantity", Row).val());
+                var UnitPrice = parseFloat($(".Price", Row).val().substring(1));
+                var TotalPrice = Quantity * UnitPrice;
+
+                $(".UnitTotal", Row).html(formatCurrency(TotalPrice));
+
+                refreshTotals();
+            }
+
+            $(".Quantity, .Price").change(function () {
+                changePrice($(this).closest("tr"));
+            });
+
+            refreshTotals();
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <table id="tblUpdate" class="dataTable">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Unit Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-item-id="01">
+                <td>Item 01</td>
+                <td><input type="number" min="0" max="999" name="Quantity_01" id="Quantity01" class="Quantity" value="9" /></td>
+                <td><input type="text" name="Price_01" id="UnitPrice01" class="Price" value="$9.99" /> </td>
+                <td id="UnitTotal01" class="UnitTotal">$89.91</td>
+            </tr>
+            <tr data-item-id="02">
+                <td>Item 02</td>
+                <td><input type="number" min="0" max="999" name="Quantity_02" id="Quantity02" class="Quantity" value="6" /></td>
+                <td><input type="text" name="Price_02" id="UnitPrice02" class="Price" value="$8.88" /> </td>
+                <td id="UnitTotal02" class="UnitTotal">$53.28</td>
+            </tr>
+            <tr data-item-id="03">
+                <td>Item 03</td>
+                <td><input type="number" min="0" max="999" name="Quantity_03" id="Quantity03" class="Quantity" value="3" /></td>
+                <td><input type="text" name="Price_03" id="UnitPrice03" class="Price" value="$7.77" /> </td>
+                <td id="UnitTotal03" class="UnitTotal">$23.31</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="2"></td>
+            <td>Total:</td>
+            <td id="TotalPrice_Total">$0.00</td>
+        </tfoot>
+    </table>
+
+
+</body>
+
+</html>

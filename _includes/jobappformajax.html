@@ -1,0 +1,129 @@
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-md-7">
+                <div class="card custom-form border-0">
+                    <div class="card-body">
+                        <h4 class="card-title">Job Application Form</h4>
+                        <div class="custom-form mt-3">
+
+                            <!-- <form class="rounded shadow p-4" method="POST" name="jobForm" autocomplete="on" enctype="multipart/form-data" onsubmit="return validateJobForm()"> -->
+                            <form id="frmJobapp" action="php/jobappajax.php" method="post">
+                                <!-- <p id="error-msg" class="mb-0"></p> -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Your Name :<span class="text-danger">*</span></label>
+                                            <span id="name-info" class="info"></span>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="user" class="fea icon-sm icons"></i>
+                                                <input type="text" class="form-control ps-5" name="name" id="name" placeholder="First Name :" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Your Email :<span class="text-danger">*</span></label>
+                                            <span id="email-info" class="info"></span>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="mail" class="fea icon-sm icons"></i>
+                                                <input type="text" class="form-control ps-5" name="email" id="email" placeholder="Your Email:" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Your Phone no. :<span class="text-danger">*</span></label>
+                                            <span id="phone-info" class="info"></span>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="phone" class="fea icon-sm icons"></i>
+                                                <!-- <input name="number" id="number" type="number" class="form-control ps-5" placeholder="Your phone no. :"> -->
+                                                <!-- <input type="tel" id="number" name="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control ps-5" placeholder="Format: 123-456-7890"> -->
+                                                <input type="tel" class="form-control ps-5" id="phone" name="phone" placeholder="Format: 123-456-7890" pattern="^\d{3}-\d{3}-\d{4}$" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Subject :</label>
+                                            <span id="subject-info" class="info"></span>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="book" class="fea icon-sm icons"></i>
+                                                <input type="text" class="form-control ps-5" name="subject" id="subject" placeholder="Subject:" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Position you are applying for:</label>
+                                            <span id="position-info" class="info"></span>
+                                            <select class="form-control custom-select" name="position" id="position">
+                                                <option disabled selected value style="display:none;">--Open Positions</option>
+                                                {% for item in site.jobs %}
+                                                    <option>{{ item.title }}</option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Cover Letter:</label>
+                                            <span id="message-info" class="info"></span>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="message-circle" class="fea icon-sm icons"></i>
+                                                <textarea name="message" id="message" rows="4" class="form-control ps-5" placeholder="Briefly explain why you are applying for this position"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label for="attachmentFile" class="form-label">Upload Your Cv / Resume :</label>
+                                            <span id="attachmentFile-info" class="info"></span>
+                                            <!-- <input class="form-control" type="file" id="resume" name="resume[]" multiple="multiple"> -->
+                                            <input class="form-control" type="file" id="attachmentFile" name="attachmentFile">
+                                            <span id="fileName"></span>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">I Accept <a href="#" class="text-primary">Terms And Condition</a></label>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <span id="g-recaptcha-info" class="info"></span>
+                                            <div class="g-recaptcha" data-sitekey="{{site.recaptcha2_sitekey}}"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary" value="Apply Now" />
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="mt-3">
+                                            <div id="response"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

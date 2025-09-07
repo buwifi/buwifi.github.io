@@ -1,0 +1,61 @@
+<header id="topnav" class="defaultscroll sticky">
+    <div class="container">
+        <a class="logo" href="{{ site.url }}{{ site.baseurl }}">
+            <span class="logo-light-mode">
+                <img src="{{ site.logo | absolute_url }}" class="l-dark" height="40" alt="">
+                <img src="{{ site.logowhite | absolute_url }}" class="l-light" height="40" alt="">
+            </span>
+            <img src="{{ site.logowhite | absolute_url }}" height="40" class="logo-dark-mode" alt="">
+        </a>
+        <div class="menu-extras">
+            <div class="menu-item">
+                <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="navigation">
+            <ul class="navigation-menu nav-light">
+                {% assign links = site.data.nav.toc %}
+                {% for link in links %}
+                    {% assign class = nil %}
+                    <!-- <p>{{ page.url }} - {{ link.url }}</p> -->
+                    {% if page.url == link.url %}
+                        {% assign class = 'active' %}
+                        <!-- <h4 class="title mb-4">{{ page.url }} - {{ link.url }}</h4> -->
+                    {% endif %}
+                    {% if link.submenu %}
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="{{ link.url | absolute_url }}">{{ link.title}}</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li>
+                                    <ul>
+                                        {% for submenu in link.submenu %}
+                                            <li class="has-submenu parent-menu-item"><a href="{{ submenu.url | absolute_url }}" class="sub-menu-item">{{ submenu.title }}</a></li>
+                                            {% if submenu.submenu %}
+                                                <ul>
+                                                {% for subsubmenu in submenu.submenu %}
+                                                    <li><a href="{{ subsubmenu.url | absolute_url }}" class="sub-menu-item">{{ subsubmenu.title }}</a></li>
+                                                {% endfor %}
+                                                </ul>  
+                                            {% endif %}
+
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    {% else %}
+                        <li><a href="{{ link.url | absolute_url }}" class="sub-menu-item">{{ link.title}}</a></li>
+                    {% endif %}
+                {% endfor %}
+             </ul>
+        </div>
+    </div>
+</header>
+

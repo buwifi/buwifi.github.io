@@ -1,0 +1,386 @@
+.calccontainer {
+  max-width: 1560px;
+  margin-right: auto;
+  margin-left: auto;
+  transition: padding 0.3s;
+
+  @media screen and (max-width: 1580px) {
+    padding: 0 64px;
+  }
+
+  @media screen and (max-width: 1280px) {
+    padding: 0 32px;
+  }
+
+  @media screen and (max-width: 520px) {
+    padding: 0;
+  }
+}
+
+.calcrow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+//Desktop columns
+.calccol-1 {
+  width: 8.333%;
+}
+
+.calccol-2 {
+  width: 16.6667%;
+}
+
+.calccol-3 {
+  width: 25%;
+}
+
+.calccol-4 {
+  width: 33.3333%;
+}
+
+.calccol-5 {
+  width: 41.6667%;
+}
+
+.calccol-6 {
+  width: 50%;
+}
+
+.calccol-7 {
+  width: 58.3333%;
+}
+
+.calccol-8 {
+  width: 66.6667%;
+}
+
+.calccol-9 {
+  width: 75%;
+}
+
+.calccol-10 {
+  width: 83.3333%;
+}
+
+.calccol-11 {
+  width: 91.6667%;
+}
+
+.calccol-12 {
+  width: 100%;
+}
+
+.calcd-none {
+  display: none;
+}
+
+.calcd-block {
+  display: block;
+}
+
+//Medium columns
+@media screen and (max-width: 1200px) {
+  .calccol-m-1 {
+    width: 8.333%;
+  }
+
+  .calccol-m-2 {
+    width: 16.6667%;
+  }
+
+  .calccol-m-3 {
+    width: 25%;
+  }
+
+  .calccol-m-4 {
+    width: 33.3333%;
+  }
+
+  .calccol-m-5 {
+    width: 41.6667%;
+  }
+
+  .calccol-m-6 {
+    width: 50%;
+  }
+
+  .calccol-m-7 {
+    width: 58.3333%;
+  }
+
+  .calccol-m-8 {
+    width: 66.6667%;
+  }
+
+  .calccol-m-9 {
+    width: 75%;
+  }
+
+  .calccol-m-10 {
+    width: 83.3333%;
+  }
+
+  .calccol-m-11 {
+    width: 91.6667%;
+  }
+
+  .calccol-m-12 {
+    width: 100%;
+  }
+
+  .calcd-m-none {
+    display: none;
+  }
+
+  .calcd-m-block {
+    display: block;
+  }
+}
+
+//Tablet columns
+@media screen and (max-width: 990px) {
+  .calccol-t-1 {
+    width: 8.333%;
+  }
+
+  .calccol-t-2 {
+    width: 16.6667%;
+  }
+
+  .calccol-t-3 {
+    width: 25%;
+  }
+
+  .calccol-t-4 {
+    width: 33.3333%;
+  }
+
+  .calccol-t-5 {
+    width: 41.6667%;
+  }
+
+  .calccol-t-6 {
+    width: 50%;
+  }
+
+  .calccol-t-7 {
+    width: 58.3333%;
+  }
+
+  .calccol-t-8 {
+    width: 66.6667%;
+  }
+
+  .calccol-t-9 {
+    width: 75%;
+  }
+
+  .calccol-t-10 {
+    width: 83.3333%;
+  }
+
+  .calccol-t-11 {
+    width: 91.6667%;
+  }
+
+  .calccol-t-12 {
+    width: 100%;
+  }
+
+  .calcd-t-none {
+    display: none;
+  }
+
+  .calcd-t-block {
+    display: block;
+  }
+}
+
+.calccol-1,
+.calccol-2,
+.calccol-3,
+.calccol-4,
+.calccol-5,
+.calccol-6,
+.calccol-7,
+.calccol-8,
+.calccol-9,
+.calccol-10,
+.calccol-11,
+.calccol-12,
+.calccol-m-1,
+.calccol-m-2,
+.calccol-m-3,
+.calccol-m-4,
+.calccol-m-5,
+.calccol-m-6,
+.calccol-m-7,
+.calccol-m-8,
+.calccol-m-9,
+.calccol-m-10,
+.calccol-m-11,
+.calccol-m-12,
+.calccol-t-1,
+.calccol-t-2,
+.calccol-t-3,
+.calccol-t-4,
+.calccol-t-5,
+.calccol-t-6,
+.calccol-t-7,
+.calccol-t-8,
+.calccol-t-9,
+.calccol-t-10,
+.calccol-t-11,
+.calccol-t-12 {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .calccol-1,
+  .calccol-2,
+  .calccol-3,
+  .calccol-4,
+  .calccol-5,
+  .calccol-6,
+  .calccol-7,
+  .calccol-8,
+  .calccol-9,
+  .calccol-10,
+  .calccol-11,
+  .calccol-12,
+  .calccol-t-1,
+  .calccol-m-2,
+  .calccol-m-3,
+  .calccol-m-4,
+  .calccol-m-5,
+  .calccol-m-6,
+  .calccol-m-7,
+  .calccol-m-8,
+  .calccol-m-9,
+  .calccol-m-10,
+  .calccol-m-11,
+  .calccol-m-12,
+  .calccol-t-2,
+  .calccol-t-3,
+  .calccol-t-4,
+  .calccol-t-5,
+  .calccol-t-6,
+  .calccol-t-7,
+  .calccol-t-8,
+  .calccol-t-9,
+  .calccol-t-10,
+  .calccol-t-11,
+  .calccol-t-12 {
+    width: 100%;
+  }
+}
+
+//Mobile columns
+@media screen and (max-width: 768px) {
+  .calccol-l-1 {
+    width: 8.333%;
+  }
+
+  .calccol-l-2 {
+    width: 16.6667%;
+  }
+
+  .calccol-l-3 {
+    width: 25%;
+  }
+
+  .calccol-l-4 {
+    width: 33.3333%;
+  }
+
+  .calccol-l-5 {
+    width: 41.6667%;
+  }
+
+  .calccol-l-6 {
+    width: 50%;
+  }
+
+  .calccol-l-7 {
+    width: 58.3333%;
+  }
+
+  .calccol-l-8 {
+    width: 66.6667%;
+  }
+
+  .calccol-l-9 {
+    width: 75%;
+  }
+
+  .calccol-l-10 {
+    width: 83.3333%;
+  }
+
+  .calccol-l-11 {
+    width: 91.6667%;
+  }
+
+  .calccol-l-12 {
+    width: 100%;
+  }
+
+  .calcd-l-none {
+    display: none;
+  }
+
+  .calcd-l-block {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .calccol-l-1,
+  .calccol-l-2,
+  .calccol-l-3,
+  .calccol-l-4,
+  .calccol-l-5,
+  .calccol-l-6,
+  .calccol-l-7,
+  .calccol-l-8,
+  .calccol-l-9,
+  .calccol-l-10,
+  .calccol-l-11,
+  .calccol-l-12 {
+    width: 100%;
+  }
+}
+
+.calccol-offset-1,
+.calccol-offset-2,
+.calccol-offset-3,
+.calccol-offset-4,
+.calccol-offset-5,
+.calccol-offset-6 {
+  transition: all 0.3s;
+}
+
+@media screen and (min-width: 990px) {
+  .calccol-offset-1 {
+    margin-left: 8.3333%;
+  }
+  .calccol-offset-2 {
+    margin-left: 16.6667%;
+  }
+  .calccol-offset-3 {
+    margin-left: 25%;
+  }
+  .calccol-offset-4 {
+    margin-left: 41.6667%;
+  }
+  .calccol-offset-5 {
+    margin-left: 8.3333%;
+  }
+  .calccol-offset-6 {
+    margin-left: 50%;
+  }
+}

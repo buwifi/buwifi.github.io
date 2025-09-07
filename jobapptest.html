@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+</head>
+
+<body>
+
+<form id='contactus' action='myjobapp.php' enctype="multipart/form-data" method='post'>
+
+<fieldset >
+<legend>Contact us</legend>
+
+
+<div class='container'>
+  
+    <label for='email' >Name*:</label><br/>
+    <input type="text" id="name" name="name" required /><br>
+    <label for='email' >Phone*:</label><br/>
+    <input type="text" id="phone" name="phone" required /><br>
+    <label for='email' >Email*:</label><br/>
+    <input type='text' name='email' id='email' required/><br/>
+ 
+    <label for='message' >Message:</label><br/>
+    <textarea rows="10" cols="50" name='message' id='message'></textarea>
+    <br>
+    <!-- Name of input element determines name in $_FILES array -->
+    Send this file: <input id="file" name="image" type="file" />
+    <input type='submit' name='Submit' value='Submit' />
+</div>
+
+</fieldset>
+</form>
+    </body>
+</html>

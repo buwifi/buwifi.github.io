@@ -1,0 +1,36 @@
+<section class="swiper-slider-hero position-relative d-block vh-100" id="home">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+            {% for item in site.data.master.slider %}
+
+            <div class="swiper-slide d-flex align-items-center overflow-hidden">
+                <div class="slide-inner slide-bg-image d-flex align-items-center" style="background: center center;"
+                    data-background="{{item.image}}">
+                    <div class="bg-overlay"></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="title-heading text-center">
+                                    <h1 class="heading text-light title-dark mb-4">{{item.header}}</h1>
+                                    <p class="para-desc mx-auto text-light">{{item.subheader}}</p>
+                                    <div class="mt-4 pt-2"><a href="contact.html" class="btn btn-primary">Contact us</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <!-- end swiper-wrapper -->
+
+        <!-- swipper controls -->
+        <!-- <div class="swiper-pagination"></div> -->
+        <div class="swiper-button-next border rounded-circle text-center"></div>
+        <div class="swiper-button-prev border rounded-circle text-center"></div>
+    </div>
+    <!--end container-->
+</section>
+<!--end section-->
+<!-- Hero End -->

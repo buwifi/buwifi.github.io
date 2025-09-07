@@ -1,0 +1,53 @@
+navigation:
+  - title: Home
+    url: index.html
+  - title: Services
+    children:
+      - title: Guest WiFi
+        url: /services/guestwifi.html
+      - title: Analytics
+        url: /services/analytics.html
+      - title: Communication
+        url: /services/communication.html
+      - title: CDP
+        url: /services/cdp.html
+      - title: Data Integration
+        url: /services/dataintegration.html
+      - title: Network Management
+        url: /services/networkmanagement.html
+      - title: UpWiFi
+        url: /services/upwifi.html
+  - title: Industries
+    children:
+      - title: Shopping Mall
+        url: /industry/shoppingmall.html
+      - title: Retail Chain
+        url: /industry/retailchain.html
+      - title: Restaurant
+        url: /industry/restaurant.html
+      - title: Hospitality
+        url: /industry/hospitality.html
+      - title: Venue
+        url: /industry/venues.html
+      - title: Transportation
+        url: /industry/transportation.html
+  - title: Pricing
+    url: /pricing.html
+  - title: Company
+    url: javascript:void(0)
+    children:
+      - title: About Us
+        url: /aboutus.html
+      - title: Case Studies
+        url: /casestudy.html
+        children:
+          - title: Teknosa
+            url: /customers/teknosa.html
+          - title: Emaar Square Mall 
+            url: /customers/emaar.html
+      - title: Careers
+        url: /careers.html
+      - title: Contact
+        url: /contact.html
+  - title: Blog
+    url: /blog/

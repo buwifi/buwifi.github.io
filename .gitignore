@@ -1,0 +1,30 @@
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Node.js dependencies (if using npm for Jekyll assets)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Ruby / Bundler files
+vendor/
+.bundle/
+Gemfile.lock
+
+# VS Code settings
+.vscode/
+
+# Environment files
+.env

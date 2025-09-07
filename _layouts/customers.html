@@ -1,0 +1,133 @@
+---
+layout: default
+---
+{% include servicesheader.html %}
+
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-5 col-12">
+                <div class="card sidebar sticky-bar rounded shadow border-0">
+                    <div class="card-body widget border-bottom">
+                        <h5 class="mb-0">Key Information</h5>
+                    </div>
+
+                    <div class="card-body">
+
+                        <div class="d-flex widget align-items-top mt-3">
+                            <i data-feather="briefcase" class="fea icon-ex-md me-3"></i>
+                            <div class="flex-1">
+                                <h6 class="widget-title mb-1">Industry:</h6>
+                                <p class="text-primary mb-0">{{page.customer_type}}</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex widget align-items-top mt-3">
+                            <i data-feather="map-pin" class="fea icon-ex-md me-3"></i>
+                            <div class="flex-1">
+                                <h6 class="widget-title mb-1">Location:</h6>
+                                <p class="text-primary mb-0">{{page.location}}</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex widget align-items-top mt-3">
+                            <i data-feather="calendar" class="fea icon-ex-md me-3"></i>
+                            <div class="flex-1">
+                                <h6 class="widget-title mb-1">BuWiFi Live Since:</h6>
+                                <p class="text-primary mb-0">{{page.since}}</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex widget align-items-top mt-3">
+                            <i data-feather="wifi" class="fea icon-ex-md me-3"></i>
+                            <div class="flex-1">
+                                <h6 class="widget-title mb-1">Wireless Infrastructure:</h6>
+                                {% for item in page.wireless %}
+                                    <p class="text-primary mb-0">{{ item }}</p>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <div class="d-flex widget align-items-top mt-3">
+                            <i data-feather="settings" class="fea icon-ex-md me-3"></i>
+                            <div class="flex-1">
+                                <h6 class="widget-title mb-1">Services Provided:</h6>
+                                {% for item in page.services %}
+                                    <p class="text-primary mb-0">{{ item }}</p>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <!--
+                         <div class="d-flex widget align-items-center mt-3">
+                            <i data-feather="book" class="fea icon-ex-md me-3"></i>
+                            <div class="flex-1">
+                                <h6 class="widget-title mb-1">Qualifications:</h6>
+                                <p class="text-primary mb-0">{{page.qualifications}}</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex widget align-items-center mt-3">
+                            <i data-feather="dollar-sign" class="fea icon-ex-md me-3"></i>
+                            <div class="flex-1">
+                                <h6 class="widget-title mb-1">Salary:</h6>
+                                <p class="text-primary mb-0">+50k to 70k</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex widget align-items-center mt-3">
+                            <i data-feather="clock" class="fea icon-ex-md me-3"></i>
+                            <div class="flex-1">
+                                <h6 class="widget-title mb-1">Date posted:</h6>
+                                <p class="text-primary mb-0 mb-0">5th Sep, 2019</p>
+                            </div>
+                        </div>
+-->
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8 col-md-7 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="ms-lg-4">
+
+                    <h5>Introduction: </h5>
+                    <p class="text-muted">{{page.introduction}}</p>
+
+                    <h5 class="mt-4">Challenges: </h5>
+                    <p class="text-muted">{{page.challenge_text}}</p>
+                    <ul class="newcustom_list text-muted">
+                        {% for item in page.challenges %}
+                        <li class="mb-1">{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+
+                    <h5 class="mt-4">Solution: </h5>
+                    <p class="text-muted">{{page.solution_text}}</p>
+                    <ul class="newcustom_list text-muted">
+                        {% for item in page.solution %}
+                        <li class="mb-1">{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+
+                    <h5 class="mt-4">Results: </h5>
+                    <p class="text-muted">{{page.result_text}}</p>
+                    <ul class="newcustom_list text-muted">
+                        {% for item in page.results %}
+                        <li class="mb-1">{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+
+                    <h5>Conclusion: </h5>
+                    <p class="text-muted">{{page.conclusion}}</p>
+  
+<!--
+                    <div class="mt-4">
+                        <a href="{{ 'jobapplication.html' | relative_url }}" class="btn btn-outline-primary">Apply Now <i class="mdi mdi-send"></i></a>
+                    </div>
+-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

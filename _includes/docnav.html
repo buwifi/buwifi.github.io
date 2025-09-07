@@ -1,0 +1,39 @@
+<div class="sidenav shadow bg-white">
+    <div class="text-center logo-border border-bottom pt-0 pt-lg-5 pb-0 pb-lg-5">
+        <div class="d-none d-lg-inline-block">
+            <a class="logo scrollbtn" href="#home">
+                <!-- Landrick<span class="text-primary">.</span> -->
+                <img src="{{ site.logo | absolute_url }}" class="l-dark" height="30" alt="">
+                <!-- <img src="{{ site.logo | absolute_url }}" height="24" alt=""> -->
+            </a>
+        </div>	
+    </div>	
+
+    <nav class="navbar navbar-expand-lg navbar-custom bg-white text-white sticky">
+        <div class="container">
+            <a class="logo text-dark d-inline-block d-lg-none scrollbtn" href="#home"><img src="{{ site.logo | absolute_url }}" height="30" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="mdi mdi-menu"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav flex-column">
+                    <li class="nav-item active"><a class="nav-link" href="#intro">Introduction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#metrics">Metrics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#dashboard">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#configuration">Configuration</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="bottom-social social-icon text-center d-none d-lg-inline-block">
+        <ul class="list-unstyled icon">
+            <li class="list-inline-item"><a href="{{ site.linkedin }}" target="_blank"><i class="mdi mdi-linkedin"></i></a></li>
+            <li class="list-inline-item"><a href="{{ site.instagram }}" target="_blank"><i class="mdi mdi-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="{{ site.twitter }}" target="_blank"><i class="mdi mdi-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="mailto:{{ site.email }}"><i class="mdi mdi-email-outline" title="email"></i></a></li>
+        </ul>
+    </div>
+</div>

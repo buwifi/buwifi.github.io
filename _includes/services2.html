@@ -1,0 +1,62 @@
+<section class="section bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="section-title mb-4 pb-2">
+                    <!-- <h6 class="text-primary">Features</h6> -->
+                    <span class="badge bg-soft-primary rounded-pill fw-bold">Our Services</span>
+                    <h4 class="title mt-3 mb-4">Explore awesome features</h4>
+                    <p class="text-muted para-desc mb-0 mx-auto">
+                        Check out our portfolio of end-to-end services designed to help you <span class="text-primary fw-bold">drive</span> business outcomes faster.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            {% for item in site.services %}
+            <div class="col-lg-4 col-md-6 col-12 mt-5 pt-3">
+                <div class="features">
+                    <div class="image position-relative d-inline-block">
+                        <img src="{{item.svg}}" class="avatar avatar-small" alt="{{item.title}}">
+                        <!-- <i class="uil uil-browser h1 text-primary"></i> -->
+                    </div>
+                    <div class="content mt-4">
+                        <h5>{{item.title}}</h5>
+                        <p class="text-muted">{{item.slogan}}</p>
+                        <a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}" class="text-primary">Read more <i class="uil uil-angle-right-b"></i></a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="container mt-100 mt-60">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6">
+                <img src="{{site.data.master.intro-benefits.image}}" class="img-fluid rounded-md shadow-lg" alt="">
+            </div>
+            <div class="col-lg-7 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                <div class="section-title text-md-start text-center ms-lg-4">
+                    <span class="badge bg-soft-primary rounded-pill fw-bold">Key Benefits</span>
+                    <h4 class="title mb-1 mt-3">{{site.data.master.intro-benefits.header}}</h4>
+                    <h6 class="mb-4">{{site.data.master.intro-benefits.subheader}}</h6>
+                    <p class="text-muted mb-0 para-desc">{{site.data.master.intro-benefits.text}}</p>
+                    {% for item in site.data.master.benefits limit:3 %}                    
+                    <div class="d-flex mt-4 pt-2">
+                        <i class="{{ item.icon }} h5 text-primary"></i>
+                        <div class="flex-1 ms-2">
+                            <h5>{{ item.header }}​</h5>
+                            <p class="mb-0 text-muted">
+                                {{ item.text }}
+                            </p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

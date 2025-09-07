@@ -1,0 +1,21 @@
+---
+layout: services
+---
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-6">
+                <div class="card blog blog-detail border-0 shadow rounded">
+                    <img src="{{ page.heroimage | absolute_url }}" class="img-fluid rounded-top" alt="">
+                    <div class="card-body content">
+                        {% include blogpostinfo.html %}
+                        {{content}}
+                    </div>
+                </div>
+                {% include categoriestags.html %}
+                {% include relatedposts.html %}
+            </div>
+            {% include sidebar.html %}
+        </div>
+    </div>
+</section>

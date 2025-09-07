@@ -1,0 +1,74 @@
+<div class="section section--first">
+  <div class="container mt-60 mt-60 mb-4">
+    <div class="container calculator">
+      <div class="row">
+        <!-- <div id="top" class="col-8"> -->
+        <div id="top" class="col-offset-1 col-6 col-t-12 col-m-8">
+          <div class="calculator__content">
+            <form class="form calculator-form">
+              <div class="form__form-group calculator__form-group form__form-group--small">
+                <input
+                  id="numberAP"
+                  class="form__input calculator__input js-field__project"
+                  type="text" 
+                  value="1">
+
+                <label class="form__label calculator__input-label">AP
+                  <span class="calculator__color_label">
+                    <span class="mdi mdi-access-point-network"></span>
+                    x ${{site.data.master.pricing.buwifi}}
+                  </span>
+                </label>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+        <!-- <div class="col-4 calculator__sidebar-wrap"> -->
+        <div class="col-offset-1 col-5 col-m-4 d-t-none calculator__sidebar-wrap">
+          <div class="sidebar calculator__sidebar card">
+            <div class="calculator__sidebar-elements">
+              <ul class="calculator__sidebar-ul" id="page">
+                <ul class="calculator__sidebar-main" id="main">
+                  <li>BuWiFi:
+                    <!-- <span><span id="number-AP"> 1 AP x</span>{{ site.data.master.pricing.buwifi }} $</span> -->
+                    <span><span class="mdi mdi-note-multiple-outline"></span><span id="number-AP"> x 1</span></span>
+                    <span id="buwifi-price" class="calculator__sidebar-price">{{ site.data.master.pricing.buwifi }} $</span>
+                  </li>
+                  <li>Pages <span id="pages-number"> x 10</span>
+                    <span id="pages-price" class="calculator__sidebar-price">+ 1 $</span>
+                  </li>
+                </ul>
+              </ul>
+
+
+
+
+
+
+
+
+
+
+
+              <ul class="calculator__sidebar-ul hidden" id="side_buwifi"></ul>
+              <ul class="calculator__sidebar-ul" id="plus"></ul>
+              <ul class="calculator__sidebar-ul hidden" id="multiple"></ul>
+
+            </div>
+
+            <div class="calculator__sidebar-total">
+              <h4>Total <span class="calculator__sidebar-price-total">13 $</span></h4>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="endMenu" class="section section--last">
+    <img alt="" class="section__img" src="assets/img/img_backgroud_footer.png">
+  </div>
+</div>

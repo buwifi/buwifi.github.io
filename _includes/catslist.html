@@ -1,0 +1,23 @@
+<div class="widget mb-4 pb-2">
+    <h5 class="widget-title">Categories</h5>
+    <div class="tagcloud mt-4">
+        <ul class="list-unstyled mt-4 mb-0 blog-categories">
+            {% assign categories = site.posts | all_category %}
+            {% for category in categories %}
+            {% assign category_slug = category['name'] | slugify: "raw" %}
+            <li>
+                <a href={{ site.baseurl | append: "/category/" | append: category_slug | append: "/" }} rel="category category">{{ category['name'] }}</a><span class="float-end">{{ category['count'] }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+

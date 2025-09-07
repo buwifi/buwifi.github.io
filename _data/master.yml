@@ -1,0 +1,1271 @@
+---
+### WHO ARE WE
+whoarewe:
+  header:
+    About BuWiFi
+  title:
+    Understand your customers and engage better with BuWiFi
+  text: 
+    - 
+      BuWiFi helps brick-and-mortar retailers to build relationships with their visitors and create the best possible in-store customer experience.
+    - 
+      BuWiFi is a data analytics company committed to help consumer-facing brick-and-mortar businesses to gather insights into their customers’ behaviours and preferences so they can communicate with them in a more targeted manner, creating more opportunities for their business to convert footfall into sales or revenue.
+  image: 
+    images/company/AdobeStock_183522151-2.jpg
+
+block:
+  - 
+    title:
+      WiFi Marketing
+    text: 
+      Use your <span class="text-primary fw-bold">Guest WiFi</span> to gather customer contact information, send promotions, and gain valuable customer insights about their visit behavior and demographics.
+    icon: 
+      uil uil-wifi
+  -
+    title:
+      Data Analytics
+    text:
+      Take your WiFi network beyond connectivity to drive digitization of physical spaces.
+    icon:
+      uil uil-chart-line
+
+steps:
+  -
+    title:
+      Connect
+    text:
+      Connect with customers seamlessly and privacy-friendly the moment they enter the venue.
+    svg:
+      images/icon_jd/wifi-sign-svgrepo-com.svg
+    url:
+      services/guestwifi.html
+  -
+    title:
+      Know
+    text:
+      Go beyond counting heads and know more about the customers as they move around the venue.
+    svg:
+      images/icon_jd/analytics-svgrepo-com.svg
+    url:
+      services/analytics.html
+  -
+    title:
+      Engage
+    text:
+      Deliver contextual experiences based on personas at the right time/place/channel.
+    svg:
+      images/icon_jd/communication-svgrepo-com.svg
+    url:
+      services/communication.html
+  -
+    title:
+      Integrate
+    text:
+      Enable a truly integrated omnichannel customer journey across digital and physical.
+    svg:
+      images/icon_jd/cdp.svg
+    url:
+      services/dataintegration.html
+
+
+aboutus:
+    smallheader: Who we are
+    header: We are leveling the data gap between online and offline worlds and allowing stores to create multi-channel experience
+    text1:
+          Companies must make use of little data techniques to create competitive advantage. 
+          Mining little data doesn’t mean investing in expensive data acquisition, hardware, software, or technology infrastructure. 
+          Fact-based decision making is an important source of competitive advantage for market-leading companies. 
+          So companies need to make commitment, some experimentation and use technology to generate richer data.
+    text2:
+          BuWiFi creates solutions for retailers to help them better understand their customers and engage better and more efficiently. 
+          Offline retailers often envy webshop owners for their easy-to-use online analytic tools and detailed information about every click their customers take. 
+          Now offline retailers have same online analytic tools as webshop owners.
+    image: img/demos/it-services/about-us/omnichannel-retailing.jpg
+
+ourstory:
+    image: images/company/sad-status-1691593_1920-2.jpg
+    slogan: Our Story
+    header: 
+        - <span class="text-primary fw-bold">BuWiFi</span> is a technology company helping public facing enterprises to make more informed business decisions and increase sales through the power of big data analytics.
+        - Our goal is to help brick-and-mortar retailers to build relationships with their visitors and create the best possible in-store customer experience.
+        # - We bring together the online and offline worlds, creating an integrated user experience that enable brick and mortar retailers to engage with mobile customers along their purchase path.
+        # - We provide online analytics for the offline world that helps marketers measure offline ROI and create smarter promotions.
+        - Our solution, <span class="text-primary fw-bold">BuWiFi</span>, is an advanced In-store Analytics, Guest WiFi and Marketing Automation platform. 
+          With BuWiFi, our clients understand customer traffic patterns and behavior inside and outside their physical stores and target their audiences across all digital channels, to create high impact campaigns with measurable ROI. 
+          BuWiFi leads to more effective marketing, new revenue opportunities, better customer satisfaction and improved operational efficiency.
+        - BuWiFi founded in 2014 and headquartered in Istanbul, Turkey.
+    sentences:
+        - Deliver a new guest WiFi experience that creates <span class="text-primary fw-bold">value</span> for all stakeholders, in compliance with privacy regulations
+        - Make it beautiful, branded and seamless for your customers to login anytime, at any of your venues.
+        - Meet BuWiFi, Cloud-based enterprise guest WiFi solution with analytics and marketing capabilities.
+        - Your customers expect fast, free and user-friendly guest WiFi wherever they go. 
+          Enhance customer experience with branded login; customised, location-specific content and seamless WiFi login every time, at any of your venues.
+          BuWiFi overlays on your existing WiFi infrastructure and can be set up in minutes.
+        - Customize every step of your visitors’ experience for maximum customer satisfaction. 
+          Build simple, branded splash pages, collect customer profile data, display targeted advertising and more!
+    block:
+        - header: WiFi Marketing
+          text: Use your <span class="text-primary fw-bold">Guest WiFi</span> to gather customer contact information, send promotions, and gain valuable customer insights about their visit behavior and demographics.
+          icon: uil uil-wifi
+        - header: Data Analytics
+          text: Take your WiFi network beyond connectivity to drive digitization of physical spaces.
+          icon: uil uil-chart-line
+
+visionmissiongoal:
+  - header: Our Vision
+    text: To connect retailers with their customers the best possible way and build loyal customers using data.
+    icon: uil uil-telescope
+  - header: Our Mission
+    text: Provide high-valued services and useful data to brick-and-mortar retailers to attract and retain customers.
+    icon: uil uil-rocket
+  - header: Our Goal
+    text: Help brick-and-mortar retailers to build relationships with their visitors and create the best in-store customer experience.
+    icon: uil uil-crosshairs
+
+whyBuWiFi:
+    image: images/illustrator/seo_svg.svg
+    slogan: Why BuWiFi
+    header: >
+        We level the data gap between online and offline worlds, allowing stores to create omni-channel  experience. Our main competitive advantages are:
+    bullets: 
+      - <span class="text-primary fw-bold">Realibility:</span> Technical Experts. Local team.
+      - <span class="text-primary fw-bold">Service:</span> Great support. Responsive, flexible, dependable. Fast customization.
+      - <span class="text-primary fw-bold">Quality:</span> Packed with features. Integration with 3rd party data. ROI focused solution.
+      - <span class="text-primary fw-bold">Price:</span> Competitive and flexible pricing options.
+      - <span class="text-primary fw-bold">Simple and Fast:</span> We develop user-friendly, flexible software to meet customer requirement.
+      - <span class="text-primary fw-bold">Expertise and Experience:</span> Years of Experience Specialising In Software Development, Delivering Best Solutions To Customers.
+      - <span class="text-primary fw-bold">We value quality:</span> Our key to success is the excellent quality of work that we hold across all our projects.
+
+##############
+
+mission:
+    - title: Our Mission
+      subtitle: Our mission is to help connect people who want to sell a business with people who want to buy a business. 
+                Lorem ipsum dolor sit <strong class="text-color-dark">amet</strong>, consectetur adipiscing elit. 
+                Nunc viverra erat orci, ac auctor.
+      image: img/demos/it-services/about-us/generic-2.jpg
+      detail:
+        - Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Sed imperdiet libero id nisi euismod, sed porta est consectetur. 
+          Vestibulum auctor felis eget orci semper vestibulum.
+        - Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Sed imperdiet libero id nisi euismod, sed porta est consectetur.
+    - title: Our Vision
+      subtitle: Lorem ipsum dolor sit <strong class="text-color-dark">amet</strong>, consectetur adipiscing elit. 
+                Nunc viverra erat orci, ac auctor.
+      image: img/demos/it-services/about-us/generic-3.jpg
+      detail:
+        - Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Sed imperdiet libero id nisi euismod, sed porta est consectetur. 
+          Vestibulum auctor felis eget orci semper vestibulum.
+        - Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Sed imperdiet libero id nisi euismod, sed porta est consectetur.
+
+### Services Header
+intro-services:
+    smalltitle: Our services
+    header: Empower your Guest WiFi experience
+    subheader: 
+          WiFi Based In-store Analytics and Mobile Marketing Platform
+    text: 
+          BuWiFi is an IoT platform that provides <strong>“Google Analytics + Criteo"</strong> for physical retail stores. 
+          It is a full suite of powerful <strong>In-store Analytics, Guest WiFi Hotspot</strong>, and <strong>Personalized Customer Engagement</strong> over WiFi 
+          that connects the online and offline worlds enabling your company to communicate with your customers while they are visiting your store. 
+          It is cloud-based, mobile app is not required and uses existing in-store Wi-Fi network.
+
+### Industries Header
+intro-industries:
+    smalltitle: Specialized solutions for your industry
+    header: BuWiFi Knows Your Industry
+    subheader: 
+          We Have Wide Variety of Applications
+    text: 
+          Whether you need easy to use <span class="text-primary fw-bold">Guest WiFi</span> or a <span class="text-primary fw-bold">Customer Satisfaction Survey</span>, we have you covered with wide variety of use cases.
+          #Learn more about our industry-specific capabilities
+
+### Benefits Header
+intro-benefits:
+    smalltitle: Key benefits
+    header: E = MC<sup>2</sup>
+    image: images/company/CommunicateWithGuests.jpg
+    subheader: 
+          E</strong>ngagement = 
+          <strong class="font-weight-extra-bold">M</strong>easure &bull; 
+          <strong class="font-weight-extra-bold">C</strong>onnect &bull; 
+          <strong class="font-weight-extra-bold">C</strong>ommunicate
+    text: 
+          With BuWiFi, we give you the all familiar formula for In-store Engagement. 
+          Now you can, Measure and Understand your visitors with In store Analytics Module,
+          Connect your customers to the internet with Guest WiFi,
+          and Communicate with them in-store. 
+
+### Partners Header
+intro-partners:
+    smalltitle: PARTNERS
+    header: Get more from your existing WiFi infrastructure
+    subheader: 
+          E</strong>ngagement = 
+          <strong class="font-weight-extra-bold">M</strong>easure &bull; 
+          <strong class="font-weight-extra-bold">C</strong>onnect &bull; 
+          <strong class="font-weight-extra-bold">C</strong>ommunicate
+    text: 
+          With BuWiFi, we give you the all familiar formula for In-store Engagement. 
+          Now you can, Measure and Understand your visitors with In store Analytics Module,
+          Connect your customers to the internet with Guest WiFi,
+          and Communicate with them in-store. 
+
+partners:
+  - header: Cisco Meraki
+    icon: fal fa-analytics
+  - header: Cisco
+    icon: fal fa-analytics
+  - header: HPE Aruba
+    icon: fal fa-wifi
+  - header: TPLink
+    icon: icons icon-bubbles
+  - header: Fortinets
+    icon: icons icon-bubbles
+
+### Why BuWiFi
+intro-whyus:
+    smalltitle: Why BuWiFi
+    header: Why Choose BuWiFi?
+    subheader: White Label WiFi Marketing For Your Business
+    text: 
+          With BuWiFi, we give you the all familiar formula for In-store Engagement. 
+          Now you can, Measure and Understand your visitors with In store Analytics Module,
+          Connect your customers to the internet with Guest WiFi,
+          and Communicate with them in-store. 
+
+whyus:
+  - header: Build Recurring Revenue
+    text: Measure & understand in-store visits and determine conversion ratio. Get the same common web metrics and reach par with online stores.
+    icon: fal fa-analytics
+  - header: Competitive Differentiation
+    text: Create an easy login portal and onboard guests with our simple user interface.
+    icon: fal fa-wifi
+  - header: Build Customer Loyalty
+    text: Provide free WiFi and personalized offers. Increase customer engagement with sweepstakes and surveys.
+    icon: icons icon-bubbles
+  - header: Automated Sales Process
+    text: Collect valuable customer profile data and build your customer database.
+    icon: fal fa-chart-network
+  - header: 3rd-Party App Integrations
+    text: Increase foot traffic & dwell time with personalized offers. Optimize marketing ROI with accurate analysis of in-store impacts.
+    icon: fal fa-smile
+  - header: Meets Privacy Requirements
+    text: Transform your WiFi network into a powerful marketing asset that builds customer database, promotes business and collects valuable insights.
+    icon: fal fa-dollar-sign
+  - header: Marketing & Sales Collateral
+    text: Transform your WiFi network into a powerful marketing asset that builds customer database, promotes business and collects valuable insights.
+    icon: fal fa-dollar-sign
+  - header: WiFi Hardware Integrations
+    text: Transform your WiFi network into a powerful marketing asset that builds customer database, promotes business and collects valuable insights.
+    icon: fal fa-dollar-sign
+
+customers:
+  - name: Yasemin Uzelli
+    title: Marketing Manager
+    comment:
+            BuWiFi enables us to understand who our customers are and how they behave in the mall while respecting their privacy. 
+            Thanks to this in-depth knowledge, we can now deliver compelling and personalized experiences.
+    image: img/how/yaseminuzelli.jpg
+  - name: Alper Tekin
+    title: CIO
+    comment:
+            BuWiFi allows us to connect with customers not just online, but also in stores. 
+            We can now create, manage and measure a more captivating in store experience for our customers, using our existing WLAN infrastructure.
+    image: img/how/alpertekin.png
+
+careers:
+      title: Join Us
+      subtitle: We are always looking to bring on enthusiastic, fun, tech-loving people. Nunc viverra erat orci, ac auctor.
+      image: img/demos/it-services/about-us/generic-4.jpg
+      detail:
+        - Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Sed imperdiet libero id nisi euismod, sed porta est consectetur. 
+          Vestibulum auctor felis eget orci semper vestibulum.
+        - Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Sed imperdiet libero id nisi euismod, sed porta est consectetur.
+
+jobs:
+  opening: Python Developer & WiFi Radius/AAA Engineer
+  summary: We are looking Python Developer & WiFi Radius/AAA Engineer to take role in company's WiFi based in-store analytics and marketing automation platform and WiFi/AAA Applications.
+  qualifications:
+   - BS/MS degree in computer engineering/programming or related fields
+   - 4+ years of experience building end-to-end web applications using Python
+   - Experience in developing web application based on Django framework and third parties APIs
+   - Hands on experience with Web Applications and programming languages such as JavaScript, JQuery, Bootstrap, PHP, HTML, HTML5, CSS, CSS3, XML, JSON,  REST, SOAP
+   - Experience in database design and MySQL/Relational databases, data analysis & modeling
+   - Experience with or basic understanding of back-end development a plus
+   - Working Experience in Radius (Authentication, Authorization, Attributes, CoA, Accounting, etc) , and Free Radius - understanding the internals.
+   - Working Experience Network Device AAA (Experience with AAA on different switches, WLAN Controllers, Wireless Access Point, VPN concentrators, integration with Radius solutions)
+   - Working Experience in Captive Portal (Redirects, Logins, Walled Garden) - understanding the internals.
+   - Knowledge Wi-Fi Standards includes 802.1x(EAP-SIM, EAP-AKA), 802.11(Open, WISPr, WEB Auth etc), HotSpot 2.0 
+   - Experience with a version control system (Git a plus)
+   - Experience building on cloud platforms such as AWS, etc.
+   - Basic knowledge in Photoshop, Illustrator
+  softskills:
+   - The position requires constant communication with colleagues,
+   - Outstanding attention to detail and a strong sense of ownership
+   - Demonstrated ability to handle multiple projects simultaneously, meet deadlines, while effectively managing priorities and communicating progress
+   - Proven ability to develop and maintain strong professional relationships with clients, colleagues and vendors
+   - Prior experience in mobile app development is an asset, not a requirement
+   - You are comfortable working in a startup environment and building version 1.0 product from scratch
+  cta: Please e-mail your resume in Word/PDF to <a href="mailto:murat@buwifi.com?subject=Python Developer and WiFi Radius-AAA Engineer">murat@buwifi.com</a>. We appreciate every applicant’s interest, but only those under consideration will be contacted.
+
+### Employee Header
+intro-employee:
+    smalltitle: Our Employee Culture
+    header: What Does A+ Player Mean For Us?
+    subheader: 
+          E</strong>ngagement = 
+          <strong class="font-weight-extra-bold">M</strong>easure &bull; 
+          <strong class="font-weight-extra-bold">C</strong>onnect &bull; 
+          <strong class="font-weight-extra-bold">C</strong>ommunicate
+    text: 
+          With BuWiFi, we give you the all familiar formula for In-store Engagement. 
+          Now you can, Measure and Understand your visitors with In store Analytics Module,
+          Connect your customers to the internet with Guest WiFi,
+          and Communicate with them in-store. 
+
+employee:
+  - header: Make it happen
+    text: Our team are committed to doing whatever it takes to <strong class="text-color-dark">"make it happen"</strong> by working together and thinking of innovative solutions every step of the way.
+    icon: fal fa-analytics
+  - header: We’re in it together
+    text: Regardless of their role, each individual at BuWiFi has one common goal, turn the world purple. Everyone is available to help each other.
+    icon: fal fa-wifi
+  - header: Playful & positive
+    text: Life's too short to take things too seriously, we like to have fun while we're working and we love positivity - and yes the glass is half full.
+    icon: icons icon-bubbles
+  - header: No drama
+    text: Things don't always go to plan as much as we try, having a tantrum over it won't help the situation and you won't find that here.
+    icon: fal fa-chart-network
+  - header: Know your stuff, keep learning
+    text: Every day is a school day. We value people who have the knowledge and have a thirst for it, lots of it.
+    icon: fal fa-smile
+  - header: With great data, comes great responsibility
+    text: Personal data is a big thing, particularly when you are the custodian of a lot of it, we take that very seriously.
+    icon: fal fa-dollar-sign
+  - header: No bullsh!t, no politics
+    text: Seriously, we all enjoy coming to work here and that stuff makes it unpleasant.
+    icon: fal fa-dollar-sign
+
+guestwifistepsheader: How BuWiFi Guest WiFi can work for you
+guestwifistepstext: Transform your WiFi network into a powerful marketing asset that builds customer database, promotes business and collects valuable insights
+guestwifisteps:
+   - title: Presence
+     text: Visitors enter establishment
+   - title: Register/Login
+     text: They join Guest WiFi
+   - title: Data Collection
+     text: You receive data and build a powerful CRM
+   - title: Run Campaings
+     text: Execute marketing campaigns
+   - title: Measure ROI
+     text: Assess your return on investment (ROI)
+
+transition1:
+    header: Empower your Guest WiFi experience
+    text: Transform your WiFi network into a powerful marketing asset that builds customer database, promotes business and collects valuable insights
+    image: images/company/network-management-systems.jpg
+
+howitworks:
+  - step: 1. CONNECT 
+    header: Connect with visitors the moment they enter the venue
+    text: Paige connects to the free WiFi on her mobile phone. BuWiFi identifies and moves Paige from an anonymous visitor to a connected visitor.
+          BuWiFi will automatically identify Paige every time she walks into the venue in the future.
+    image:
+  - step: 2. KNOW
+    header: Know more about the visitors as they move around the venue
+    text: Once Paige is connected, BuWiFi starts gathering insights based on Paige’s past and present location behavior at the venue.
+          The data gathered from Paige’s visits leads to visitor at location personas and Paige is recognized as a “frequent shopper” based on historic venue behavior patterns.
+    image:
+  - step: 3. ENGAGE
+    header: Deliver contextual experiences based on personas at the right time, right place, and right channel
+    text: Using WiFi for reach, engage real-time with visitors at the venue. 
+          Use SMS, Email, App, Smart Captive Portals to directly engage using BuWiFi or make use of API services to trigger your enterprise workflows with visitors presence intelligence.
+          Upon Paige’s 3rd visit, she gets an engagement (a SMS with an offer) “Hey Paige, get 15% off on travel guides at the Airport Gift Shop”.
+    image:
+  - step: 4. INTEGRATE
+    header: Enable a truly integrated traveler journey across digital and physical
+    text: Make use of API services to trigger your enterprise workflows with visitors' presence intelligence. 
+          Get daily and weekly email updates with trends, reports and analytics on location insights across your venue.
+    image:
+
+# A robust location intelligence strategy for your venue starts with BuWiFi
+strategy:
+  - step: LOCATION HIERARCHY
+    header: Have a single, centralized view across all locations that is automatically in sync with your network hierarchy. 
+            Any change in the location or configuration of the access points will be automatically reflected on the dashboard. 
+            Location insights can be managed from any level in the hierarchy.
+    image:
+  - step: LOCATION PERSONAS
+    header: Easily identify different types of visitors by creating tags based on their location and behavior trends in your venue. 
+            Create personalized experiences for different types of at location visitor personas.
+    image:
+  - step: LOCATION INSIGHTS
+    header: Gain meaningful insights by measuring metrics such as dwell time, visits and frequency, zones visited, etc. by location and persona. 
+            Monitor trends and predict behavior.
+            Quantify the impact of location activity on at-location behavior and transform location insights into business outcomes.
+    image:
+  - step: SMART MULTI-CHANNEL ENGAGEMENTS
+    header: Engage with customers through multiple channels (SMS, Email, Native App, Captive Portal) leveraging smart location hierarchy and personas to drive real-time contextual engagements.
+    image:
+  - step: SMART CAPTIVE PORTALS
+    header: Deliver personalized engagements to customers based on their location, time, persona, relevancy and context using Smart Captive Portals.
+    image:
+
+
+slider:
+    - header: Transform your guest WiFi into a powerful marketing tool
+      subheader: We provide <strong class="text-color-light">Guest WiFi, Analytics</strong>, and <strong class="text-color-light">Location Based Messaging</strong> service for public facing enterprises
+      image: images/course/slide-corporate-3-2.jpg
+    - header: Understand your customers and engage better with BuWiFi
+      subheader: BuWiFi helps brick-and-mortar retailers to build relationships with their visitors and create the best possible in-store customer experience.
+      image: images/corporate/2.jpg
+    - header: Digitizing physical spaces with In-store Analytics and Mobile Customer Engagement 
+      subheader: Go beyond counting heads. Measure, understand and boost store performance with WiFi Analytics
+      image: images/course/carlos-muza-hpjSkU2UYSU-unsplash.jpg
+    - header: Transform your guest WiFi into a powerful marketing tool
+      subheader: We provide <strong class="text-color-light">Guest WiFi, Analytics</strong>, and <strong class="text-color-light">Location Based Messaging</strong> service for public facing enterprices
+      image: images/corporate/1.jpg
+
+benefits:
+  - 
+    shortname:
+     guestwifi
+    header:
+     Delight your guests with easy WiFi connectivity
+    text:
+      Create an easy login portal and onboard guests with our simple user interface. 
+      When guests return to your venue the network remembers their details.
+      Customers will spend more time and money in a venue offering guest WiFi.
+    icon:
+      uil uil-wifi
+  -
+    shortname:
+      metrics
+    header:
+      Get rich metrics and actionable insights of in-store shopping behaviour
+    text:
+      Get the same common web metrics and reach par with online stores.
+      Create custom audiences based on demographics such as age, gender, and shopping behaviour.
+      #It is <span class="text-primary fw-bold">Google Analytics</span> for physical spaces.
+    icon:
+      uil uil-chart-line
+  -
+    shortname:
+      personalize
+    header:
+      Personalise and Enhance Shopper Experience
+    text:
+      Location-Based Marketing throughout the venue. 
+      Reach your customers via SMS at the right time and location.
+    icon:
+      uil uil-comment-alt-heart
+  -
+    shortname:
+      engage
+    header:
+      Engage your customers through smarter campaigns and sweepstakes
+    text:
+      Drive in-store conversion with personalized offers, automatically delivered to customers when they enter your store, engage with a department, or after they leave.
+    icon:
+      uil uil-bullseye
+  -
+    shortname:
+      datadriven
+    header:
+      Make data driven decisions using dashboard and reports
+    text:
+      Get customized MS Power BI reports to better understand customer behavior
+    icon:
+      uil uil-chart
+  -
+    shortname: roi
+    header:
+      Measure, understand and optimize the impact of marketing campaigns
+    text:
+      Understand how marketing campaigns, promotions, and product launches impact visits, conversion, and dwell times.
+      Optimize marketing ROI with accurate analysis of in-store impacts. 
+    icon:
+      uil uil-shopping-bag
+  -
+    shortname:
+      crm
+    header:
+      Enrich CRM Data
+    text:
+      Collect and unify offline (In-store visits, Guest WiFi, POS and loyalty programs) and online (Website and app, Ecommerce, Digital Marketing) customer touchpoint data.
+    icon:
+      uil uil-database
+  -
+    shortname:
+      data
+    header:
+      Collect and monetize your opt-in shopper data with WiFi marketing
+    text:
+      Transform your WiFi network into a powerful marketing asset that builds customer database, promotes business and collects valuable insights.
+    icon:
+      uil uil-user-check 
+  -
+    shortname:
+      instore
+    header:
+      In-store promotions
+    text:
+      Easily promote offers and events to existing and potential visitors.
+    icon:
+      uil-pricetag-alt 
+  -
+    shortname:
+      revenue
+    header:
+      Increase dwell time, loyalty and generate new revenue streams for your business
+    text:
+      Increase foot traffic & dwell time with personalized offers. 
+      Build happy, satisfied, brand loyal customers that come back time and time again.
+    icon:
+      uil uil-dollar-alt
+  -
+    shortname:
+      feedback
+    header:
+      Collect customer feedback
+    text:
+      You can deliver automated surveys before providing access to your network or as exit surveys after the customer leaves. This will allow you to collect timely feedback about customer experience.
+    icon:
+      uil uil-file-check-alt
+  -
+    shortname:
+      campaign
+    header:
+      Run engaging marketing campaigns
+    text:
+      Fine-tune campaigns with deep learning to deliver hyper-targeted messages and obtain measurable ROI and walk-through rate results.
+    icon:
+      uil uil-megaphone
+  -
+    shortname:
+      reward
+    header:
+      Never miss an opportunity to engage and reward your loyal visitors
+    text:
+      Instantly identify new/returning visitors and trigger automatic communications throughout the visitor journey with WebHooks.
+    icon:
+      uil uil-comment-check
+  -
+    shortname:
+      compliance
+    header:
+      Ensure compliance
+    text:
+      Having all your customers’ data in one place offers the added advantage of becoming GDPR and R-Privacy compliant.
+    icon:
+      uil uil-comment-lock
+  -
+    shortname:
+      unified
+    header:
+      Unified data and 360-degree customer view
+    text:
+      Centralized data from multiple sources to provide a clear picture of customer behavior.
+      Eliminate data silos and access data quickly. 
+    icon:
+      uil uil-user-square
+  -
+    shortname:
+      segmentation
+    header:
+      Identify new possibilities for segmentation.
+    text:
+      See all your clients’ data in one place and understand your customers better, as both groups and individuals.
+    icon:
+      uil uil-users-alt
+  -
+    shortname:
+      integration
+    header:
+      BuWiFi + Webhooks & APIs.  Better together
+    text:
+      Use Webhooks and APIs to integrate your existing software or website.
+      Easy setup. We connect to every app out there that uses webhooks.
+    icon:
+      uil uil-channel-add
+  -
+    shortname:
+      singledashboard
+    header:
+      Make BuWiFi single dashboard
+    text:
+      Inject Door Count, POS, Mobile App, CRM data. 
+      Enrich existing data sets with a wealth of additional intelligence.
+    icon:
+      uil uil-chart
+  -
+    shortname:
+      installation
+    header:
+      Easy installation
+    text:
+      BuWiFi overlays on your existing WiFi infrastructure and can be set up in minutes. Mobile application is not required.
+    icon:
+      uil uil-cog
+  -
+    shortname:
+      network
+    header:
+      Simplified Network Management
+    text:
+      Get insights and easily manage your Guest WiFi, while reducing IT burden and TCO
+    icon:
+      uil uil-desktop-cloud-alt
+  -
+    shortname:
+      notification
+    header:
+      Get notifications and minimize downtime
+    text:
+      Understand your WiFi network in an easy and accessible manner, helping network admins to tackle issues in a timely manner.
+    icon:
+      uil uil-envelope
+  -
+    shortname:
+      monitor
+    header:
+      Metric collection
+    text:
+      Monitor Performance Counters. 
+    icon:
+      uil uil-comparison
+  -
+    shortname:
+      measure_guestwifi
+    header:
+      Monitor Key Guest WiFi metrics
+    text:
+      Access all metrics via all familiar Zabbix interface.
+    icon:
+      uil uil-comparison
+  -
+    shortname:
+      reduce_downtime
+    header:
+      Receive problem notification to detect and resolve issues faster
+    text:
+      Reduce the frequency and duration of performance bottlenecks and downtime.
+    icon:
+      uil uil-hourglass
+  -
+    shortname:
+      zabbix_alarm
+    header:
+      Utilize strong Zabbix capabilities
+    text:
+      Enjoy strong data gathering and real-time graphing capabilities of Zabbix.
+    icon:
+      uil uil-exclamation-triangle
+
+### USE CASES ###
+features: 
+  -
+    shortname:
+      guestwifi
+    slogan:
+      Easy, secure and data compliant Guest WiFi access
+    header:
+      Make it simple, branded and seamless for your customers to login anytime, at any of your venues
+    bullets: 
+      - Enhance customer experience with branded, location-specific content and seamless WiFi login.
+      - Build simple, branded splash pages, collect customer profile data, display targeted advertising and more!
+      - Drastically improve WiFi experience by enabling one-click connectivity, eliminating lengthy forms and antiquated login screens.
+      - Let shoppers connect once to seamlessly use WiFi across all your venues both now and in future visits.
+      - BuWiFi overlays on your existing WiFi infrastructure and can be set up in minutes.
+    image:
+      images/company/guestwifi-outline.svg
+  -
+    shortname:
+      kyc
+    slogan:
+      Know who your customers are with WiFi marketing
+    header:
+      Understand your visitors with rich profiles including identity, demographics, and behaviour.
+    bullets: 
+      - Obtain complete information on who your customers are, their contact information, and how frequently they visit. 
+      - Know visitor demographics such as age, gender, and interests in relation to their behaviour.
+      - Turn new customers into repeat customers and exponentially increase profits. 
+      - Engage with new customers the moment they’ve left and nudge them to return by offering incentives.
+    image:
+      images/company/progressive-profiling.svg
+  -
+    shortname:
+      understand
+    slogan:
+      Understand visitor journey and conversion
+    header:
+      Visualise how visitors move through your venue and analyse how they engage with each department/floor/zone.
+      Understand the conversion funnel for your venue, from passerby to visitor, from the door to the cashier, curb to gate.
+    bullets: 
+      - Collect and analyse data about visitor movements in and around your store and use WiFi to engage with customers, driving sales.
+      - Get customized MS Power BI reports to better understand customer behavior.
+      - Gain meaningful insights by measuring metrics such as dwell time, visits and frequency, zones visited, etc. by location and persona. Monitor trends and predict behavior.
+      - Analyze outdoor spaces such as parking lots and nearby streets to identify peak times and trends.
+      - Analyze heatmaps to understand the flow of on-site visitor traffic, delays, operational inefficiencies and improve infrastructure if needed.
+      - Identify courses with high dropout rates or low attendance by analyzing occupancy trends in zones and class attendance.
+      #- Visualize passenger flow from check-in to security to retail to gates and from gates to immigration to customs to exit.
+    image:
+      images/company/Measure-Customer-Flow.svg
+  -
+    shortname:
+      crmdata
+    slogan:
+      Capture visitor data, boost your CRM records and drive spend
+    header:
+      Add hundreds of thousands of new opt-ins to your CRM and inform them of new and upcoming events. Use Webhooks and APIs to connect with internal database.
+    bullets: 
+      - Obtain detailed shopper data and marketing consent as they connect to your Guest WiFi. 
+      - Collect and monetize your shopper data with WiFi marketing for venue.
+      - Use the data collected to build detailed visitor profiles and personalize the in-venue experience; driving spend and increasing return rates.
+      - Grow your customer database with marketing opt-ins from a large number of in-store shoppers.
+    image:
+      images/illustrator/Startup_SVG.svg
+  -
+    shortname:
+      lbs
+    slogan:
+      Run campaigns to the right shopper group. Personalise your shopper experience
+    header:
+      Deliver personalized engagements to customers based on their location, time, persona, relevancy and context.
+    bullets: 
+      - Deliver targeted communications to connect with customers at the point of purchase and influence spending decisions.
+      - Automatically engage with visitors based on their physical location. Influence their visit and behaviour in a completely non-intrusive way.
+      - Trigger campaigns to be sent when visitors enter or exit your venue, when visitors haven’t returned to your location or when visitors reach a dwell time threshold.
+      - Hyper-target your visitors from data collected when they authenticate using your guest WiFi.
+      - Provide unique value to tenants, partners or sponsors.
+      - Inform visitors of upcoming events and keep them engaged with your brand. Provide additional reasons for your guests to visit your locations.
+      - Announcements to the customers in the store.
+      - Segment / Zone based offers.
+    image:
+      images/illustrator/seo_svg.svg
+  -
+    shortname:
+      roi
+    slogan:
+      Measure ROI on marketing events and campaign effectiveness
+    header:
+      Analyze the ROI of each campaign. Measure the impact that centre events have on shopper behaviour on the day of the event, and over time.
+    bullets: 
+      - Analyze and measure the ROI of each campaign and retail events like sales and product launches. 
+      - Understand their impact on in-store shopper behaviour. No more guesswork. Identify the precise footfall traffic coming to your venue attributed to a specific campaign.
+      - Empower individual marketing teams with deep shopper insights and the ability to run personalized campaigns. 
+      - Allocate your marketing spending intelligently. Refine and relaunch campaigns with real-time insights and hyper-targeting the right shopper audience.
+    image:
+      images/illustrator/Marketing_strategy_SVG.svg
+  -
+    shortname:
+      lease
+    slogan:
+      Plan operations and optimise your leasing guided by data insights
+    header:
+      Use shopper behavioural data to make smarter leasing decisions to retailers and take fact-based decisions. 
+      Assist the operations teams to understand shopping patterns, busy hours.
+    bullets: 
+      - Empower leasing teams with measurable metrics for the right tenant mix and support rental negotiations.
+      - Schedule security and cleaning staff based on demand.
+      - Get notified with alerts for any predefined events such as area overcrowding in violation of fire codes.
+      - Integrate with your HVAC to adjust cooling and heating based on occupancy to reduce costs and be more environmentally friendly.
+      - Measure occupancy and improve staff rostering with visitor analytics to maximise sales conversions and resource allocations.
+      - Benchmark venues. See what’s working where and for who; use the data to define best practices.
+    image:
+      images/illustrator/maintenance.svg
+  -
+    shortname:
+      scratch
+    slogan:
+      Scratch & Win or Wheel of Fortune Sweepstakes
+    header:
+      Send random gifts to visitors.
+    bullets: 
+      - Customers who come to the venue and use Guest WiFi will receive a surprise gift. An SMS with a sweepstake link will be sent.
+      - Customize gift list and distribution probabilities.
+      - Detailed campaign report.
+    image:
+      images/company/undraw_winners.svg
+  -
+    shortname:
+      survey
+    slogan:
+      Run surveys and collect feedback
+    header:
+      Gather feedback from visitors to your stores as they shop or after they exit. Know what they like and pinpoint concerns for improvement.
+    bullets: 
+      - Run surveys when shoppers connect to your WiFi or after their visits. Customize questionnaires based on their behaviour and demographics. Make surveys relevant to each store location.
+      - Easily collect information from your visitors with effortless surveys, regarding what they liked, didn’t like, or any other facet of your business you may want to improve.
+      - Customer Satisfaction Surveys.
+      - Mystery Shopper Surveys.
+      - Detailed survey report.
+    image:
+      images/company/Wifi-Surveys.svg
+  -
+    shortname:
+      mallpersonas
+    slogan:
+      Identify visitor personas for Mall
+    header:
+      Easily identify various visitors by creating tags based on their location and behavior trends in your stores. Create personalized experiences for different types of at location visitor personas.
+    image:
+      images/company/personas.svg
+    bullets: 
+      - Lisa is weekend visitor
+      - John is a weekday shopper
+      - James is a business lunch visitor
+      - Amanda is a frequent movie goer
+      - Carl is a bar visitor
+      - Jane is a commuter
+  -
+    shortname:
+      retailpersonas
+    slogan:
+      Identify visitor personas for Retail
+    header:
+      Easily identify various visitors by creating tags based on their location and behavior trends in your stores. Create personalized experiences for different types of at location visitor personas.
+    image:
+      images/company/personas.svg
+    bullets: 
+      - Grace likes shopping during weekends
+      - Jack likes receiving discounts
+      - Steve often visits on weekday during afternoons
+      - Lisa visits multiple store locations
+      - Mark is a high value loyalty member
+      - Jennifer spends more time in the shoe section
+  -
+    shortname:
+      hospitalitypersonas
+    slogan:
+      Identify visitor personas for Hospitality
+    header:
+      Easily identify various visitors by creating tags based on their location and behavior trends in your stores. Create personalized experiences for different types of at location visitor personas.
+    image:
+      images/company/personas.svg
+    bullets: 
+      - Chloe stays at the hotel during weekends
+      - Vincent stays during business trips
+      - Liam has stayed at multiple hotel locations
+      - Noah is a platinum hotel member
+      - Ethan likes to visit the gym frequently
+      - Emma is not a guest, but likes to go to the bar
+  -
+    shortname:
+      airportpersonas
+    slogan:
+      Identify visitor personas for Airports
+    header:
+      Easily identify various visitors by creating tags based on their location and behavior trends in your stores. Create personalized experiences for different types of at location visitor personas.
+    image:
+      images/company/personas.svg
+    bullets: 
+      - Grace is an airport employee
+      - Eric is a platinum flyer who visits the lounge
+      - Sam spends time in the shopping area
+      - Carl often travels on the weekends
+      - Steven is a business traveler
+      - Laura is an international traveler
+  -
+    shortname:
+      stadiumpersonas
+    slogan:
+      Identify visitor personas for Stadiums
+    header:
+      Easily identify various visitors by creating tags based on their location and behavior trends in your stores. Create personalized experiences for different types of at location visitor personas.
+    image:
+      images/company/personas.svg
+    bullets: 
+      - Gina is a season ticket holder
+      - James is a frequently early arriver
+      - Matt is a club member
+      - Grace is a concession zone visitor
+      - John likes attending football games
+      - Julie likes attending basketball games
+  -
+    shortname:
+      conferencepersonas
+    slogan:
+      Identify visitor personas for Conferences
+    header:
+      Easily identify various visitors by creating tags based on their location and behavior trends in your stores. Create personalized experiences for different types of at location visitor personas.
+    image:
+      images/company/conferences.svg
+    bullets: 
+      - Amy is an early arriver
+      - Matt is a keynote speaker attendee
+      - Eric is interested in IOT and marketing topics
+      - Jim attends the conference trade show
+      - Sean is an international attendee
+      - June spends a lot of time in the lobby area
+
+
+beforeduringafter:
+    title: <span class="text-primary">Before, During, After</span> visit campaign ideas
+    text: Here are some campaign scenarios to <span class="text-primary fw-bold">reach and engage</span> customers before during and after visit
+    image: images/saas/classic01.png
+    data:
+      - id: beforevisit
+        label: before
+        slogan: Before Visit
+        header: Inform customers about events / discounts, offers and free services, based on customers’ profile and previous engagements (measured by WiFi Analytics)
+        image: images/company/before.jpg
+        bullets: 
+          - Create flash sales to people who are not present in the mall
+          - Private invitations to social events (Fashion/Art exhibitions, store openings, concerts, private parties, book signings, seminars)
+          - Attract lagging customers and make them frequent visitors again. E.g., send a promotion or an exclusive invitation for a movie premiere 
+          - Send a coffee coupon to frequent visitors
+          - Send announcement to parents for an upcoming kids event
+          - Send an cinema promotion to parents 
+          - Send announcement to young females for “Ladies Night” event
+          - Send a free drink coupon to young ladies
+          - Send personalized messages depending on customer profile
+      - id: duringvisit
+        label: during
+        slogan: During Visit
+        header: Detect physical presence in the venue and send location aware personalised messages (welcome messages, zone/corridor based messages)
+        image: images/company/during.jpg
+        bullets:
+          - Send “Scratch & Win” SMS to each visitor. “Connect to WiFi and Win”
+          - Send segment based campaigns.
+          - Send young males announcement SMS informing %30 discount in soccer shirts in Adidas store
+          - Send females announcement SMS informing free makeup training workshop on first floor
+          - Send mass marketing announcement/promotions
+          - Today Orhan Pamuk will have an autograph session in D&R bookstore
+          - Personalized discounts and offers to visitors who are physically inside the mall
+          - Dwell based campaigns. If visitor stays more than 30min in food-court send a coffee coupon for outdoor cafeterias or a %20 discount on cinema ticket
+          - If a parent stays more than 30min in kids area send a discount at Koçtaş
+          - Ask a question and send “Scratch & Win” SMS for a small price
+          - Question; “Which floor is Koçtaş located”. If answered correctly Scratch & Win SMS will be sent 
+          - WiFi triggered push notification messages for mobile app
+          - Engage visitors by giving loyalty points depending on dwell time, visit frequency and money spent
+      - id: aftervisit
+        label: after
+        slogan: After Visit
+        header: Evaluate customers' visit experience via surveys and trigger their next visits
+        image: images/company/after.jpg
+        bullets: 
+          - Send goodbye messages
+          - Send customer satisfaction surveys to visitors who left the mall
+          # - Send a survey to evaluate the visit experience
+          - Send a promotion to frequent visitors valid for next 7 days
+          - Send personalized messages to upcoming events, celebrity visits, early sales pre-launch etc.
+          - Notify customers about their loyalty status/points to trigger their next visits
+
+quickfacts:
+    title: Use WiFi to grow your business
+    text: WiFi is proven to increase customer visit frequency and loyalty.
+          Let’s take a look at some industry statistics on WiFi.
+    image: images/company/pngegg.png
+    facts:
+      - slogan: Opt-in for Promotions
+        fact: <span class="counter-value" data-target="74">3</span>%
+        text: >
+              74% people would be happy for a retailer to send a text or email with promotions while they’re using in-store WiFi <br>(Source: OnDeviceResearch)
+      - slogan: Guest WiFi is Important ...
+        fact: <span class="counter-value" data-target="75">3</span>%
+        text: >
+              75% of businesses say they consider free wireless access to be either “important” or “very important” to their business now.<br>(Source: iGR)
+      - slogan: ... Even for age 45+
+        fact: <span class="counter-value" data-target="79">3</span>%
+        text: >
+              79% of even the least WiFi Interested shoppers, age 45+ are positively influenced by in-store WiFi availability<br>(Source: Accenture)
+
+partners:
+    title: Technology Partners
+    header: Partners for WiFi infrastructure
+    text: BuWiFi seamlessly integrates with the majority of WiFi network hardware from the following manufacturers.
+    image: images/saas/classic01.png
+    logos:
+      - images/company/partners/cisco-meraki-logo.svg
+      - images/company/partners/Cisco_logo.svg
+      - images/company/partners/aruba-networks-logo.svg
+      - images/company/partners/Tp-link-logo.svg
+      - images/company/partners/Fortinet-Logo.svg
+    questions:
+      title: You have any questions ?
+      text: Here you'll find answers to the questions we get asked the most about BuWiFi.
+      list:
+        - BuWiFi is cloud-based and it is an overlay to your existing WiFi infrastructure, so no extra hardware is required
+        - Cloud-based
+        - Mobile application is not required
+        - Uses existing in-store WiFi network
+        - GDPR and KVKK compliant
+        - Fancy a demo? Contact us and one of our product experts will be in touch.
+    faq:
+      - question: What is WiFi Marketing?
+        answer: > 
+                  WiFi marketing is an innovative way for brick-and-mortar businesses 
+                  to build customer loyalty by leveraging on-premise guest WiFi 
+                  to run highly targeted digital ads, send emails & SMS messages, 
+                  and automate other customer communications.
+      - question: How does it work?
+        answer: > 
+                  BuWiFi is a cloud-based WiFi platform and it is an overlay to your existing WiFi infrastructure, so no extra hardware is required. 
+                  Setup is seriously quick and everything is managed via an online portal.
+                  When visitors connect to WiFi, our captive portal compliantly captures key contact and demographic information which allows you to get to know your visitors, quickly analyze data, and follow up with personalized marketing campaigns.
+      - question: Does it require an app?
+        answer: BuWiFi doesn't require an app since engagement is done over SMS or email. But BuWiFi can communicate with an app and increase its effectiveness.
+      - question: Do I need to install any additional hardware?
+        answer: >
+                  No. BuWiFi is a cloud-based WiFi platform and it is an overlay to your existing WiFi infrastructure, so no extra hardware is required. 
+      - question: Any integration capabilities?
+        answer: Yes. Using Webhooks and APIs.
+      - question: How BuWiFi is deployed?
+        answer: When wireless infrastructure is ready, BuWiFi setup is very quick and everything is managed via an online portal.
+      - question: Is BuWiFi compliant with privacy regulations?
+        answer: Yes. BuWiFi is a secure & compliant with the various regulations. It is compliant with General Data Protection Regulation (GDPR) and 
+                6698 KVKK (Kişisel Verilerin Korunması Kanunu) (Law on the Protection of Personal Data).
+                When we provide guest WiFi, the terms and conditions clearly defines what data are we collecting and why.
+                Guests will have to opt-in to any marketing material. Clear instructions on how to opt-out is also provided. 
+      - question: How can I test BuWiFi?
+        answer: We provide 1 month Proof of Concept (PoC) to our potential customers. Fully enabled solution is installed to chosen locations. 
+                Splash and Langing pages are customized. After PoC, a report is provided to go over the insights.
+
+pricing:
+  buwifi: 35
+  syslog: 5
+  jms: 0.2
+  upwifi: 65
+  title: Our WiFi marketing solution is comprised of three products
+  text: >        
+        <span class="text-primary fw-bold">BuWiFi</span>, <span class="text-primary fw-bold">BuWiFi Messaging Service (JMS)</span> and <span class="text-primary fw-bold">UpWiFi</span>.
+  calc_title: Calculate your monthly price
+  calc_text: Simple plans. Simple prices. Only pay for what you really need.
+  data:
+    - service: BuWiFi
+      price: 35
+      unit: /AP/mo
+      text: BuWiFi transforms your WiFi network into a powerful marketing asset that builds customer database, promotes business and collects valuable insights.
+      bullets: 
+        - Guest WiFi
+        - Analytics Dashboard
+        - MS Power BI Reporting
+        - Syslog (5651)
+      image: images/company/guestwifi-outline.svg
+      infotext: Some other optional features are given below...
+      infobullet:
+        - MS Power BI Custom Reports
+        - Heatmap
+        - CRM Integration
+        - Footfall counter integration
+        - Minimum 12 months contract is required
+    - service: UpWiFi
+      price: 65
+      unit: /RPi/mo
+      text: UpWiFi is a simple, scalable solution by offering an automated way to monitor and alarm your Guest WiFi's key metrics in realtime.
+      bullets: 
+        - Plug & Play
+        - Zabbix dashboard
+        - Trigger alarm
+        - Remote management
+      image: images/company/guestwifi-outline.svg
+      infotext: Monitor Key Guest WiFi metrics​.
+      infobullet:
+        - Easy installation.
+        - Get insights from your Guest WiFi network and monitor performance in real-time.
+        - Receive problem notification to detect and resolve issues faster.
+        - Data is provided by Zabbix web interface
+    - service: JMS
+      price: 0.2
+      unit: /SMS
+      text: BuWiFi Messaging Service (JMS) is a value added, pay as you go SMS service. Please contact us for discounted bulk SMS packages.
+      bullets: 
+        - Scratch & Win
+        - Wheel of Fortune
+        - Customer Satisfaction Survey
+        - Zone Based SMS
+      image: images/company/guestwifi-outline.svg
+      infotext: Deliver targeted communications at the right moment
+      infobullet:
+        - Gamify engagement with sweepstakes
+        - Customer Satisfaction and Mystery Shopper Surveys
+        - Optimize Marketing ROI
+        - Simple Pay As You Go pricing model
+
+jms:
+  - message: 0
+    discount: 0%
+    total: 0
+  - message: 1000
+    discount: 3%
+    total: 194
+  - message: 2500
+    discount: 10%
+    total: 450
+  - message: 5000
+    discount: 20%
+    total: 800
+  - message: 10000
+    discount: 40%
+    total: 1200
+
+pricestorage:
+  - value: 2
+    datavalue: 2GB
+    label: $2
+  - value: 16
+    datavalue: 16GB
+    label: $16
+  - value: 50
+    datavalue: 500GB
+    label: $50
+  - value: 100
+    datavalue: 1TB
+    label: $200
+  - value: 500
+    datavalue: 5TB
+    label: $500
+
+priceexport:
+  - name: google
+    value: 20000
+    title: Export to Google Drive
+    datavalue: + 10 $
+    label: $10
+  - name: dropbpx
+    value: 10
+    title: Export to Dropbpx
+    datavalue: + 10 $
+    label: $10
+  - name: pdf
+    value: 5
+    title: Export to PDF
+    datavalue: + 5 $
+    label: $5
+  - name: jpg
+    value: 5
+    title: Export to JPG
+    datavalue: + 5 $
+    label: $5
+  - name: png
+    value: 5
+    title: Export to PNG
+    datavalue: + 5 $
+    label: $5
+
+pricefeatures:
+  - name: domain
+    input: plus-input
+    value: 10
+    note: Plus Custom Domain
+    datavalue: + 10 $
+    label: 10 $
+    desc: Choose your own damain. If total cost more $100 domain is free.
+  - name: e-commerce
+    input: sum-input plus-input
+    value: 100
+    note: Sum Integrated e-commerce
+    datavalue: + 100 $
+    label: $100
+    desc: Integrate online shopping to your account
+  - name: donations
+    input: sum-input plus-input
+    value: 20
+    note: Sum Donations
+    datavalue: + 20 $
+    label: $20
+    desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  - name: comments
+    input: sum-input plus-input
+    value: 100
+    note: Sum Unlimited comments
+    datavalue: + 100 $
+    label: $100
+    desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  - name: design
+    input: page-input
+    value: 1.5
+    note: Page Your own designs
+    datavalue: x 1.5
+    label: <span class="mdi mdi-note-multiple-outline"></span> x 1.5
+    desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  - name: team
+    input: page-input
+    value: 1.5
+    note: Page Collaborate with Team Members
+    datavalue: x 1.5
+    label: x 1.5
+    desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  - name: analytics
+    input: multiple-input
+    value: 1.2
+    note: Multiple Analytics
+    datavalue: x 1.2
+    label: x 1.2
+    desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  - name: task
+    input: multiple-input
+    value: 1.2
+    note: Multiple Task Automation
+    datavalue: x 1.2
+    label: x 1.2
+    desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+
+buwifi_calc:
+  title: BuWiFi
+  intro: >
+          Enter number of Access Points (APs). 
+          The number of AP is used as base value for calculation. 
+          For a Shopping Mall a typical value would be minimum 50 APs. 
+          For a chain store 2 APs per floor is a good start. 
+          If you also need syslog (5651) also check the box.
+
+upwifi_calc:
+  title: UpWiFi
+  intro: >
+          Enter number of Raspberry Pi (RPi). 
+          The number of RPi is used as base value for calculation. 
+          For a Shopping Mall a typical value would be minimum 1 RPi per floor. 
+          For a chain store 1 RPi per store is a good start.
+
+
+---
+
+
+20,000 10% 0.045 900
+50,000 20% 0.040 2,000
+100,000 30% 0.035 3,500
+200,000 40% 0.030 6,000
+
+
+Our cloud-based WiFi platform, BuWiFi, provides an overlay to your existing WiFi infrastructure, so no extra hardware is required. 
+Setup is seriously quick - we’re talking under an hour - and everything is managed via an online portal. 
+When visitors connect to WiFi, our captive portal captures key contact and demographic information - compliantly of course - 
+which allows you to get to know your visitors, quickly analyze data, and follow up with personalized marketing campaigns.
+
+
+
+ Digitizing physical spaces with In-store Analytics and Mobile Customer Engagement 
+
+
+
+
+74% of 
+Impact of BuWiFi
+200,000 unique loyalty member emails acquired in 6 weeks
+80% engagement rate at-location with returning visitors
+700% increase in clicks when using Smart Captive Portals (30 % vs. industry standard of 3-5%)
+
+
+
+The airport blindspot
+In most airports today, travelers are digital ghosts. They remain completely unknown until check-in.
+
+Every airport has a heartbeat made from billions of digital footprints left by travelers.
+Are you listening to it? Real-time? Engaging with them?
+
+Imagine if your Airport can be digitized
+Customer experience will never be same again
+
+Convert visitors into loyal customers and build a direct relationship with them under your brand.
+
+
+

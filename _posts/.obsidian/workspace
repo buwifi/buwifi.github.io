@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "70989e9b5c0cddf9",
+    "type": "split",
+    "children": [
+      {
+        "id": "2e747649b5ea1819",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "2022-02-01-what-is-wifi-marketing.md",
+            "mode": "source",
+            "source": true
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b368d0554635dccd",
+    "type": "split",
+    "children": [
+      {
+        "id": "ec4c0604e038ed9b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7b1b1fd57f2e2edb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "80fc8d78a276ea51",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 361
+  },
+  "right": {
+    "id": "e4146599502c1c48",
+    "type": "split",
+    "children": [
+      {
+        "id": "03698e0a337bf683",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e2c3b146b1d9f074",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2022-02-01-what-is-wifi-marketing.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "2e747649b5ea1819",
+  "lastOpenFiles": [
+    "2022-02-01-what-is-wifi-marketing.md",
+    "2022-03-07-scratch-and-win.md",
+    "2022-02-26-what-is-guestwifi.md",
+    "2022-01-22-online-offline-data-gap.md",
+    "2022-01-25-benefits-of-wifi-analytics.md",
+    "2022-01-15-what-is-wifi-analytics.md",
+    "2022-02-25-what-is-wifi-marketing.md",
+    "2022-02-26-scratch-and-win.md",
+    "2022-02-22-online-offline-data-gap.md",
+    "2021-09-12-how-does-in-store-analytics-work.md"
+  ]
+}

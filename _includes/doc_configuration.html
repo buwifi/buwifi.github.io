@@ -1,0 +1,39 @@
+<section class="section bg-light" id="configuration">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title mb-4">
+                    <h4 class="title">{{site.data.jdoc.configuration.header}}</h4>
+                </div>
+                <p class="text-muted mb-0">{{site.data.jdoc.configuration.text}}</p>
+
+                {% for item in site.data.jdoc.configuration.group %}
+
+
+                <h5 class="mt-5 mb-3"><i class="mdi mdi-chevron-right"></i>{{ item.header }}</h5>
+                <p class="text-muted">{{ item.text }}</p>
+
+                <table class="table table-bordered m-0">
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;"><i class="ti-file"></i>Metric</th>
+                            <th>Definition</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for data in item.row %}
+                        <tr>
+                            <td>{{ data.metric }}</td>
+                            <td>{{ data.definition }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+
+                {% endfor %}
+
+
+            </div>
+        </div>
+    </div>
+</section>

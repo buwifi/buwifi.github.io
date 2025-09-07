@@ -1,0 +1,62 @@
+<section class="section" id="dashboard">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12">
+                <div class="section-title mb-4"><h4 class="title">{{site.data.jdoc.dashboard.header}}</h4></div>
+                <p class="text-muted">{{site.data.jdoc.dashboard.text}}</p>
+
+                {% for item in site.data.jdoc.dashboard.body %}
+
+                    <h5>{{item.section}}</h5>
+                    <p class="h6 text-muted">
+                        <i class="mdi mdi-arrow-right mr-2"></i>{{item.text}}</p>
+                    <div class="row">
+                        <div class="col-12 mt-3">
+                            <!-- <h6 class="mb-3">Main Dashboard</h6> -->
+                            <img src="{{item.image}}" class="img-fluid rounded shadow" alt="">
+                        </div>
+                        {% assign mylist = item.bullets %}
+                        <div class="col-12 mt-5">
+                            <ol class="circle">
+                                {% for item in mylist %}
+                                <li>{{item.level1}}
+                                    <ul>
+                                        {% for item in item.level2 %}
+                                            <li>{{item.title}}
+                                                <ol type="a">
+                                                    {% for item in item.level3 %}
+                                                        <li>{{item.title}}
+                                                            <ul>
+                                                                {% for item in item.level4 %}
+                                                                    <li>{{item.title}}
+                                                                        <ol>
+                                                                            {% for item in item.level5 %}
+                                                                                <li>{{item.title}}
+                                                                                    <ul>
+                                                                                        {% for item in item.level6 %}
+                                                                                            <li>{{item.title}}
+                                                                                        {% endfor %}
+                                                                                    </ul>
+                                                                            {% endfor %}
+                                                                        </ol>
+                                                                {% endfor %}
+                                                            </ul>
+                                                    {% endfor %}
+                                                </ol>
+                                        {% endfor %}
+                                    </ul>
+                                {% endfor %}
+                            </ol>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                {% endfor %}
+
+
+            </div>
+        </div>
+    </div>
+</section>

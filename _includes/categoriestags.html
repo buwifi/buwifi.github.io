@@ -1,0 +1,28 @@
+<div class="pb-1">
+    <div class="row">
+        <div class="col-md-6 mt-4">
+            <div class="card border-0 sidebar sticky-bar rounded shadow">
+                <div class="card-body">
+                    <div class="widget">
+                        <h6 class="widget-title">Category:</h6>
+                        <div class="tagcloud">
+                            {% include categoryprint.html %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mt-4">
+            <div class="card border-0 sidebar sticky-bar rounded shadow">
+                <div class="card-body">
+                    <div class="widget">
+                        <h6 class="widget-title">Tags:</h6>
+                        <div class="tagcloud">
+                            {% include tagsprint.html %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

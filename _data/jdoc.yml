@@ -1,0 +1,174 @@
+metrics:
+    header: WiFi Analytics Metrics
+    text: BuWiFi has rich metrics set. Below we will define what those metrics are.
+    image: images/company/pngegg.png
+    group:
+      - header: Attraction Metrics
+        text: How well are you ATTRACTING customers?
+        row:
+          - metric: <code class="font-weight-bold">Passersby</code>
+            definition: Number of people with WiFi enabled smartphones detected outside and inside the mall/floor/zone.
+          - metric: <code class="font-weight-bold">Shoppers</code>
+            definition: Number of people with WiFi enabled smartphones who entered into the mall/floor/zone.
+          - metric: <code class="font-weight-bold">Walk-bys</code>
+            definition: Number of people with WiFi enabled smartphones detected outside your store who did not enter.
+          - metric: <code class="font-weight-bold">Window Conversion Rate</code>
+            definition: Number of shoppers who entered the zone/floor divided by total mall visitors (Passersby).
+          - metric: <code class="font-weight-bold">Door Count</code>
+            definition: Number of people entered into the mall/floor/zone (counted by People Counting Camera System)
+      - header: Engagement Metrics
+        text: How well are you ENGAGING customers?
+        row:
+          - metric: <code class="font-weight-bold">Engaged Shoppers</code>
+            definition: "% of shoppers who spent greater than X min (default 45min) in the mall/floor/zone."
+          - metric: <code class="font-weight-bold">Bounced Shoppers</code>
+            definition: "% of shoppers who spent less than X min (default 20min) in the mall/floor/zone."
+          - metric: <code class="font-weight-bold">Zones per Shopping</code>
+            definition: No of zones visited per visit.
+          - metric: <code class="font-weight-bold">Average Shopping Time</code>
+            definition: Average minutes shoppers spent in  the mall/floor/zone.
+          - metric: <code class="font-weight-bold">Shopping Time Variations</code>
+            definition: "% of shoppers distrubuted accordingly with shopping times."
+      - header: Loyalty Metrics
+        text: How LOYAL are your customers?
+        row:
+          - metric: <code class="font-weight-bold">New Shoppers</code>
+            definition: "% of 1st time shoppers or % of shoppers who had no visit in any of your stores in the last 12 months."
+          - metric: <code class="font-weight-bold">Repeat Shoppers</code>
+            definition: 1 - New Shoppers
+          - metric: <code class="font-weight-bold">Lapsed Shoppers</code>
+            definition: "% of shoppers who had no visit in any of your stores in the last 30 days."
+          - metric: <code class="font-weight-bold">Recent Shoppers</code>
+            definition: "% of shoppers who had at least one visit in any of your stores in the last 30 days."
+          - metric: <code class="font-weight-bold">Shopping Frequency [days]</code>
+            definition: Average no of days between each consecutive visits.
+          - metric: <code class="font-weight-bold">Shoppings per Shopper</code>
+            definition: Average no of visits per shopper for a selected time range.
+
+dashboard:
+  header: BuWiFi Dashboard
+  text: BuWiFi has a very well structured extensive interface. It is flexible, easy to use and provides <code>rich metrics</code>. Main parts of the dashboard is given below:"
+  body:
+    - section: "1) Overview"
+      text: BuWiFi Dashboard Overview.
+      image: images/company/userguide/dashboard01.png
+      bullets:
+        - level1: Login to your account. Also Settings - Help - Change Language - Log Out here.
+        - level1: BuWiFi Interface has 3 main tabs
+          level2:
+            - title: DASHBOARD
+            - title: REPORTS
+            - title: MARKETING
+        - level1: DASHBOARD - Overview section has 5 pages (explained in the following sections)
+          level2:
+            - title: <code class="font-weight-bold">Summary</code> Executive summary of key metrics.
+            - title: <code class="font-weight-bold">Attraction</code> Metrics related to your marketing activities.
+            - title: Engagement Metrics related how engaged your visitors are.
+            - title: Loyalty Metrics related how loyal your customers are.
+            - title: Sales Metrics related to your sales activities.
+        - level1: Select Location and Date
+          level2:
+            - title: "Select Location: BuWiFi has 2 Location modes:"
+              level3:
+                - title: "Campus: For big buildings like Shopping Mall, Stadiums, Hospitals, Hotels, etc…"
+                  level4:
+                    - title: Campus - Building - Floor - Zone
+                - title: "Store: For major brands, multi stores, restaurants,"
+                  level4:
+                    - title: Region - Store - Floor - Zone
+            - title: "Select Date: Select predefined periods from pull down menu or custom date. After Location and Date selection
+      is made, proper comparison dates are automatically selected."
+        - level1: Executive summary dashboard data is shown after selection is made
+    - section: "2) Overview - Summary Page"
+      text: Summary Page.
+      image: images/company/userguide/01summary01.png
+      bullets:
+        - level1: Select Location (Campus/Store) and Date
+        - level1: Selected and Comparison Date will show automatically
+        - level1: For selected Location and Date, metrics will populate. For definition of the key metrics please see ”WiFi Analytics Metrics” section.
+        - level1: Space Ranking gives sortable key metrics (Absolute & Percentage)
+    - section: "3) Overview - Attraction Page"
+      text: Attraction Page gives key metrics related to marketing activities.
+      image: images/company/userguide/02attraction01.png
+      bullets:
+        - level1: Relevant metrics are shown here. Please click on the chart to show in the upper windows.
+        - level1: Turn on/off Comparison chart
+        - level1: Change the chart to Daily / Weekly / Monthly
+    - section: "4) Overview - Engagement Page"
+      text: Engagement Page gives key metrics related to how engaged your visitors are with your services/products.
+      image: images/company/userguide/03engagement01.png
+      bullets:
+        - level1: Relevant metrics are shown here. Please click on the chart to show in the upper windows.
+        - level1: Turn on/off Comparison chart
+        - level1: Change the chart to Daily / Weekly / Monthly
+        - level1: Shopping Time Variations gives additional breakdown.
+    - section: "5) Overview - Loyalty Page"
+      text: Loyalty Page gives key metrics related to how loyal your visitors are.
+      image: images/company/userguide/04loyalty01.png
+      bullets:
+        - level1: Relevant metrics are shown here. Please click on the chart to show in the upper windows.
+        - level1: Turn on/off Comparison chart
+        - level1: Change the chart to Daily / Weekly / Monthly
+        - level1: Additional Charts
+          level2:
+            - title: <code class="font-weight-bold">Shoppings Per Shopper</code> Average no of visits per shopper for a selected time range.
+            - title: <code class="font-weight-bold">Stores Per Shopper</code> Average no of days between each consecutive visits.
+    - section: "6) Charts Page"
+      text: Flexible charting capabilities.
+      image: images/company/userguide/05charts01.png
+      bullets:
+        - level1: Select main metric.
+        - level1: Select comparison metric (optional).
+        - level1: Click Per Location to see metric for each location. Click Events to see marketing events flags on the bottom of the chart.
+        - level1: Zoom in/out by dragging here (same as Google Finance charts).
+        - level1: Marketing events show here (same as Google Finance charts).
+    - section: "7) Tables Page"
+      text: Powerful table heatmap feature to visualize each metric.
+      image: images/company/userguide/06timecard01.png
+      bullets:
+        - level1: Select Time of Day, Day of Week or Time Card.
+        - level1: Select metric.
+        - level1: Select Location and Date.
+        - level1: Table heatmap will show here.
+    - section: "8) Calendar Page"
+      text: Calendar view for the selected metric will show monthly variations.
+      image: images/company/userguide/07calendar01.png
+      bullets:
+        - level1: Select Metric, Store and Month
+        - level1: Selected metric
+    - section: "9) Reports > Shopper Report"
+      text: Customizable Shopper Report gives detailed information about shoppers.
+      image: images/company/userguide/08shopperreport01.png
+      bullets:
+        - level1: Select Store and Date
+        - level1: Select Sort By
+        - level1: Shopper Report will show here.
+    - section: "10) Reports > Shopping Time Report"
+      text: Customizable Shopper Time Report gives detailed information about dwell tim.
+      image: images/company/userguide/09shoppingtimereport01.png
+      bullets:
+        - level1: Select Store and Date
+        - level1: Select Sort By
+        - level1: Shopping Time Report will show here.
+    - section: "11) Marketing"
+      text: "Segment and engage with your customers using our powerful <code>Scenario Engine</code>."
+      image: images/company/userguide/12marketing01.png
+      bullets:
+        - level1: Select desired segment paramaters.
+        - level1: Number of people in the selected segment will be updated here.
+        - level1: People in the selected segment will show here.
+
+configuration:
+    header: Configuration Parameters
+    text: BuWiFi has many parameters that you can set for your own environment. Below we will define what those metrics are.
+    image: images/company/pngegg.png
+    group:
+      - header: Timeouts
+        text: There are 3 timeout parameters
+        row:
+          - metric: <code class="font-weight-bold">Timeout Duration</code>
+            definition: "Users will have to manually login after this time. <code>Default: 30days</code>"
+          - metric: <code class="font-weight-bold">Idle-Timeout</code>
+            definition: "If there is no data transfer, session ends after this duration. <code>Default: 30min</code>"
+          - metric: <code class="font-weight-bold">Session-Timeout</code>
+            definition: "Session ends after this duration. Independant of data transfer. <code>Default: 2hr</code>"

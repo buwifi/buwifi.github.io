@@ -1,0 +1,68 @@
+<section class="home-slider position-relative">
+    <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            {% for item in site.data.master.slider %}
+
+            {% if forloop.first %}
+            <div class="carousel-item active" data-bs-interval="3000">
+                {% else %}
+                <div class="carousel-item" data-bs-interval="3000">
+                    {% endif %}
+                    <div class="bg-home d-flex align-items-center" style="background-image:url('{{item.image}}')">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12 text-center">
+                                    <div class="title-heading text-white mt-4">
+                                        <h1 class="display-4 title-dark fw-bold mb-3">{{item.header}}</h1>
+                                        <h4 class="para-desc para-dark mx-auto text-light">{{item.subheader}}</h4>
+                                        <!-- <h4 class="text-light mx-auto">{{item.subheader}}</h4> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="bg-home d-flex align-items-center"
+                        style="background-image:url('images/finance/bg.jpg')">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="title-heading text-white mt-4">
+                                        <div class="alert alert-white alert-pills shadow" role="alert">
+                                            <span class="badge rounded-pill bg-primary me-1">Trusted</span>
+                                            <span class="content"> Funds held securely and relibly</span>
+                                        </div>
+                                        <h1 class="heading display-4 title-dark fw-bold mb-3">
+                                            Help your
+                                            <span class="text-primary text-decoration-underline typewrite"
+                                                data-period="2000"
+                                                data-type='[ "Agency", "Business", "Startups", "Studio" ]'>
+                                                <span class="wrap"></span> </span> <br> Growth up to high level</h1>
+                                        <p class="para-desc text-white">
+                                            Launch your campaign and benefit from our expertise on designing and
+                                            managing conversion centered bootstrap v5 html page.
+                                        </p>
+                                        <div class="mt-4 pt-2"><a href="javascript:void(0)" class="btn btn-primary">Contact us</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+</section>

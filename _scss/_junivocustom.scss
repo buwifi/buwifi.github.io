@@ -1,0 +1,250 @@
+.custom_list {
+  padding-left: 1rem;
+}
+
+.custom_list li {
+  list-style-type: none;
+  padding-left: 1rem;
+  margin-bottom: .4rem;
+}
+
+.custom_list li:before {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+  margin: 0 10px 0 -28px;
+  color: #2f55d4;
+}
+
+.newcustom_list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.newcustom_list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.newcustom_list li:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: FontAwesome;
+  content: "\f058";
+  /*     content: "\f00c"; FontAwesome Unicode */
+  color: #2f55d4;
+}
+
+.markdown-h1 {
+  font-size: xx-large !important;
+  color: #2f55d4;
+}
+
+.markdown-h2 {
+  font-size: x-large !important;
+  color: #2f55d4;
+}
+
+.markdown-h3 {
+  font-size: large !important;
+  color: #2f55d4;
+}
+
+.markdown-h4 {
+  font-size: medium !important;
+  color: #2f55d4;
+}
+
+.markdown-h5 {
+  font-size: small !important;
+}
+
+.markdown-h6 {
+  font-size: x-small !important;
+}
+
+.ludwig {
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.2em solid #d8dff7;
+  font-family: 'Lato', serif;
+  font-size: large;
+  line-height: 1.5em;
+  font-weight: 100;
+}
+
+.ludwig:before, .ludwig:after {
+  content: '\201C';
+  font-family: 'Sanchez';
+  color: #d8dff7;
+}
+
+.ludwig:after {
+  content: '\201D';
+}
+
+.rule {
+  position: relative;
+  padding-left: 1em;
+  left: 7px;
+  background: #d8dff7;
+  box-shadow: -2px 0 0 #2f55d4, -4px 0 0 #d8dff7, -7px 0 0 #2f55d4;
+}
+
+.md-blockquote {
+  font-size: medium;
+  width: 95%;
+  margin: 10px auto;
+  font-style: italic;
+  color: #555555;
+  padding: 1.2em 10px 1.2em 50px;
+  border-left: 8px solid #2f55d4;
+  line-height: 1.6;
+  position: relative;
+  background: #EDEDED;
+}
+
+.md-blockquote::before {
+  content: "\201C";
+  color: #2f55d4;
+  font-size: 4em;
+  position: absolute;
+  left: 5px;
+  top: -5px;
+}
+
+.md-blockquote::after {
+  content: '';
+}
+
+.md-blockquote span {
+  display: block;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+p.note {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  background-color: #f0f7fb;
+  background-image: url(../images/icon_jd/note_icons/Pencil-48.png);
+  background-position: 9px 0px;
+  background-repeat: no-repeat;
+  border: solid 1px #3498db;
+  border-radius: 6px;
+  line-height: 1.6;
+  overflow: hidden;
+  padding: 15px 60px;
+}
+
+p.noteAlt {
+  background-color: #f0f7fb;
+  background-image: url(../images/icon_jd/note_icons/Pencil-48.png);
+  background-position: 9px 0px;
+  background-repeat: no-repeat;
+  border-left: solid 4px #3498db;
+  line-height: 1.6;
+  overflow: hidden;
+  padding: 15px 60px;
+}
+
+p.noteMyAlt {
+  background-color: #f0f7fb;
+  border-left: solid 4px #3498db;
+  line-height: 1.6;
+  mc-auto-number-format: '{b}Note: {/b}';
+  overflow: hidden;
+  padding: 12px;
+}
+
+p.warning {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  background-color: #f9e7e5;
+  background-image: url(../images/icon_jd/note_icons/Warning-48.png);
+  background-position: 9px 0px;
+  background-repeat: no-repeat;
+  border: solid 1px #c0392b;
+  border-radius: 6px;
+  line-height: 1.6;
+  overflow: hidden;
+  padding: 15px 60px;
+}
+
+p.example {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  background-color: #e7f6f0;
+  background-image: url(../images/icon_jd/note_icons/Check-48.png);
+  background-position: 9px 0px;
+  background-repeat: no-repeat;
+  border: solid 1px #27ae60;
+  border-radius: 6px;
+  line-height: 1.6;
+  overflow: hidden;
+  padding: 15px 60px;
+}
+
+p.tip {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  background-color: #fffbea;
+  background-image: url(../images/icon_jd/note_icons/Bulb-48.png);
+  background-position: 9px 0px;
+  background-repeat: no-repeat;
+  border: solid 1px #f1c40f;
+  border-radius: 6px;
+  line-height: 1.6;
+  overflow: hidden;
+  padding: 15px 60px;
+}
+
+p.warningAlt {
+  background-color: #fcf7f2;
+  background-image: url(../images/icon_jd/note_icons/Warning-48.png);
+  background-position: 9px 0px;
+  background-repeat: no-repeat;
+  border-left: solid 4px #e74c3c;
+  line-height: 1.6;
+  overflow: hidden;
+  padding: 15px 60px;
+}
+
+p.exampleAlt {
+  background-color: #e7f6f0;
+  background-image: url(../images/icon_jd/note_icons/Check-48.png);
+  background-position: 9px 0px;
+  background-repeat: no-repeat;
+  border-left: solid 4px #2ecc71;
+  line-height: 1.6;
+  overflow: hidden;
+  padding: 15px 60px;
+}
+
+p.tipAlt {
+  background-color: #fffbea;
+  background-image: url(../images/icon_jd/note_icons/Bulb-48.png);
+  background-position: 9px 0px;
+  background-repeat: no-repeat;
+  border-left: solid 4px #f1c40f;
+  line-height: 1.6;
+  overflow: hidden;
+  padding: 15px 60px;
+}
+
+div.note {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  background-color: #f0f7fb;
+  background-image: url(../images/icon_jd/note_icons/Pencil-48.png);
+  background-position: 9px 0px;
+  background-repeat: no-repeat;
+  border: solid 1px #3498db;
+  border-radius: 6px;
+  line-height: 1.6;
+  overflow: hidden;
+  padding: 15px 60px;
+}

@@ -1,0 +1,101 @@
+<div class="container mt-100 mt-60">
+    <div class="row align-items-center">
+        <div class="col-lg-5 col-md-6 pt-2 pt-sm-0 order-2 order-md-1">
+            <div class="card shadow rounded border-0">
+                <div class="card-body py-5">
+                    <h4 class="card-title">Get In Touch !</h4>
+                    <div class="custom-form mt-3">
+                        <!-- <form method="post" name="myForm" onsubmit="return validateForm()"> -->
+                        <!-- <form action="php/contact-form.php" method="POST"> -->
+                        <!-- <form id="contactForm" class="contact-form-recaptcha-v3 custom-contact-form-style-1" action="php/contact-form-recaptcha-v4.php" method="POST" enctype="multipart/form-data"> -->
+                        <form class="form-control" action="php/contact-form-recaptcha-v4.php" method="post" enctype="multipart/form-data">
+
+                            <!-- <div class="contact-form-success alert alert-success d-none mt-4"><strong>Success!</strong> Your message has been sent to us.</div>
+                            <div class="contact-form-error alert alert-danger d-none mt-4"><strong>Error!</strong> There was an error sending your message.<span class="mail-error-message text-1 d-block"></span></div>
+                            <p id="error-msg" class="mb-0"></p>
+                            <div id="simple-msg"></div> -->
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Your Name <span class="text-danger">*</span></label>
+                                        <div class="form-icon position-relative">
+                                            <i data-feather="user" class="fea icon-sm icons"></i>
+                                            <input name="name" id="name" type="text" class="form-control ps-5" placeholder="Name :">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Your Email <span class="text-danger">*</span></label>
+                                        <div class="form-icon position-relative">
+                                            <i data-feather="mail" class="fea icon-sm icons"></i>
+                                            <input name="email" id="email" type="email" class="form-control ps-5" placeholder="Email :">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Subject</label>
+                                        <div class="form-icon position-relative">
+                                            <i data-feather="book" class="fea icon-sm icons"></i>
+                                            <input name="subject" id="subject" class="form-control ps-5" placeholder="subject :">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Comments <span class="text-danger">*</span></label>
+                                        <div class="form-icon position-relative">
+                                            <i data-feather="message-circle" class="fea icon-sm icons clearfix"></i>
+                                            <textarea name="message" id="message" rows="4" class="form-control ps-5" placeholder="Message :"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <div class="g-recaptcha" data-sitekey="6LdeQ6obAAAAAGYNZP3nIQymmmbSLhcLMmZMt5IC"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-grid">
+                                        <input type="submit" name="submit" value="Send" class="btn btn-danger btn-block">
+                                        <!-- <button type="submit" id="submit" name="submit" class="btn btn-primary">Send Message</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <!-- <h4 class="text-success text-center"><?= $msg; ?></h4> -->
+                                <?php
+                                if(ISSET($_SESSION['status'])){
+                                    if($_SESSION['status'] == "ok"){
+                                ?>
+                                        <div class="alert alert-info"><?php echo $_SESSION['result']?></div>
+                                <?php
+                                    }else{
+                                ?>
+                                        <div class="alert alert-danger"><?php echo $_SESSION['result']?></div>
+                                <?php
+                                    }
+                                    unset($_SESSION['result']);
+                                    unset($_SESSION['status']);
+                                    }
+                                ?>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-7 col-md-6 order-1 order-md-2">
+            <div class="card border-0">
+                <div class="card-body p-0">
+                    <img src="images/contact.svg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

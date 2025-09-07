@@ -1,0 +1,189 @@
+<footer class="footer footer-border">
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="footer-py-60 text-center">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card border-0 text-center features feature-primary feature-clean bg-transparent">
+                                        <div class="icons text-center mx-auto">
+                                            <i class="uil uil-phone rounded h3 mb-0"></i>
+                                        </div>
+                                        <div class="content mt-4">
+                                            <h5 class="footer-head">Phone</h5>
+                                            <p class="text-muted">Start working with Landrick that can provide everything</p>
+                                            <a href="tel:+152534-468-854" class="text-foot">+152 534-468-854</a>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                        
+                                <div class="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <div class="card border-0 text-center features feature-primary feature-clean bg-transparent">
+                                        <div class="icons text-center mx-auto">
+                                            <i class="uil uil-envelope rounded h3 mb-0"></i>
+                                        </div>
+                                        <div class="content mt-4">
+                                            <h5 class="footer-head">Email</h5>
+                                            <p class="text-muted">Start working with Landrick that can provide everything</p>
+                                            <a href="mailto:contact@example.com" class="text-foot">contact@example.com</a>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                        
+                                <div class="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <div class="card border-0 text-center features feature-primary feature-clean bg-transparent">
+                                        <div class="icons text-center mx-auto">
+                                            <i class="uil uil-map-marker rounded h3 mb-0"></i>
+                                        </div>
+                                        <div class="content mt-4">
+                                            <h5 class="footer-head">Location</h5>
+                                            <p class="text-muted">C/54 Northwest Freeway, Suite 558, <br>Houston, USA 485</p>
+                                            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin"
+                                                data-type="iframe" class="video-play-icon text-foot lightbox">View on Google map</a>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                <a href="{{ site.url }}{{ site.baseurl }}" class="logo-footer">
+                    <img src="{{ site.logowhite | absolute_url }}" height="40" alt="">
+                </a>
+                <p class="mt-4">
+                    We help brick-and-mortar retailers to build relationships with their visitors and create the best possible in-store customer experience.
+                </p>
+                <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                    <!-- <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li> -->
+                    <li class="list-inline-item"><a href="{{ site.linkedin }}" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                    <li class="list-inline-item"><a href="{{ site.twitter }}" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                    <li class="list-inline-item"><a href="{{ site.instagram }}" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                    <li class="list-inline-item"><a href="{{ '/feed.xml' | absolute_url }}" class="rounded"><i data-feather="rss" class="fea icon-sm fea-social"></i></a></li>
+                </ul>
+            </div>
+
+            {% assign links = site.data.nav.navigation %}
+            {% for link in links %}
+                {% if link.title == 'Services' %}
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h5 class="text-light footer-head">{{ link.title }}</h5>
+                    <ul class="list-unstyled footer-list mt-4">
+                        {% for submenu in link.children %}
+                            <!-- <li><a href="{{ site.url }}{{ site.baseurl }}{{ submenu.url }}" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>{{ submenu.title }}</a></li> -->
+                            <li><a href="{{ submenu.url | absolute_url }}" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>{{ submenu.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            {% endfor %}
+
+
+            {% assign links = site.data.nav.navigation %}
+            {% for link in links %}
+                {% if link.title == 'Industries' %}
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h5 class="text-light footer-head">{{ link.title }}</h5>
+                    <ul class="list-unstyled footer-list mt-4">
+                        {% for submenu in link.children %}
+                            <li><a href="{{ submenu.url | absolute_url }}" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>{{ submenu.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            {% endfor %}
+
+            {% assign links = site.data.nav.navigation %}
+            {% for link in links %}
+                {% if link.title == 'Company' %}
+
+                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h5 class="text-light footer-head">{{ link.title }}</h5>
+                    <ul class="list-unstyled footer-list mt-4">
+                        {% for submenu in link.children %}
+                            <li><a href="{{ submenu.url | absolute_url }}" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>{{ submenu.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            {% endfor %}
+
+<!-- 
+            <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <h5 class="text-light footer-head">Newsletter</h5>
+                <p class="mt-4">Sign up and receive the latest tips via email.</p>
+                <form>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="foot-subscribe mb-3">
+                                <label class="form-label">Write your email <span class="text-danger">*</span></label>
+                                <div class="form-icon position-relative">
+                                    <i data-feather="mail" class="fea icon-sm icons"></i>
+                                    <input type="email" name="email" id="emailsubscribe"
+                                        class="form-control ps-5 rounded" placeholder="Your email : " required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="d-grid">
+                                <input type="submit" id="submitsubscribe" name="send" class="btn btn-soft-primary"
+                                    value="Subscribe">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div> -->
+
+        </div>
+    </div>
+</footer>
+<footer class="footer footer-bar">
+    <div class="container text-center">
+        <div class="row align-items-center">
+            <div class="col-sm-6">
+                <div class="text-sm-start">
+                    <p class="mb-0">© <script> document.write(new Date().getFullYear()) </script>
+                        <a href="{{ site.web }}" target="_blank" class="text-reset">{{ site.name }}</a>
+                    </p>
+                </div>
+            </div>
+
+            <!--                 <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <ul class="list-unstyled text-sm-end mb-0">
+                        <li class="list-inline-item"><a href="javascript:void(0)"><img
+                                    src="images/payments/american-ex.png" class="avatar avatar-ex-sm"
+                                    title="American Express" alt=""></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)"><img
+                                    src="images/payments/discover.png" class="avatar avatar-ex-sm" title="Discover"
+                                    alt=""></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)"><img
+                                    src="images/payments/master-card.png" class="avatar avatar-ex-sm"
+                                    title="Master Card" alt=""></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/paypal.png"
+                                    class="avatar avatar-ex-sm" title="Paypal" alt=""></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/visa.png"
+                                    class="avatar avatar-ex-sm" title="Visa" alt=""></a></li>
+                    </ul>
+                </div>
+ -->
+
+        </div>
+    </div>
+</footer>
+
+<a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>

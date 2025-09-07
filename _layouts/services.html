@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{% include servicesheader.html %}
+
+{% if page.collection == 'services' %}
+    {% include whatisit.html %}
+    {% include rtlservices.html %}
+{% elsif page.collection == 'industry' %}
+    {% include whatisit.html %}
+    {% include rtlindustry2.html %}
+{% elsif page.title == 'BUWIFI BLOG' %}
+    {{content}}
+{% elsif page.layout == 'post' %}
+    {{content}}
+{% else %}
+    <h1>NEW COLLECTION</h1>
+{% endif %}
+
+

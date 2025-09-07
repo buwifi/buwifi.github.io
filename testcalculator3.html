@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#id_add_fields_placeholder").change(function () {
+        if ($(this).val() == "Other") {
+          $("#id_add_fields_placeholderValue").show();
+        } else {
+          $("#id_add_fields_placeholderValue").hide();
+        }
+      });
+      $("#id_add_fields_placeholderValue").hide();
+    });
+  </script>
+
+</head>
+
+<body>
+
+
+  <label for="name_add_fields_placeholder">Placeholder: </label>
+  <select name="name_add_fields_placeholder" id="id_add_fields_placeholder">
+    <option value="50">50</option>
+    <option value="100">100</option>
+    <option value="200">200</option>
+    <option value="500">500</option>
+    <option value="1000">1000</option>
+    <option value="Other">Other</option>
+  </select>
+  <div id="id_add_fields_placeholderValue">
+    Price:
+    <input type="text" name="name_add_fields_placeholderValue" id="id_add_fields_placeholderValue">
+  </div>
+
+
+
+</body>
+
+</html>

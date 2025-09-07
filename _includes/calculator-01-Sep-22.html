@@ -1,0 +1,310 @@
+<div class="section section--first">
+
+  <div class="container mt-60 mt-60 mb-4">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="section-title text-center mb-4 pb-2">
+          <h4 class="title mb-4">{{site.data.master.pricing.calc_title}}</h4>
+          <p class="para-desc mx-auto text-muted mb-0">{{site.data.master.pricing.calc_text}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container calculator">
+      <div class="row">
+        <!-- <div id="top" class="calccol-7 calccol-t-12 calccol-m-8"> -->
+        <!-- <div id="top" class="calccol-offset-1 calccol-6 calccol-t-12 calccol-m-8"> -->
+        <div id="top" class="col-8">
+          <div class="calculator__content">
+            <form class="form calculator-form">
+
+
+              <!-- BUWiFi -->
+              <h4>{{site.data.master.buwifi_calc.title}}</h4>
+              <p class="text-muted para-desc mt-2">{{site.data.master.buwifi_calc.intro}}</p>
+
+              <div class="form__form-group calculator__form-group form__form-group--small">
+                <input
+                         id="numberAP"
+                         class="form__input calculator__input js-field__project"
+                         type="number"
+                         value="0"
+                         min="0"
+                         placeholder="#AP"
+                         data-title="BuWiFi"
+                         data-value="+ {{site.data.master.pricing.buwifi}} $"
+               >
+                <label class="form__label calculator__input-label">AP
+                  <span class="calculator__color_label">
+                    <span class="mdi mdi-access-point-network"></span>
+                    x ${{site.data.master.pricing.buwifi}}
+                  </span>
+                </label>
+              </div>
+
+              <!-- SYSLOG -->
+              <div class="form__form-group">
+                <label class="checkbox-btn">
+                  <input 
+                          id="checkSyslog"
+                          class="checkbox-btn__checkbox"
+                          type="checkbox"
+                          name="checkSyslog"
+                          value="{{site.data.master.pricing.syslog}}"
+                          data-title="Syslog (5651)"
+                          data-value="+ {{site.data.master.pricing.syslog}} $"
+                  >
+                  <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
+                  <span class="checkbox-btn__label">Syslog (5651)
+                    <span class="calculator__color_label">
+                      <span class="mdi mdi-access-point-network"></span>
+                      x ${{site.data.master.pricing.syslog}}
+                    </span>
+                  </span>
+                </label>
+              </div>
+              <p class="text-muted para-desc mt-2 calculator__checkbox-description">
+                Check if you need (optional) Syslog(5651) service.
+              </p>
+
+              <!-- UPWiFi -->
+              <h4>{{site.data.master.upwifi_calc.title}}</h4>
+              <p class="text-muted para-desc mt-0">{{site.data.master.upwifi_calc.intro}}</p>
+              <div class="form__form-group calculator__form-group form__form-group--small">
+                <input
+                         id="numberRPi"
+                         class="form__input calculator__input js-field__project"
+                         type="number"
+                         value="1"
+                         min="0"
+                         data-value=" + {{item.total}} $" 
+                         data-title="UpWiFi"
+             >
+                <label class="form__label calculator__input-label">RPi
+                  <span class="calculator__color_label">
+                    <span class="mdi mdi-access-point-network"></span>
+                    x ${{site.data.master.pricing.upwifi}}
+                  </span>
+                </label>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <h4>BuWiFi Messaging Service (BMS)</h4>
+              <p class="text-muted para-desc mt-2">
+                Customers can pay as they go at the end of the month or select one of the below JMS packages and get
+                discounts.
+              </p>
+              <p class="text-muted para-desc mt-2">
+                Please select your estimated number of SMS messages per month.
+              </p>
+
+              <div class="form__form-group plus-input">
+                {% for item in site.data.master.jms %}
+                <div>
+                  <label class="radio-btn calculator__radio-btn">
+                    <input
+                            name="jms-package"
+                            class="radio-btn__radio"
+                            type="radio"
+                            value="{{item.total}}"
+                            data-value=" + {{item.total}} $" 
+                            data-title="JMS"
+                            {% if forloop.first %}checked{% endif %}
+                    >
+                    <span class="radio-btn__radio-custom"></span>
+                    <span class="radio-btn__label"> Plus ${{item.message}}
+                      <span class="calculator__color_label">
+                        <span class="mdi mdi-message-reply-text-outline"></span>
+                        {{item.discount}} Discount: ${{item.total}}
+                      </span>
+                    </span>
+                  </label>
+                </div>
+                {% endfor %}
+              </div>
+
+              <h4>Storage</h4>
+              <p class="text-muted para-desc mt-2">Development costs for the different storages are comparable.</p>
+              <div class="form__form-group">
+                {% for item in site.data.master.pricestorage %}
+                <label class="radio-btn calculator__radio-btn">
+                  <input 
+                        class="radio-btn__radio" 
+                        type="radio" 
+                        name="storage" 
+                        value="{{item.value}}"
+                        data-value="{{item.datavalue}}" 
+                        {% if forloop.first %}checked{% endif %}
+                  >
+                  <span class="radio-btn__radio-custom"></span>
+                  <span class="radio-btn__label">{{item.datavalue}}
+                    <span class="calculator__color_label">{{item.label}}</span>
+                  </span>
+                </label>
+                {% endfor %}
+              </div>
+
+              <h4>BuWiFi Messaging Service (BMS)</h4>
+              <p class="text-muted para-desc mt-2">Development costs for the different storages are comparable.</p>
+              {% for item in site.data.master.priceexport %}
+              <div class="form__form-group sum-input plus-input">
+                <label class="checkbox-btn">
+                  <input class=" checkbox-btn__checkbox" type="checkbox" name="{{item.name}}" value="{{item.value}}"
+                    data-title="{{item.title}}" data-value="{{item.datavalue}}">
+                  <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
+                  <span class="checkbox-btn__label"> Sum Plus {{item.title}}
+                    <span class="calculator__color_label">{{item.label}}</span>
+                  </span>
+                </label>
+              </div>
+              {% endfor %}
+
+
+              <h4>Features</h4>
+              {% for item in site.data.master.pricefeatures %}
+              <div class="form__form-group {{item.input}}">
+                <label class="checkbox-btn">
+                  <input class=" checkbox-btn__checkbox" type="checkbox" name="{{item.name}}" value="{{item.value}}"
+                    data-title="{{item.note}}" data-value="{{item.datavalue}}">
+                  <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
+                  <span class="checkbox-btn__label">{{item.note}}
+                    <span class="calculator__color_label">{{item.label}}</span>
+                  </span>
+                </label>
+              </div>
+              <p class="calculator__checkbox-description">{{item.desc}}</p>
+              {% endfor %}
+
+              <div class="form__card calculator__card-form card js-form" id="card-form">
+                <div class="calculator__card-send">
+                  <h4>Save your estimate</h4>
+                  <p>Enter your email address and we’ll send you the calculation.</p>
+                  <div class="form__form-group">
+                    <label class="form__label">Email</label>
+                    <input class="form__input js-field__email" type="email" placeholder="example@mail.com" required>
+                    <span class="form-validation"></span>
+                  </div>
+                  <div class="form__form-group form__form-group--read-and-agree">
+                    <label class="checkbox-btn">
+                      <input class=" checkbox-btn__checkbox" type="checkbox" name="terms" required>
+                      <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
+                      <span class="checkbox-btn__label">I read and agree to
+                        <a href="09_privacy.html" target="_blank" class="link link--accent link--accent-bold">Terms &
+                          Conditions</a></span>
+                    </label>
+                  </div>
+                  <button class="site-btn site-btn--accent form__submit disable" type="submit" value="Send"
+                    disabled>Save Estimate</button>
+                </div>
+
+                <div class="calculator__card-success calculator__card-form card hidden">
+                  <h4>Congratulations!</h4>
+                  <p>Your calculations have been successfully sent to the email address!<br>
+                    Please check your mail.</p>
+                  <button class="site-btn site-btn--light js-reset">Great! Thank you</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- <div class="calccol-5 calccol-m-4 calcd-t-none calculator__sidebar-wrap"> -->
+        <!-- <div class="calccol-offset-1 calccol-3 calccol-m-4 calcd-t-none calculator__sidebar-wrap"> -->
+        <div class="col-4 calculator__sidebar-wrap">
+          <div class="sidebar calculator__sidebar card">
+            <div class="calculator__sidebar-elements">
+              <ul class="calculator__sidebar-ul" id="page">
+                <ul class="calculator__sidebar-main" id="main">
+                  <li>BuWiFi:
+                    <span>
+                      <!-- <span class="mdi mdi-access-point-network"></span> -->
+                      <span id="number-AP"> 1 AP x</span>
+                        {{ site.data.master.pricing.buwifi }} $
+                    </span>
+                    <span id="buwifi-price" class="calculator__sidebar-price">
+                        {{ site.data.master.pricing.buwifi }} $
+                    </span>
+                  </li>
+
+                  <li>Syslog:
+                    <span>
+                      <span id="syslog-number"> 1 AP x</span>
+                        {{ site.data.master.pricing.syslog }} $
+                      </span>
+                    <span id="syslog-price" class="calculator__sidebar-price">
+                        {{ site.data.master.pricing.syslog }} $
+                    </span>
+                  </li>
+
+                  <li>UpWiFi:
+                    <span>
+                      <!-- <span class="mdi mdi-access-point-network"></span> -->
+                      <span id="number-RPi"> 1 RPi x</span>
+                        {{ site.data.master.pricing.upwifi }} $
+                    </span>
+                    <span id="upwifi-price" class="calculator__sidebar-price">
+                        {{ site.data.master.pricing.upwifi }} $
+                    </span>
+                  </li>
+                </ul>
+              </ul>
+
+              <ul class="calculator__sidebar-ul hidden" id="side_buwifi">
+              </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <ul class="calculator__sidebar-ul" id="plus">
+                <!-- <li> Storage
+                      <span  id="storage-price" class="calculator__sidebar-price">+ 2 $</span>
+                </li> -->
+              </ul>
+              <ul class="calculator__sidebar-ul hidden" id="multiple">
+              </ul>
+            </div>
+            <div class="calculator__sidebar-total">
+              <h4>Total <span class="calculator__sidebar-price-total">13 $</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="endMenu" class="section section--last">
+    <img alt="" class="section__img" src="assets/img/img_backgroud_footer.png">
+  </div>
+</div>

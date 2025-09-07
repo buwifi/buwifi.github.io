@@ -1,0 +1,462 @@
+<div class="section section--first">
+  <div class="container mt-60 mt-60 mb-4">
+ 
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="section-title text-center mb-4 pb-2">
+          <h4 class="title mb-4">{{site.data.master.pricing.calc_title}}</h4>
+          <p class="para-desc mx-auto text-muted mb-0">{{site.data.master.pricing.calc_text}}</p>
+        </div>
+      </div>
+    </div>
+ 
+     <div class="container calculator">
+      <div class="row">
+        <div id="top" class="col-offset-1 col-8 col-t-12 col-m-8">
+           <div class="calculator__content">
+            <form class="form calculator-form">
+
+              <!-- BUWiFi -->
+              <h4>{{site.data.master.buwifi_calc.title}}</h4>
+              <p class="text-muted para-desc mt-2">{{site.data.master.buwifi_calc.intro}}</p>
+
+              <div class="form__form-group calculator__form-group form__form-group--small">
+                <input
+                      id="buwifi"
+                      class="form__input calculator__input js-field__project"
+                      type="text"
+                      value="0">
+                <label class="form__label calculator__input-label">AP
+                  <span class="calculator__color_label">
+                    <span class="mdi mdi-access-point-network"></span>
+                    x ${{site.data.master.pricing.buwifi}}</span>
+                </label>
+              </div>
+
+              <div class="form__form-group page-input">
+                <label class="checkbox-btn">
+                  <input  id="syslog" 
+                          class="checkbox-btn__checkbox" 
+                          type="checkbox" 
+                          name="syslog" 
+                          value="{{site.data.master.pricing.syslog}}"
+                          data-title="Syslog (5651)" 
+                          data-value=" + {{site.data.master.pricing.syslog}} $">
+                  <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
+                  <span class="checkbox-btn__label">Syslog (5651)
+                    <span id="syslog_label" class="calculator__color_label"><span class="mdi mdi-access-point-network"></span> AP x ${{site.data.master.pricing.syslog}}</span>
+                  </span>
+                </label>
+              </div>
+              <p class="text-muted calculator__checkbox-description">Check the box if you need Syslog (5651) service.</p>
+
+              <!-- UPWiFi -->
+              <h4>{{site.data.master.upwifi_calc.title}}</h4>
+              <p class="text-muted para-desc mt-0">{{site.data.master.upwifi_calc.intro}}</p>
+
+              <div class="form__form-group calculator__form-group form__form-group--small sum-input">
+                  <input 
+                      id="upwifi" 
+                      class="form__input calculator__input js-field__project" 
+                      type="text" 
+                      value="0">
+                  <label class="form__label calculator__input-label">RPi
+                    <span class="calculator__color_label">
+                      <span class="mdi mdi-access-point-network"></span>
+                      x ${{site.data.master.pricing.upwifi}}</span>
+                  </label>
+              </div>
+
+
+              <h4>BuWiFi Messaging Service (BMS)</h4>
+              <p class="text-muted para-desc mt-2">
+                Customers can pay as they go at the end of the month or select one of the below BMS packages and get
+                discounts.
+              </p>
+              <p class="text-muted para-desc mt-2">
+                Please select your estimated number of SMS messages per month.
+              </p>
+
+              <div class="form__form-group">
+                {% for item in site.data.master.jms %}
+                <div>
+                  <label class="radio-btn calculator__radio-btn">
+                    <input
+                        class="radio-btn__radio" 
+                        type="radio" 
+                        value="{{item.message}}" 
+                        name="bulk-jms" 
+                        data-value="{{item.total}}" 
+                        {% if forloop.first %}checked{% endif %}
+                    >
+                    <span class="radio-btn__radio-custom"></span>
+                    <span class="radio-btn__label">{{item.message}} SMS
+                      <span class="calculator__color_label">
+                        <!-- <span class="mdi mdi-note-multiple-outline"></span> -->
+                        {{item.discount}} Discount: ${{item.total}}
+                      </span>
+                    </span>
+                  </label>
+                </div>
+                {% endfor %}
+              </div>
+
+              <!--Number of pages-->
+<!-- 
+              <div class="form__form-group">
+                <label class="radio-btn calculator__radio-btn">
+                  <input class="radio-btn__radio" type="radio" value="1" name="number-page" data-value=" x 10" checked>
+                  <span class="radio-btn__radio-custom"></span>
+                  <span class="radio-btn__label">10
+                    <span class="calculator__color_label">
+                      <span class="mdi mdi-note-multiple-outline"></span>
+                      + $1
+                    </span>
+                  </span>
+                </label>
+                <label class="radio-btn calculator__radio-btn">
+                  <input class="radio-btn__radio" type="radio" value="2" data-value=" x 20" name="number-page">
+                  <span class="radio-btn__radio-custom"></span>
+                  <span class="radio-btn__label">20
+                    <span class="calculator__color_label"><span class="mdi mdi-note-multiple-outline"></span> + $2</span>
+                  </span>
+                </label>
+                <label class="radio-btn calculator__radio-btn">
+                  <input class="radio-btn__radio" type="radio" value="5" data-value=" x 50" name="number-page">
+                  <span class="radio-btn__radio-custom"></span>
+                  <span class="radio-btn__label">50
+                    <span class="calculator__color_label"><span class="mdi mdi-note-multiple-outline"></span> + $5</span>
+                  </span>
+                </label>
+                <label class="radio-btn calculator__radio-btn">
+                  <input class="radio-btn__radio" type="radio" value="10" data-value=" x 100" name="number-page">
+                  <span class="radio-btn__radio-custom"></span>
+                  <span class="radio-btn__label">100
+                    <span class="calculator__color_label"><span class="mdi mdi-note-multiple-outline"></span> +
+                      $10</span>
+                  </span>
+                </label>
+                <label class="radio-btn calculator__radio-btn">
+                  <input class="radio-btn__radio" type="radio" value="20" data-value=" x 200" name="number-page">
+                  <span class="radio-btn__radio-custom"></span>
+                  <span class="radio-btn__label">200
+                    <span class="calculator__color_label"><span class="mdi mdi-note-multiple-outline"></span> +
+                      $20</span>
+                  </span>
+                </label>
+                <label class="radio-btn calculator__radio-btn">
+                  <input class="radio-btn__radio" type="radio" value="50" data-value=" x 500" name="number-page">
+                  <span class="radio-btn__radio-custom"></span>
+                  <span class="radio-btn__label">500
+                    <span class="calculator__color_label"><span class="mdi mdi-note-multiple-outline"></span> +
+                      $50</span>
+                  </span>
+                </label>
+                <label class="radio-btn calculator__radio-btn">
+                  <input class="radio-btn__radio" type="radio" value="100" data-value=" Unlimited" name="number-page">
+                  <span class="radio-btn__radio-custom"></span>
+                  <span class="radio-btn__label">Unlimited
+                    <span class="calculator__color_label"><span class="mdi mdi-note-multiple-outline"></span> +
+                      $100</span>
+                  </span>
+                </label>
+              </div>
+ -->
+
+<!-- 
+              <h4>Storage</h4>
+              <p>Development costs for the different storages are comparable. </p>
+
+              <div class="form__form-group">
+                <label class="radio-btn calculator__radio-btn">
+                  <input class="radio-btn__radio" type="radio" value="2" name="storage" data-value="2Gb" checked>
+                  <span class="radio-btn__radio-custom"></span>
+                  <span class="radio-btn__label">2Gb
+                    <span class="calculator__color_label">$2</span>
+                  </span>
+                </label>
+                <label class="radio-btn calculator__radio-btn">
+                  <input class="radio-btn__radio" type="radio" value="16" name="storage" data-value="16Gb">
+                  <span class="radio-btn__radio-custom"></span>
+                  <span class="radio-btn__label">16Gb
+                    <span class="calculator__color_label">$16</span>
+                  </span>
+                </label>
+                <label class="radio-btn calculator__radio-btn">
+                  <input class="radio-btn__radio" type="radio" value="50" name="storage" data-value="500Gb">
+                  <span class="radio-btn__radio-custom"></span>
+                  <span class="radio-btn__label">500Gb
+                    <span class="calculator__color_label">$50</span>
+                  </span>
+                </label>
+                <label class="radio-btn calculator__radio-btn">
+                  <input class="radio-btn__radio" type="radio" value="100" name="storage" data-value="1Tb">
+                  <span class="radio-btn__radio-custom"></span>
+                  <span class="radio-btn__label">1Tb
+                    <span class="calculator__color_label">$100</span>
+                  </span>
+                </label>
+                <label class="radio-btn calculator__radio-btn">
+                  <input class="radio-btn__radio" type="radio" value="500" name="storage" data-value="5Tb">
+                  <span class="radio-btn__radio-custom"></span>
+                  <span class="radio-btn__label">5Tb
+                    <span class="calculator__color_label">$500</span>
+                  </span>
+                </label>
+              </div>
+ -->
+
+<!-- 
+              <h4>Export</h4>
+              <p>Please, select the features you require.</p>
+
+              <div class="form__form-group sum-input plus-input">
+                <label class="checkbox-btn">
+                  <input class=" checkbox-btn__checkbox" type="checkbox" name="google" value="10"
+                    data-title="Export to Google Drive" data-value="+ 10 $">
+                  <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
+                  <span class="checkbox-btn__label">Export to Google Drive
+                    <span class="calculator__color_label">$10</span>
+                  </span>
+                </label>
+              </div>
+              <div class="form__form-group sum-input plus-input">
+                <label class="checkbox-btn">
+                  <input class=" checkbox-btn__checkbox" type="checkbox" name="dropbox" value="10"
+                    data-title="Export to Dropbox" data-value="+ 10 $">
+                  <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
+                  <span class="checkbox-btn__label">Export to Dropbox
+                    <span class="calculator__color_label">$10</span>
+                  </span>
+                </label>
+              </div>
+              <div class="form__form-group sum-input plus-input">
+                <label class="checkbox-btn">
+                  <input class=" checkbox-btn__checkbox" type="checkbox" name="pdf" value="5" data-title="Export to PDF"
+                    data-value="+ 5 $">
+                  <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
+                  <span class="checkbox-btn__label">Export to PDF
+                    <span class="calculator__color_label">$5</span>
+                  </span>
+                </label>
+              </div>
+
+              <div class="form__form-group sum-input plus-input">
+                <label class="checkbox-btn">
+                  <input class=" checkbox-btn__checkbox" type="checkbox" name="jpg" value="5" data-title="Export to JPG"
+                    data-value="+ 5 $">
+                  <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
+                  <span class="checkbox-btn__label">Export to JPG
+                    <span class="calculator__color_label">$5</span>
+                  </span>
+                </label>
+              </div>
+              <div class="form__form-group sum-input plus-input">
+                <label class="checkbox-btn">
+                  <input class=" checkbox-btn__checkbox" type="checkbox" name="png" value="5" data-title="Export to PNG"
+                    data-value="+ 5 $">
+                  <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
+                  <span class="checkbox-btn__label">Export to PNG
+                    <span class="calculator__color_label">$5</span>
+                  </span>
+                </label>
+              </div>
+
+ -->
+
+<!-- 
+              <h4>Features</h4>
+
+              <div class="form__form-group sum-input plus-input">
+                <label class="checkbox-btn">
+                  <input class=" checkbox-btn__checkbox" type="checkbox" name="e-commerce" value="100"
+                    data-title="Integrated e-commerce" data-value="+ 100 $">
+                  <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
+                  <span class="checkbox-btn__label">Integrated e-commerce
+                    <span class="calculator__color_label">$100</span>
+                  </span>
+                </label>
+              </div>
+              <p class="calculator__checkbox-description">Integrate online shopping to your account</p>
+
+              <div class="form__form-group plus-input">
+                <label class="checkbox-btn">
+                  <input id="domain" class=" checkbox-btn__checkbox" type="checkbox" name="domain" value="10"
+                    data-title="Custom domain" data-value="+ 10 $">
+                  <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
+                  <span class="checkbox-btn__label">Custom domain
+                    <span id="domain_label" class="calculator__color_label">10 $</span>
+                  </span>
+                </label>
+              </div>
+              <p class="calculator__checkbox-description">Choose your own damain. If total cost more $100 domain is
+                free.</p>
+
+
+              <div class="form__form-group sum-input plus-input">
+                <label class="checkbox-btn">
+                  <input class=" checkbox-btn__checkbox" type="checkbox" name="donations" value="20"
+                    data-title="Donations" data-value="+ 20 $">
+                  <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
+                  <span class="checkbox-btn__label">Donations
+                    <span class="calculator__color_label">$20</span>
+                  </span>
+                </label>
+              </div>
+              <p class="calculator__checkbox-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+              <div class="form__form-group page-input">
+                <label class="checkbox-btn">
+                  <input id="design" class="checkbox-btn__checkbox" type="checkbox" name="design" value="1.5"
+                    data-title="Your own designs" data-value=" x 1.5">
+                  <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
+                  <span class="checkbox-btn__label">Your own designs
+                    <span class="calculator__color_label"><span class="mdi mdi-note-multiple-outline"></span> x
+                      1.5</span>
+                  </span>
+                </label>
+              </div>
+              <p class="calculator__checkbox-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+              <div class="form__form-group sum-input plus-input">
+                <label class="checkbox-btn">
+                  <input class=" checkbox-btn__checkbox" type="checkbox" name="comments" value="100"
+                    data-title="Unlimited comments" data-value="+ 100 $">
+                  <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
+                  <span class="checkbox-btn__label">Unlimited comments
+                    <span class="calculator__color_label">$100</span>
+                  </span>
+                </label>
+              </div>
+              <p class="calculator__checkbox-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+              <div class="form__form-group multiple-input">
+                <label class="checkbox-btn">
+                  <input id="analytics" class="checkbox-btn__checkbox" type="checkbox" name="analytics" value="1.2"
+                    data-title="Analytics" data-value="x 1.2">
+                  <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
+                  <span class="checkbox-btn__label">Analytics
+                    <span class="calculator__color_label">x 1.2</span>
+                  </span>
+                </label>
+              </div>
+              <p class="calculator__checkbox-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+              <div class="form__form-group page-input">
+                <label class="checkbox-btn">
+                  <input id="team" class=" checkbox-btn__checkbox" type="checkbox" name="team" value="1.5"
+                    data-title="Collaborate with Team Members" data-value=" x 1.5">
+                  <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
+                  <span class="checkbox-btn__label">Collaborate with Team Members
+                    <span class="calculator__color_label"><span class="mdi mdi-note-multiple-outline"></span> x
+                      1.5</span>
+                  </span>
+                </label>
+              </div>
+              <p class="calculator__checkbox-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+              <div class="form__form-group multiple-input">
+                <label class="checkbox-btn">
+                  <input id="task" class=" checkbox-btn__checkbox" type="checkbox" name="task" value="1.2"
+                    data-title="Task Automation" data-value="x 1.2">
+                  <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
+                  <span class="checkbox-btn__label">Task Automation
+                    <span class="calculator__color_label">x 1.2</span>
+                  </span>
+                </label>
+              </div>
+              <p class="calculator__checkbox-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+              <div class="form__card calculator__card-form card js-form" id="card-form">
+                <div class="calculator__card-send">
+                  <h4>Save your estimate</h4>
+                  <p>Enter your email address and we’ll send you the calculation.</p>
+                  <div class="form__form-group">
+                    <label class="form__label">Email</label>
+                    <input class="form__input js-field__email" type="email" placeholder="example@mail.com" required>
+                    <span class="form-validation"></span>
+                  </div>
+                  <div class="form__form-group form__form-group--read-and-agree">
+                    <label class="checkbox-btn">
+                      <input class=" checkbox-btn__checkbox" type="checkbox" name="terms" required>
+                      <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check"></i></span>
+                      <span class="checkbox-btn__label">I read and agree to
+                        <a href="09_privacy.html" target="_blank" class="link link--accent link--accent-bold">Terms &
+                          Conditions</a></span>
+                    </label>
+                  </div>
+                  <button class="site-btn site-btn--accent form__submit disable" type="submit" value="Send"
+                    disabled>Save
+                    Estimate
+                  </button>
+                </div>
+
+                <div class="calculator__card-success calculator__card-form card hidden">
+                  <h4>Congratulations!</h4>
+                  <p>Your calculations have been successfully sent to the email address!<br>
+                    Please check your mail.</p>
+                  <button class="site-btn site-btn--light js-reset">Great! Thank you</button>
+                </div>
+
+              </div> -->
+
+            </form>
+          </div>
+        </div>
+
+        <div class="col-offset-1 col-4 col-m-4 d-t-none calculator__sidebar-wrap">
+          <div class="sidebar calculator__sidebar card">
+            <div class="calculator__sidebar-elements">
+
+              <ul class="calculator__sidebar-ul" id="page">
+                <!-- <ul class="calculator__sidebar-main" id="main"> -->
+                  <p class="text-center text-primary fw-bold">BuWiFi</p>
+                  <li>AP
+                    <span>
+                      <span class="mdi mdi-access-point-network"></span>
+                      <span id="number-ap"> x 0</span>
+                    </span>
+                    <span id="price-buwifi" class="calculator__sidebar-price">+ 0 $</span>
+                  </li>
+                <!-- </ul> -->
+              </ul>
+
+              <ul class="calculator__sidebar-ul" id="multiple">
+                <p class="text-center text-primary fw-bold">UpWiFi</p>
+                <li>RPi
+                  <span>
+                    <span class="mdi mdi-access-point-network"></span>
+                    <span id="number-rpi"> x 0</span>
+                  </span>
+                  <span id="price-upwifi" class="calculator__sidebar-price">+ 0 $</span>
+                </li>
+              </ul>
+
+              <ul class="calculator__sidebar-ul" id="plus">
+                <p class="text-center text-primary fw-bold">JMS</p>
+                <!-- <li>Storage <span id="storage-price" class="calculator__sidebar-price">+ 2 $</span></li> -->
+                <li>JMS
+                  <span>
+                    <span class="mdi mdi-comment-processing-outline"></span>
+                    <span id="number-sms"> x 0</span>
+                  </span>
+                  <span id="price-jms" class="calculator__sidebar-price">+ 0 $</span>
+                </li>
+              </ul>
+
+
+            </div>
+
+            <div class="calculator__sidebar-total">
+              <h4>Total / month <span class="calculator__sidebar-price-total">0 $</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="endMenu" class="section section--last">
+  <!-- <img alt="" class="section__img" src="assets/img/img_backgroud_footer.png"> -->
+</div>

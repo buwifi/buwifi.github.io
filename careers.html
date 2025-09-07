@@ -1,0 +1,75 @@
+---
+layout: default
+title: CAREER
+slogan: Start working with BuWiFi
+background: /images/company/network-management-systems.jpg
+cta: Please e-mail your resume in Word/PDF to <a href="mailto:murat@buwifi.com?subject=BuWiFi Job Application">murat@buwifi.com</a>. We appreciate every applicant’s interest, but only those under consideration will be contacted.
+---
+{% include servicesheader.html %}
+
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="section-title mb-4 pb-2">
+                    <h4 class="title mb-4">Join The Team</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Start working with <span
+                            class="text-primary fw-bold">BuWiFi</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                </div>
+            </div>
+
+            {% for item in site.jobs %}
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="card job-box rounded shadow border-0 overflow-hidden">
+                    <div class="border-bottom">
+                        <div class="position-relative">
+                            <img src="{{item.postimage | relative_url}}" class="img-fluid" alt="">
+                            <div class="job-overlay bg-white"></div>
+                        </div>
+                        <div class="mb-0 position"><a href="{{item.url | relative_url}}" class="text-dark h5">{{item.title}}</a>
+                            <ul class="list-unstyled h6 mb-0 text-warning">
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                                <li class="list-inline-item mb-0"><i class="mdi mdi-star"></i></li>
+                            </ul>
+                        </div>
+                        <ul class="list-unstyled head mb-0">
+                            {% if item.employee_type == "Full Time" %}
+                                <li class="badge bg-success rounded-pill">{{item.employee_type}}</li>
+                            {% elsif item.employee_type == "Part Time" %}
+                                <li class="badge bg-warning rounded-pill">{{item.employee_type}}</li>
+                            {% elsif item.employee_type == "Intern" %}
+                                <li class="badge bg-danger rounded-pill">{{item.employee_type}}</li>
+                            {% else %}
+                            {% endif %}
+                        </ul>
+
+                    </div>
+
+                    <div class="card-body content position-relative">
+                        <div class="firm-logo rounded-circle shadow bg-light text-center">
+                            <img src="images/BuWiFi-logo-only-black.svg" class="avatar avatar-md-sm" alt="">
+                        </div>
+                        <div class="company-detail text-center mt-3">
+                            <!-- <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">{{item.company}}</a></h5> -->
+                            <h5 class="mb-0"><a href="#" class="text-dark company-name">{{item.company}}</a></h5>
+                            <p class="text-muted"><a href="#" class="text-muted"><i data-feather="map-pin" class="fea icon-sm"></i> {{item.location}}</a></p>
+                        </div>
+                        <ul class="job-facts list-unstyled">
+                            {% for item in item.keyitems %}
+                                <li class="list-inline-item text-muted"><i data-feather="check" class="fea icon-sm text-success me-1"></i>{{item}}</li>
+                            {% endfor %}
+                        </ul>
+                        <div class="d-grid">
+                            <a href="{{item.url | relative_url}}" class="btn btn-outline-primary">Job Description</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

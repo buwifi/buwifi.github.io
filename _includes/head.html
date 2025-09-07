@@ -1,0 +1,24 @@
+<head>
+    <meta charset="UTF-8" />
+
+    <title>
+        {%if page.title %}
+        {{ page.title }}
+        {% else %}
+        {{ site.title }}
+        {% endif %}
+    </title>
+ 
+    {% include meta.html %}
+    {% include css_core.html %}
+
+    {% feed_meta %}
+    {% seo %}
+    {% if site.google_analytics and jekyll.environment == "production" %}
+        {% include google-analytics.html %}
+    {% endif %}
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+</head>

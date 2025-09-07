@@ -1,0 +1,309 @@
+<section class="section bg-light" id="structure">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title mb-4">
+					<h4 class="title">Structure</h4>
+				</div>
+				<p class="text-muted mb-0">I have tried to follow the standards and modular structure while developing
+					the theme. Following sections are explaining the theme File & Folder, structure, html file struture
+					and plugins.</p>
+
+				<h5 class="mt-5 mb-3"><i class="mdi mdi-chevron-right"></i> File & Folder Structure</h5>
+				<pre class="prettyprint text-muted bg-white mb-0 border p-4 rounded">
+<span class="font-weight-bold h4">Landrick v3.2.0</span>
+|
+├── <b class="text-primary h5"><i class="mdi mdi-file-document"></i> html files</b>
+│   └── Something 149 html pages
+│
+├── <b class="text-primary h5"><i class="mdi mdi-folder-open"></i> css/</b>
+│   └── <b class="text-success"><i class="mdi mdi-folder-open"></i> colors</b>
+│   │   └── <i class="mdi mdi-file-document"></i> default.css
+│   │   └── <i class="mdi mdi-file-document"></i> cyan.css
+│   │   └── <i class="mdi mdi-file-document"></i> green.css
+│   │   └── <i class="mdi mdi-file-document"></i> red.css
+│   │   └── <i class="mdi mdi-file-document"></i> skobleoff.css
+│   │   └── <i class="mdi mdi-file-document"></i> skyblue.css
+│   │   └── <i class="mdi mdi-file-document"></i> slateblue.css
+│   │   └── <i class="mdi mdi-file-document"></i> purple.css
+│   │   └── <i class="mdi mdi-file-document"></i> yellow.css
+│   │
+│   └── <i class="mdi mdi-file-document"></i> bootstrap.css
+│   └── <i class="mdi mdi-file-document"></i> animate.css
+│   └── <i class="mdi mdi-file-document"></i> animation-delay.css
+│   └── <i class="mdi mdi-file-document"></i> aos.css
+│   └── <i class="mdi mdi-file-document"></i> datepicker.min.css
+│   └── <i class="mdi mdi-file-document"></i> flatpickr.min.css
+│   └── <i class="mdi mdi-file-document"></i> tobii.css
+│   └── <i class="mdi mdi-file-document"></i> materialdesignicons.min.css
+│   └── <i class="mdi mdi-file-document"></i> tiny-slider.css
+│   └── <i class="mdi mdi-file-document"></i> swiper.min.css
+│   └── <i class="mdi mdi-file-document"></i> style-dark.css
+│   └── <i class="mdi mdi-file-document"></i> style-dark-rtl.css
+│   └── <i class="mdi mdi-file-document"></i> style-rtl.css
+│   └── <i class="mdi mdi-file-document"></i> style.css
+│
+├── <b class="text-primary h5"><i class="mdi mdi-folder-open"></i> fonts/</b>
+│   └── <i class="mdi mdi-file-document"></i> ajex-loader.gif
+│   └── <i class="mdi mdi-file-document"></i> materialdesignicons-webfont.eot
+│   └── <i class="mdi mdi-file-document"></i> materialdesignicons-webfont.svg
+│   └── <i class="mdi mdi-file-document"></i> materialdesignicons-webfont.ttf
+│   └── <i class="mdi mdi-file-document"></i> materialdesignicons-webfont.woff
+│   └── <i class="mdi mdi-file-document"></i> materialdesignicons-webfont.woff2
+│
+├── <b class="text-primary h5"><i class="mdi mdi-folder-open"></i> images/</b>
+│   └── <i class="mdi mdi-image"></i> All dummy images
+│
+├── <b class="text-primary h5"><i class="mdi mdi-folder-open"></i> scss/</b>
+│   └── <b class="text-success"><i class="mdi mdi-folder-open"></i> dark</b>
+│   │	└── <b class="text-danger"><i class="mdi mdi-folder-open"></i> rtl</b>
+│   │	│	└── <i class="mdi mdi-file-document"></i> _general-rtl.scss
+│   │	│
+│   │	└── <i class="mdi mdi-file-document"></i> _bootstrap-custom.scss
+│   │	└── <i class="mdi mdi-file-document"></i> _components.scss
+│   │	└── <i class="mdi mdi-file-document"></i> _general.scss
+│   │	└── <i class="mdi mdi-file-document"></i> _helper.scss
+│   │	└── <i class="mdi mdi-file-document"></i> _menu.scss
+│   │	└── <i class="mdi mdi-file-document"></i> _variables.scss
+│   │
+│   └── <b class="text-success"><i class="mdi mdi-folder-open"></i> rtl</b>
+│   │	└── <i class="mdi mdi-file-document"></i> _bootstrap-custom-rtl.scss
+│   │	└── <i class="mdi mdi-file-document"></i> _components-rtl.scss
+│   │	└── <i class="mdi mdi-file-document"></i> _general-rtl.scss
+│   │	└── <i class="mdi mdi-file-document"></i> _helper-rtl.scss
+│   │	└── <i class="mdi mdi-file-document"></i> _menu-rtl.scss 
+│   │
+│   └── <i class="mdi mdi-file-document"></i> _blog.scss
+│   └── <i class="mdi mdi-file-document"></i> _bootstrap-custom.scss
+│   └── <i class="mdi mdi-file-document"></i> _components.scss
+│   └── <i class="mdi mdi-file-document"></i> _contact.scss
+│   └── <i class="mdi mdi-file-document"></i> _countdown.scss
+│   └── <i class="mdi mdi-file-document"></i> _cta.scss
+│   └── <i class="mdi mdi-file-document"></i> _features.scss
+│   └── <i class="mdi mdi-file-document"></i> _footer.scss
+│   └── <i class="mdi mdi-file-document"></i> _general.scss
+│   └── <i class="mdi mdi-file-document"></i> _helper.scss
+│   └── <i class="mdi mdi-file-document"></i> _home.scss
+│   └── <i class="mdi mdi-file-document"></i> _menu.scss
+│   └── <i class="mdi mdi-file-document"></i> _price.scss
+│   └── <i class="mdi mdi-file-document"></i> _team.scss
+│   └── <i class="mdi mdi-file-document"></i> _testi.scss
+│   └── <i class="mdi mdi-file-document"></i> _user.scss
+│   └── <i class="mdi mdi-file-document"></i> _variables.scss
+│   └── <i class="mdi mdi-file-document"></i> _work.scss
+│   └── <i class="mdi mdi-file-document"></i> style-dark-rtl.scss
+│   └── <i class="mdi mdi-file-document"></i> style-dark.scss
+│   └── <i class="mdi mdi-file-document"></i> style-rtl.scss
+│   └── <i class="mdi mdi-file-document"></i> style.scss
+│
+├── <b class="text-primary h5"><i class="mdi mdi-folder-open"></i> php/</b>
+│   └── <i class="mdi mdi-file-document"></i> contact.php file
+│
+└── <b class="text-primary h5"><i class="mdi mdi-folder-open"></i> js/</b>
+    └── <i class="mdi mdi-file-document"></i> bootstrap-bundle.min.js
+    └── <i class="mdi mdi-file-document"></i> app.js
+    └── <i class="mdi mdi-file-document"></i> plugins.init.js
+    └── <i class="mdi mdi-file-document"></i> aos.js
+    └── <i class="mdi mdi-file-document"></i> contact.js
+    └── <i class="mdi mdi-file-document"></i> gumshoe.polyfills.min.js
+    └── <i class="mdi mdi-file-document"></i> feather.min.js
+    └── <i class="mdi mdi-file-document"></i> shuffle.min.js
+    └── <i class="mdi mdi-file-document"></i> tobii.js
+    └── <i class="mdi mdi-file-document"></i> tiny-slider.js
+    └── <i class="mdi mdi-file-document"></i> swiper.min.js
+    └── <i class="mdi mdi-file-document"></i> parallax.js
+    └── <i class="mdi mdi-file-document"></i> ckeditor.js </pre>
+
+				<h5 class="mt-5 mb-3"><i class="mdi mdi-chevron-right"></i> HTML Structure</h5>
+				<pre class="code mb-0 mt-4 font-weight-bold p-4 bg-white rounded border text-muted">
+<span class="text-primary">&lt;!doctype html&gt;</span>
+<span class="text-warning">&lt;html lang="en"&gt;</span>
+    <span class="text-danger">&lt;head&gt;</span>
+
+        <span class="text-danger">&lt;meta charset="utf-8" /&gt;</span>
+        <span class="text-danger">&lt;title&gt;</span><span class="text-primary"> Landrick - Saas & Software Landing Page Template </span><span class="text-danger">&lt;/title&gt;</span>
+        <span class="text-danger">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</span>
+        <span class="text-danger">&lt;meta name="description" content="Site description" /&gt;</span>
+        <span class="text-danger">&lt;meta name="keywords" content="Your tags" /&gt;</span>
+
+        <span class="text-muted">&lt;!-- favicon icon --&gt;</span>
+        <span class="text-info">&lt;link rel="shortcut icon" href="images/favicon.ico"&gt;</span>
+
+        <span class="text-muted">&lt;!-- Bootstrap --&gt;</span>
+        <span class="text-info">&lt;link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" /&gt;</span>
+
+        <span class="text-muted">&lt;!-- Main css --&gt;</span>
+        <span class="text-info">&lt;link href="css/style.css" rel="stylesheet" type="text/css" /&gt;</span>
+        <span class="text-info">&lt;link href="css/colors/default.css" rel="stylesheet" id="color-opt" /&gt;</span>
+    
+    <span class="text-danger">&lt;/head&gt;</span>
+
+    <span class="text-danger">&lt;body&gt;</span>
+
+        <span class="text-muted">&lt;!-- Loader Start --&gt;</span>
+        <span class="text-danger">&lt;div id="#--------"&gt;</span>
+            --------
+            --------
+        <span class="text-danger">&lt;/div&gt;</span>
+        <span class="text-muted">&lt;!-- Loader End --&gt;</span>
+
+        <span class="text-muted">&lt;!-- Navbar Start --&gt;</span>
+        <span class="text-danger">&lt;header&gt;</span>
+            <span class="text-danger">&lt;div class="--------"&gt;</span>
+                --------
+                --------
+                --------
+                --------
+            <span class="text-danger">&lt;/div&gt;</span>
+        <span class="text-danger">&lt;/header&gt;</span>
+        <span class="text-muted">&lt;!-- Navbar End --&gt;</span>
+
+        <span class="text-muted">&lt;!-- Hero Start --&gt;</span>
+        <span class="text-danger">&lt;section class="--------"&gt;</span>
+            <span class="text-danger">&lt;div class="--------"&gt;</span>
+                --------
+                --------
+                --------
+                --------
+            <span class="text-danger">&lt;/div&gt;</span>
+        <span class="text-danger">&lt;/section&gt;</span>
+        <span class="text-muted">&lt;!-- Hero End --&gt;</span>
+
+        <span class="text-muted">&lt;!-- Footer Start --&gt;</span>
+        <span class="text-danger">&lt;footer&gt;</span>
+            <span class="text-danger">&lt;div class="--------"&gt;</span>
+                --------
+                --------
+                --------
+                --------
+            <span class="text-danger">&lt;/div&gt;</span>
+        <span class="text-danger">&lt;/footer&gt;</span>
+        <span class="text-muted">&lt;!-- Footer End --&gt;</span>
+
+        <span class="text-muted">&lt;!-- Back To Home Start --&gt;</span>
+        <span class="text-danger">&lt;a href="#" class="--------" id="#--------"&gt;</span>
+            --------
+            --------
+        <span class="text-danger">&lt;/a&gt;</span>
+        <span class="text-muted">&lt;!-- Back To Home End --&gt;</span>
+
+        <span class="text-muted">&lt;!-- Javascript Start --&gt;</span>
+        <span class="text-info">&lt;script src="js/jquery-3.4.1.min.js"&gt;&lt;/script&gt;</span>
+        <span class="text-info">&lt;script src="js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;</span>
+        --------
+        --------
+        --------
+        <span class="text-info">&lt;script src="js/app.js"&gt;&lt;/script&gt;</span>
+        <span class="text-muted">&lt;!-- Javascript End --&gt;</span>
+    <span class="text-danger">&lt;/body&gt;</span>
+<span class="text-warning">&lt;/html&gt;</span>
+                        </pre>
+				<!--end pre code-->
+				<!-- <img src="images/html.png" class="img-fluid rounded border" alt=""> -->
+
+				<h5 class="mt-5 mb-3"><i class="mdi mdi-chevron-right"></i> CSS</h5>
+				<p class="text-muted">Files are explained below: </p>
+
+				<table class="table table-bordered m-0">
+					<thead>
+						<tr>
+							<th style="width: 20%;"><i class="ti-file"></i> File</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<code>bootstrap.min.css</code>
+							</td>
+							<td>
+								Landrick uses the latest bootstrap v5.0.0 Beta 3. The core bootstrap file is being used
+								in all the pages.
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<code>style.css</code>
+							</td>
+							<td>
+								This file is containing all common styles for all the pages.
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<code>style-rtl.css</code>
+							</td>
+							<td>
+								In order to have <b>RTL</b> mode enabled, replace the reference of <code
+									class="font-weight-bold">style.css</code> to <code
+									class="font-weight-bold">style-rtl.css</code>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>style-dark.css</code>
+							</td>
+							<td>
+								In order to have <b>Dark</b> mode enabled, replace the reference of <code
+									class="font-weight-bold">style.css</code> to <code
+									class="font-weight-bold">style-dark.css</code>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>style-dark-rtl.css</code>
+							</td>
+							<td>
+								In order to have <b>Dark RTL</b> mode enabled, replace the reference of <code
+									class="font-weight-bold">style.css</code> to <code
+									class="font-weight-bold">style-dark-rtl.css</code>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h5 class="mt-5 mb-3"><i class="mdi mdi-chevron-right"></i> Javascript</h5>
+				<p class="text-muted">Files are explained below: </p>
+
+				<table class="table table-bordered m-0">
+					<thead>
+						<tr>
+							<th style="width: 20%;"><i class="ti-file"></i> File</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<code>bootstrap.bundle.min.js</code>
+							</td>
+							<td>
+								These files are used at core of the theme.
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>app.js</code>
+							</td>
+							<td>
+								This is a main js file. All important javascript like page loader, menu, sticky menu,
+								menu-toggler, one page menu etc.
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>plugins.init.js</code>
+							</td>
+							<td>
+								All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper
+								slider, aos animation etc.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</section>

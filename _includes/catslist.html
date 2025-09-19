@@ -1,37 +1,36 @@
-<!-- Categories Widget -->
+<!-- Categories -->
 <div class="widget mb-4 pb-2">
-    <h5 class="widget-title">Categories</h5>
-    <div class="tagcloud mt-4">
-        <ul class="list-unstyled mt-4 mb-0 blog-categories">
-            {% for category in site.categories %}
-                {% assign cat_name = category[0] %}
-                <li>
-                    <a href="{{ '/categories/' | append: cat_name | relative_url }}">
-                        {{ cat_name | capitalize }}
-                    </a>
-                    <span class="float-end">{{ category[1].size }}</span>
-                </li>
-            {% endfor %}
-        </ul>
-    </div>
+  <h5 class="widget-title">Categories</h5>
+  <div class="tagcloud mt-4">
+    <ul class="list-unstyled mt-4 mb-0 blog-categories">
+      {% for category in site.categories %}
+        {% assign cat_slug = category[0] | downcase %}
+        <li>
+          <a href="{{ '/categories/' | append: cat_slug | relative_url }}">
+            {{ category[0] | capitalize }}
+          </a>
+          <span class="float-end">{{ category[1].size }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
 
-<!-- Tags Widget -->
+<!-- Tags -->
 <div class="widget mb-4 pb-2">
-    <h5 class="widget-title">Tags</h5>
-    <div class="tagcloud mt-4">
-        <ul class="list-unstyled mt-4 mb-0 blog-categories">
-            {% for tag in site.tags %}
-                {% assign tag_name = tag[0] %}
-                <li>
-                    <a href="{{ '/tags/' | append: tag_name | relative_url }}">
-                        {{ tag_name | capitalize }}
-                    </a>
-                    <span class="float-end">{{ tag[1].size }}</span>
-                </li>
-            {% endfor %}
-        </ul>
-    </div>
+  <h5 class="widget-title">Tags</h5>
+  <div class="tagcloud mt-4">
+    <ul class="list-unstyled mt-4 mb-0 blog-tags">
+      {% for tag in site.tags %}
+        {% assign tag_slug = tag[0] | downcase %}
+        <li>
+          <a href="{{ '/tags/' | append: tag_slug | relative_url }}">
+            {{ tag[0] | capitalize }}
+          </a>
+          <span class="float-end">{{ tag[1].size }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
-
 

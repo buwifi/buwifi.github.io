@@ -33,3 +33,4 @@ jobs:
         publish_dir: ./_site
         user_name: "GitHub Actions"
         user_email: "actions@github.com"
+        force_orphan: true

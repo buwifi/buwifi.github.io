@@ -35,7 +35,7 @@ layout: default
       <div class="row">
         <div class="col-lg-8 col-md-6">
           <div class="row">
-            {% for post in page.paginator.posts %}
+            {% for post in paginator.posts %}
               {% include post-card.html post=post %}
             {% endfor %}
           </div>

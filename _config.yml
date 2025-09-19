@@ -26,23 +26,13 @@ jdlocation: "https://maps.google.com/maps?q=Fenerbah%C3%A7e,%20Yo%C4%9Furt%C3%A7
 og_image: images/company/wifi-shopping-mall.jpg
 
 google_analytics: G-CQBBWRN64F
-
 debug: true
 
 # ----------------------------
 # URL & BASEURL
 # ----------------------------
-# Uncomment production/development
-# PRODUCTION
-# url: "https://BuWiFi.com"
-# baseurl: ""
-# recaptcha2_sitekey: 6Leo-3IiAAAAANO2sQOcwv1-3LrK49YCMr3lYlH3
-
-# DEVELOPMENT
-#url: "http://localhost:4000"
-url: "https://buwifi.github.io"
-baseurl: ""
-# recaptcha2_sitekey: 6LcldnIiAAAAAK1Nl81Hj0cTqpgBlX4YCYp6yfUn
+url: "https://buwifi.github.io"  # or your custom domain
+baseurl: ""                     # leave blank for root
 
 # ----------------------------
 # SASS/SCSS
@@ -56,6 +46,7 @@ sass:
 # MARKDOWN
 # ----------------------------
 markdown: kramdown
+
 # ----------------------------
 # PLUGINS
 # ----------------------------
@@ -63,6 +54,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate-v2
   - jekyll-sass-converter
 
 # ----------------------------
@@ -71,7 +63,7 @@ plugins:
 collections:
   services:
     output: true
-    order: 
+    order:
       - guestwifi.md
       - analytics.md
       - communication.md
@@ -81,7 +73,7 @@ collections:
       - speedtest.md
   industry:
     output: true
-    order: 
+    order:
       - shoppingmall.md
       - retailchain.md
       - restaurant.md
@@ -90,12 +82,38 @@ collections:
       - transportation.md
   jobs:
     output: true
-    order: 
+    order:
       - pythondeveloper.md
       - radiusengineer.md
       - frontend.md
   customers:
     output: true
-    order: 
+    order:
       - teknosa.md
       - emaar.md
+
+# ----------------------------
+# PAGINATION (jekyll-paginate-v2)
+# ----------------------------
+pagination:
+  enabled: true
+  per_page: 4
+  title: ":title - page :num"
+  permalink: "/blog/page:num/"
+  sort_field: "date"
+  sort_reverse: true
+  collection: "posts"
+
+  # Category pagination
+  categories:
+    enabled: true
+    per_page: 4
+    title: "Category: :name - page :num"
+    permalink: "/categories/:name/page:num/"
+
+  # Tag pagination
+  tags:
+    enabled: true
+    per_page: 4
+    title: "Tag: :name - page :num"
+    permalink: "/tags/:name/page:num/"

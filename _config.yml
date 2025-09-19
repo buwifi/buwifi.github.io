@@ -27,7 +27,7 @@ og_image: images/company/wifi-shopping-mall.jpg
 
 google_analytics: G-CQBBWRN64F
 
-debug: false
+debug: true
 
 # ----------------------------
 # URL & BASEURL

@@ -1,0 +1,40 @@
+<div class="row mt-5 justify-content-center">
+    <div class="col-lg-12 text-center">
+        <div class="pages-heading title-heading">
+
+            <!-- Main Title -->
+            {% if paginator %}
+            <h1 class="heading text-light title-dark mb-4">Blog</h1>
+            {% elsif page.url == "/blog/" or page.url == "/blog/index.html" %}
+            <h1 class="heading text-light title-dark mb-4">Blog</h1>
+            {% else %}
+            <h1 class="heading text-light title-dark mb-4">{{ page.title }}</h1>
+            {% endif %}
+
+            <!-- Subtitle -->
+            {% assign subtitle = "" %}
+            {% assign slogan_pages = "CAREER,CASE STUDY,ABOUT US,Job Application,CONTACT US,PRICING,OUR PRIVACY POLICY,Blog" | split: "," %}
+
+            {% if paginator %}
+            {% assign subtitle = "Latest posts from BuWiFi" %}
+            {% elsif page.collection == "services" or page.collection == "jobs" or page.collection == "customers" %}
+            {% assign subtitle = page.slogan %}
+            {% elsif page.collection == "industry" %}
+            {% assign subtitle = page.verticals %}
+            {% elsif page.layout == "post" %}
+            {% assign subtitle = page.subtitle %}
+            {% elsif page.type == "category" %}
+            {% assign subtitle = "Posts in “" | append: page.title | append: "”" %}
+            {% elsif page.type == "tag" %}
+            {% assign subtitle = "Tagged with “" | append: page.title | append: "”" %}
+            {% elsif slogan_pages contains page.title %}
+            {% assign subtitle = page.slogan %}
+            {% endif %}
+
+            {% if subtitle != "" %}
+            <h5 class="para-desc mb-0 mx-auto text-light">{{ subtitle }}</h5>
+            {% endif %}
+
+        </div>
+    </div>
+</div>

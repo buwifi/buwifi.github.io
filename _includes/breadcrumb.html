@@ -1,0 +1,58 @@
+<!-- Breadcrumb -->
+<div class="position-breadcrumb">
+  <nav aria-label="breadcrumb" class="d-inline-block">
+    <ul class="breadcrumb bg-white rounded shadow mb-0 px-4 py-2">
+      <li class="breadcrumb-item"><a href="{{ '/' | absolute_url }}">Home</a></li>
+
+      {% if page.layout == "post" %}
+        <!-- Single blog post -->
+        <li class="breadcrumb-item"><a href="{{ '/blog/' | absolute_url }}">Blog</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+
+      {% elsif page.type == "category" %}
+        <!-- Category listing -->
+        <li class="breadcrumb-item"><a href="{{ '/blog/' | absolute_url }}">Categories</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+        {% if page.paginator and page.paginator.page > 1 %}
+          <li class="breadcrumb-item active" aria-current="page">Page {{ page.paginator.page }}</li>
+        {% endif %}
+
+      {% elsif page.type == "tag" %}
+        <!-- Tag listing -->
+        <li class="breadcrumb-item"><a href="{{ '/blog/' | absolute_url }}">Tags</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+        {% if page.paginator and page.paginator.page > 1 %}
+          <li class="breadcrumb-item active" aria-current="page">Page {{ page.paginator.page }}</li>
+        {% endif %}
+
+      {% elsif page.url == "/categories/" or page.url == "/tags/" %}
+        <!-- Top-level categories/tags index → Blog -->
+        <li class="breadcrumb-item"><a href="{{ '/blog/' | absolute_url }}">Blog</a></li>
+
+      {% elsif paginator and paginator.page > 1 %}
+        <!-- Blog main pagination -->
+        <li class="breadcrumb-item"><a href="{{ '/blog/' | absolute_url }}">Blog</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Page {{ paginator.page }}</li>
+
+      {% elsif page.url == "/blog/" or page.url == "/blog/index.html" %}
+        <!-- Blog main page -->
+        <li class="breadcrumb-item active" aria-current="page">Blog</li>
+
+      {% else %}
+        <!-- Fallback generic breadcrumbs -->
+        {% assign crumbs = page.url | split:'/' | reject:'' %}
+        {% assign path = "" %}
+        {% for crumb in crumbs offset:1 %}
+          {% assign path = path | append:'/' | append:crumb %}
+          {% if forloop.last %}
+            <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+          {% else %}
+            <li class="breadcrumb-item">
+              <a href="{{ path | absolute_url }}">{{ crumb | replace:'-',' ' | capitalize }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </ul>
+  </nav>
+</div>

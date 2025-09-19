@@ -1,25 +1,19 @@
 ---
 layout: services
-title: Blog
-background: images/blurcustomer.jpg
-slogan: Learn more about how to leverage your WiFi network
-pagination:
-  enabled: true
-  collection: posts
+slogan: "Posts in {{ page.name }}"
 ---
-
 <section class="section">
   <div class="container">
     <div class="row">
+      <!-- Category Posts -->
       <div class="col-lg-8 col-md-6">
         <div class="row">
-          {% for post in paginator.posts %}
+          {% for post in page.paginator.posts %}
             {% include post-card.html post=post %}
           {% endfor %}
         </div>
 
-        <!-- Pagination -->
-        {% include pagination.html %}
+        {% include pagination_cat.html %}
       </div>
 
       <!-- Sidebar -->

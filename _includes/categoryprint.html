@@ -1,8 +1,8 @@
 {% if post %}
-{% assign categories = post.categories %}
+    {% assign categories = post.categories %}
 {% else %}
-{% assign categories = page.categories %}
+    {% assign categories = page.categories %}
 {% endif %}
 {% for category in categories %}
-<a href="{{site.baseurl}}/category/{{category|slugize}}" class="rounded">{{category}}</a>
+    <a href="{{site.baseurl}}/category/{{category|slugize}}" class="rounded">{{category}}</a>
 {% endfor %}

@@ -6,7 +6,7 @@ background: images/company/shoppingmallbackground.png
 heroimage: images/company/wifi-shopping-mall.jpg
 thumbnail: 
 share: 
-category: [GuestWiFi]
+categories: [GuestWiFi]
 tags: [GuestWiFi]
 alt: Blog Post Thumbnail 1
 author: Murat Eren

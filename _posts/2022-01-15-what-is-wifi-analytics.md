@@ -6,7 +6,7 @@ background: images/company/shoppingmallbackground.png
 heroimage: images/company/blurcustomer.jpg
 thumbnail: 
 share: 
-category: [Analytics]
+categories: [Analytics]
 tags: [Data]
 alt: Blog Post Thumbnail 1
 author: Murat Eren

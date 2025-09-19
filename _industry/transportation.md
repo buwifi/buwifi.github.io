@@ -9,7 +9,6 @@ svg: images/icon_jd/industries/airport.svg
 caseSelected: [guestwifi, kyc, understand, crmdata, lbs, roi, lease, scratch, survey, airportpersonas]
 benefitsSelected: [metrics, guestwifi, data]
 
-
 intro:
     slogan: AIRPORTS
     header: Use your existing wireless infrastructure to analyse and understand the end-to-end passenger journey.

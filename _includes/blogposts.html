@@ -1,6 +1,15 @@
-{% for post in paginator.posts %}
+{% comment %}
+Loop through paginated posts and include post-card.html for each.
+This works for main index and category pages with jekyll-paginate-v2.
+{% endcomment %}
 
-    {% include bloglist.html %}
-
-{% endfor %}
+{% if paginator.posts %}
+  {% for post in paginator.posts %}
+    {% include post-card.html post=post %}
+  {% endfor %}
+{% else %}
+  <div class="col-12">
+    <p>No posts found.</p>
+  </div>
+{% endif %}
 

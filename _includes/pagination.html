@@ -1,74 +1,70 @@
-<!-- PAGINATION START -->
-<div class="col-12">
-    {% if paginator.total_pages > 1 %}
-    {% assign first_page_path = site.paginate_path | replace: 'page:num', '' | replace: '//', '/' | relative_url %}
-    <ul class="pagination justify-content-center mb-0">
-        {% comment %} Link for previous page {% endcomment %}
-        {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-        <li class="page-item"><a class="page-link" href="{{ first_page_path }}" aria-label="Previous">Prev</a></li>
-        {% else %}
-        <li class="page-item"><a class="page-link"
-                href="{{ site.paginate_path | replace: ':num', paginator.previous_page | replace: '//', '/' | relative_url }}"
-                aria-label="Previous">Prev</a></li>
-        {% endif %}
-        {% else %}
-        <li class="page-item"><a class="page-link" href="#" aria-label="Previous">Prev</a></li>
-        {% endif %}
-        {% comment %} First page {% endcomment %}
-        {% if paginator.page == 1 %}
-        <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
-        {% else %}
-        <li class="page-item"><a class="page-link" href="{{ first_page_path }}">1</a></li>
-        {% endif %}
+{% if paginator.total_pages > 1 %}
+<nav class="mt-4">
+  <ul class="pagination justify-content-center mb-0">
 
-        {% assign page_start = 2 %}
-        {% if paginator.page > 4 %}
-        {% assign page_start = paginator.page | minus: 2 %}
-        {% comment %} Ellipsis for truncated links {% endcomment %}
-        <li class="page-item"><a class="page-link" href="#">&hellip;</a></li>
-        {% endif %}
+    <li class="page-item {% unless paginator.previous_page %}disabled{% endunless %}">
+      {% if paginator.previous_page %}
+        <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">« Prev</a>
+      {% else %}
+        <span class="page-link">« Prev</span>
+      {% endif %}
+    </li>
 
-        {% assign page_end = paginator.total_pages | minus: 1 %}
-        {% assign pages_to_end = paginator.total_pages | minus: paginator.page %}
-        {% if pages_to_end > 4 %}
-        {% assign page_end = paginator.page | plus: 2 %}
-        {% endif %}
-        {% for index in (page_start..page_end) %}
-        {% if index == paginator.page %}
-        <li class="page-item active"><a class="page-link"
-                href="{{ site.paginate_path | replace: ':num', paginator.previous_page | replace: '//', '/' | relative_url }}"
-                aria-label="Previous">{{ index }}</a></li>
-        {% else %}
-        {% comment %} Distance from current page and this link {% endcomment %}
-        {% assign dist = paginator.page | minus: index %}
-        {% if dist < 0 %} {% comment %} Distance must be a positive value {% endcomment %}
-        {% assign dist=0 | minus: dist %} {% endif %}
-        <li class="page-item"><a class="page-link"
-                href="{{ site.paginate_path | replace: ':num', index | relative_url }}">{{ index }}</a></li>
-        {% endif %}
+    {% assign current_page = paginator.page %}
+    {% assign total_pages = paginator.total_pages %}
+
+    {% if total_pages <= 7 %}
+      {% for page_num in (1..total_pages) %}
+        <li class="page-item {% if page_num == current_page %}active{% endif %}">
+          {% if page_num == 1 %}
+            <a class="page-link" href="{{ paginator.first_page_path | relative_url }}">{{ page_num }}</a>
+          {% else %}
+            <a class="page-link" href="{{ site.paginate_path | replace: ':num', page_num | relative_url }}">{{ page_num }}</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    {% else %}
+      {% if current_page <= 4 %}
+        {% for page_num in (1..5) %}
+          <li class="page-item {% if page_num == current_page %}active{% endif %}">
+            {% if page_num == 1 %}
+              <a class="page-link" href="{{ paginator.first_page_path | relative_url }}">{{ page_num }}</a>
+            {% else %}
+              <a class="page-link" href="{{ site.paginate_path | replace: ':num', page_num | relative_url }}">{{ page_num }}</a>
+            {% endif %}
+          </li>
+        {% endfor %}
+        <li class="page-item disabled"><span class="page-link">…</span></li>
+        <li class="page-item"><a class="page-link" href="{{ paginator.last_page_path | relative_url }}">{{ total_pages }}</a></li>
+
+      {% elsif current_page >= total_pages | minus: 3 %}
+        <li class="page-item"><a class="page-link" href="{{ paginator.first_page_path | relative_url }}">1</a></li>
+        <li class="page-item disabled"><span class="page-link">…</span></li>
+        {% for page_num in (total_pages | minus: 4..total_pages) %}
+          <li class="page-item {% if page_num == current_page %}active{% endif %}">
+            <a class="page-link" href="{{ site.paginate_path | replace: ':num', page_num | relative_url }}">{{ page_num }}</a>
+          </li>
         {% endfor %}
 
-        {% comment %} Ellipsis for truncated links {% endcomment %}
-        {% if pages_to_end > 3 %}
-        <li class="page-item"><a class="page-link" href="#">&hellip;</a></li>
-        {% endif %}
-        {% if paginator.page == paginator.total_pages %}
-        <li class="page-item active"><a class="page-link" href="#">{{ paginator.page }}</a></li>
-        {% else %}
-        <li class="page-item"><a class="page-link"
-                href="{{ site.paginate_path | replace: ':num', paginator.total_pages | replace: '//', '/' | relative_url }}">
-                {{ paginator.total_pages }}</a></li>
-        {% endif %}
-
-        {% comment %} Link next page {% endcomment %}
-        {% if paginator.next_page %}
-        <li class="page-item"><a class="page-link"
-                href="{{ site.paginate_path | replace: ':num', paginator.next_page | replace: '//', '/' | relative_url }}"
-                aria-label="Next">Next</a></li>
-        {% else %}
-        <li class="page-item"><a class="page-link" href="#" aria-label="Next">Next</a></li>
-        {% endif %}
-    </ul>
+      {% else %}
+        <li class="page-item"><a class="page-link" href="{{ paginator.first_page_path | relative_url }}">1</a></li>
+        <li class="page-item disabled"><span class="page-link">…</span></li>
+        <li class="page-item"><a class="page-link" href="{{ site.paginate_path | replace: ':num', current_page | minus: 1 | relative_url }}">{{ current_page | minus: 1 }}</a></li>
+        <li class="page-item active"><span class="page-link">{{ current_page }}</span></li>
+        <li class="page-item"><a class="page-link" href="{{ site.paginate_path | replace: ':num', current_page | plus: 1 | relative_url }}">{{ current_page | plus: 1 }}</a></li>
+        <li class="page-item disabled"><span class="page-link">…</span></li>
+        <li class="page-item"><a class="page-link" href="{{ paginator.last_page_path | relative_url }}">{{ total_pages }}</a></li>
+      {% endif %}
     {% endif %}
-</div>
+
+    <li class="page-item {% unless paginator.next_page %}disabled{% endunless %}">
+      {% if paginator.next_page %}
+        <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">Next »</a>
+      {% else %}
+        <span class="page-link">Next »</span>
+      {% endif %}
+    </li>
+
+  </ul>
+</nav>
+{% endif %}

@@ -3,18 +3,40 @@ layout: default
 ---
 {% include servicesheader.html %}
 
-{% if page.collection == 'services' %}
-    {% include whatisit.html %}
-    {% include rtlservices.html %}
-{% elsif page.collection == 'industry' %}
-    {% include whatisit.html %}
-    {% include rtlindustry2.html %}
-{% elsif page.title == 'BUWIFI BLOG' %}
-    {{content}}
-{% elsif page.layout == 'post' %}
-    {{content}}
-{% else %}
-    <h1>NEW COLLECTION</h1>
+{% if site.debug %}
+<h3>DEBUG: services.html</h3>
+<ul>
+  <li>page.path: {{ page.path }}</li>
+  <li>page.url: {{ page.url }}</li>
+  <li>page.collection: {{ page.collection }}</li>
+  <li>page.layout: {{ page.layout }}</li>
+  <li>Type: {{ page.type }}</li>
+  <li>page.title: {{ page.title }}</li>
+  <li>page.previous: {{ page.previous }}</li>
+  <li>page.next: {{ page.next }}</li>
+  <li>page.pagination: {{ page.pagination }}</li>
+  <li>paginator? {% if paginator %}
+           YES (page {{ paginator.page }} of {{ paginator.total_pages }}) — showing {{ paginator.posts | size }} posts
+           {% else %}NO{% endif %}</li>
+</ul>
 {% endif %}
 
+{% if page.collection == "services" %}
+  {% include whatisit.html %}
+  {% include rtlservices.html %}
 
+{% elsif page.collection == "industry" %}
+  {% include whatisit.html %}
+  {% include rtlindustry2.html %}
+
+{% elsif page.layout == "post" 
+      or page.layout == "services"
+      or page.type == "category"
+      or page.type == "tag"
+      or paginator
+      or page.title contains "Blog" %}
+  {{ content }}
+
+{% else %}
+  <h1>services.html NEW COLLECTION</h1>
+{% endif %}

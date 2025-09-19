@@ -6,7 +6,7 @@ background: images/company/shoppingmallbackground.png
 heroimage: images/company/kazikazanekran.jpg
 thumbnail: 
 share: 
-category: [Engage]
+categories: [Marketing]
 tags: [Gamification]
 alt: Blog Post Thumbnail 1
 author: Murat Eren

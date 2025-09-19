@@ -7,7 +7,7 @@ heroimage: images/company/mobile-shopping.jpg
 image: images/company/mobile-shopping.jpg
 thumbnail: 
 share: 
-category: [Engage]
+categories: [Marketing]
 tags: [Marketing, Analytics, GuestWiFi]
 alt: Blog Post Thumbnail 1
 author: Murat Eren

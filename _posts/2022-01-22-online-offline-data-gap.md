@@ -6,7 +6,7 @@ background: images/company/shoppingmallbackground.png
 heroimage: images/company/offline-online.jpg
 thumbnail: 
 share: 
-category: [Analytics]
+categories: [Analytics]
 tags: [Data, Omnichannel]
 alt: Blog Post Thumbnail 1
 author: Murat Eren

@@ -9,7 +9,6 @@ svg: images/icon_jd/industries/stadium.svg
 caseSelected: [guestwifi, kyc, understand, crmdata, lbs, roi, lease, scratch, survey, stadiumpersonas, conferencepersonas]
 benefitsSelected: [guestwifi, crm, data]
 
-
 intro:
     slogan: VENUES
     header: BuWiFi gives you the right tools to increase sponsorship revenue by allowing your sponsors and partners to target the right audiences at the right time.

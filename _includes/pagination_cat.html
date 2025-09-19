@@ -1,0 +1,55 @@
+{% if page.paginator and page.paginator.total_pages > 1 %}
+<nav class="mt-4">
+  <ul class="pagination justify-content-center mb-0">
+
+    <!-- Previous Page -->
+    <li class="page-item {% unless page.paginator.previous_page %}disabled{% endunless %}">
+      {% if page.paginator.previous_page %}
+        {% assign prev_page_num = page.paginator.previous_page %}
+        {% if prev_page_num == 1 %}
+          {% assign prev_url = "/categories/" | append: page.category | relative_url %}
+        {% else %}
+          {% assign prev_url = "/categories/" | append: page.category | append: "/page" | append: prev_page_num | relative_url %}
+        {% endif %}
+        <a class="page-link" href="{{ prev_url }}">« Prev</a>
+      {% else %}
+        <span class="page-link">« Prev</span>
+      {% endif %}
+    </li>
+
+    <!-- Page Numbers -->
+    {% assign total_pages = page.paginator.total_pages %}
+    {% assign current_page = page.paginator.page %}
+    {% for page_num in (1..total_pages) %}
+      {% if page_num == 1 %}
+        {% assign page_url = "/categories/" | append: page.category | relative_url %}
+      {% else %}
+        {% assign page_url = "/categories/" | append: page.category | append: "/page" | append: page_num | relative_url %}
+      {% endif %}
+      <li class="page-item {% if page_num == current_page %}active{% endif %}">
+        {% if page_num == current_page %}
+          <span class="page-link">{{ page_num }}</span>
+        {% else %}
+          <a class="page-link" href="{{ page_url }}">{{ page_num }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+
+    <!-- Next Page -->
+    <li class="page-item {% unless page.paginator.next_page %}disabled{% endunless %}">
+      {% if page.paginator.next_page %}
+        {% assign next_page_num = page.paginator.next_page %}
+        {% if next_page_num == 1 %}
+          {% assign next_url = "/categories/" | append: page.category | relative_url %}
+        {% else %}
+          {% assign next_url = "/categories/" | append: page.category | append: "/page" | append: next_page_num | relative_url %}
+        {% endif %}
+        <a class="page-link" href="{{ next_url }}">Next »</a>
+      {% else %}
+        <span class="page-link">Next »</span>
+      {% endif %}
+    </li>
+
+  </ul>
+</nav>
+{% endif %}

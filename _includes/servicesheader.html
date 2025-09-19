@@ -1,67 +1,142 @@
+{% assign bg = page.background %}
+
+{% if page.type == "category" %}
+  {% assign first_post = site.categories[page.title] | first %}
+{% elsif page.type == "tag" %}
+  {% assign first_post = site.tags[page.title] | first %}
+{% endif %}
+
+{% if first_post and first_post.heroimage %}
+  {% assign bg = first_post.heroimage %}
+{% endif %}
+
+{% assign bg = bg | default: "/images/blurcustomer.jpg" %}
+
 <section class="bg-half-170 d-table w-100"
-            style="background: url('{{ page.background | relative_url }}') center center;">
-    <div class="bg-overlay"></div>
-    <div class="container">
+         style="background: url('{{ bg | relative_url }}') center center / cover no-repeat;">
+  <div class="bg-overlay"></div>
+  <div class="container">
 
-        <div class="row mt-5 justify-content-center">
-            <div class="col-lg-12 text-center">
-                <div class="pages-heading title-heading">
-                    <!-- <h1 class="title text-white title-dark">{{ page.title }}</h1> -->
-                    <!-- <h1 class="display-4 title-dark fw-bold text-white mb-3">{{ page.title }}</h1> -->
+    <div class="row mt-5 justify-content-center">
+      <div class="col-lg-12 text-center">
+        <div class="pages-heading title-heading">
 
-                    <!-- <h4 class="text-light para-dark para-desc mx-auto">{{ page.slogan }}</h4> -->
-                    <!-- <h4 class="text-light heading mx-auto">{{ page.slogan }}</h4> -->
+          <!-- Main Title -->
+          {% if paginator %}
+            <h1 class="heading text-light title-dark mb-4">Blog</h1>
+          {% elsif page.url == "/blog/" or page.url == "/blog/index.html" %}
+            <h1 class="heading text-light title-dark mb-4">Blog</h1>
+          {% else %}
+            <h1 class="heading text-light title-dark mb-4">{{ page.title }}</h1>
+          {% endif %}
 
-                    <h1 class="heading text-light title-dark mb-4">{{page.title}}</h1>
+          <!-- Subtitle -->
+          {% assign subtitle = "" %}
+          {% assign slogan_pages = "CAREER,CASE STUDY,ABOUT US,Job Application,CONTACT US,PRICING,OUR PRIVACY POLICY,Blog" | split: "," %}
 
-                    {% if page.collection == 'services' %}<h5 class="para-desc mb-0 mx-auto text-light">{{page.slogan}}</h5>
-                    {% elsif page.collection == 'industry' %}<h5 class="para-desc mb-0 mx-auto text-light">{{page.verticals}}</h5>
-                    {% elsif page.collection == 'jobs' %}<h5 class="para-desc mb-0 mx-auto text-light">{{page.slogan}}</h5>
-                    {% elsif page.collection == 'customers' %}<h5 class="para-desc mb-0 mx-auto text-light">{{page.slogan}}</h5>
-                    {% elsif page.title == 'CAREER' %}<h5 class="para-desc mb-0 mx-auto text-light">{{page.slogan}}</h5>
-                    {% elsif page.title == 'CASE STUDY' %}<h5 class="para-desc mb-0 mx-auto text-light">{{page.slogan}}</h5>
-                    {% elsif page.title == 'ABOUT US' %}<h5 class="para-desc mb-0 mx-auto text-light">{{page.slogan}}</h5>
-                    {% elsif page.title == 'Job Application' %}<h5 class="para-desc mb-0 mx-auto text-light">{{page.slogan}}</h5>
-                    {% elsif page.title == 'CONTACT US' %}<h5 class="para-desc mb-0 mx-auto text-light">{{page.slogan}}</h5>
-                    {% elsif page.title == 'PRICING' %}<h5 class="para-desc mb-0 mx-auto text-light">{{page.slogan}}</h5>
-                    {% elsif page.title == 'OUR PRIVACY POLICY' %}<h5 class="para-desc mb-0 mx-auto text-light">{{page.slogan}}</h5>
-                    {% elsif page.title == 'BUWIFI BLOG' %}<h5 class="para-desc mb-0 mx-auto text-light">{{page.slogan}}</h5>
-                    {% elsif page.layout == 'post' %}<h5 class="para-desc mb-0 mx-auto text-light">{{page.subtitle}}</h5>
-                    {% else %}<h1>NEW COLLECTION</h1>
-                    {% endif %}
-                </div>
-            </div>
-            <!--end col-->
+          {% if paginator %}
+            {% assign subtitle = "Latest posts from BuWiFi" %}
+          {% elsif page.collection == "services" or page.collection == "jobs" or page.collection == "customers" %}
+            {% assign subtitle = page.slogan %}
+          {% elsif page.collection == "industry" %}
+            {% assign subtitle = page.verticals %}
+          {% elsif page.layout == "post" %}
+            {% assign subtitle = page.subtitle %}
+          {% elsif page.type == "category" %}
+            {% assign subtitle = "Posts in “" | append: page.title | append: "”" %}
+          {% elsif page.type == "tag" %}
+            {% assign subtitle = "Tagged with “" | append: page.title | append: "”" %}
+          {% elsif slogan_pages contains page.title %}
+            {% assign subtitle = page.slogan %}
+          {% endif %}
+
+          {% if subtitle != "" %}
+            <h5 class="para-desc mb-0 mx-auto text-light">{{ subtitle }}</h5>
+          {% endif %}
+
         </div>
-        <!--end row-->
-        <div class="position-breadcrumb">
-            <nav aria-label="breadcrumb" class="d-inline-block">
-                <ul class="breadcrumb bg-white rounded shadow mb-0 px-4 py-2">
-                    {% if page.layout == 'post' %}
-                        <li class="breadcrumb-item"><a href="{{ site.url }}{{ site.baseurl }}">Home</a></li>
-                        <li class="breadcrumb-item"><a href="{{ site.url }}{{ site.baseurl }}/blog/">Blog</a></li>
-                        <li class="breadcrumb-item active" aria-current="page"><a href="#">Blog Post</a></li>
-                    {% else %}
-                        {% assign crumbs = page.url | split: '/' %}
-                        <li class="breadcrumb-item"><a href="{{ site.url }}{{ site.baseurl }}">Home</a></li>
-                            {% for crumb in crumbs offset: 1 %}
-                                {% if forloop.last %}
-                                    <li class="breadcrumb-item active" aria-current="page"><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
-                                {% else %}
-                                    <li class="breadcrumb-item">
-                                        <a href="
-                                            {{ site.url }}{{ site.baseurl }}
-                                            {% assign crumb_limit = forloop.index | plus: 1 %}
-                                            {% for crumb in crumbs limit: crumb_limit %}
-                                                {{ crumb | absolute | append: '/' }}
-                                            {% endfor %}"
-                                            >{{ crumb | replace:'-',' ' }}</a></li>
-                                {% endif %}
-                            {% endfor %}
-                    {% endif %}
-                </ul>
-            </nav>
-        </div>
+      </div>
     </div>
+
+
+
+<!-- Breadcrumb -->
+<div class="position-breadcrumb">
+  <nav aria-label="breadcrumb" class="d-inline-block">
+    <ul class="breadcrumb bg-white rounded shadow mb-0 px-4 py-2">
+      <li class="breadcrumb-item"><a href="{{ '/' | absolute_url }}">Home</a></li>
+
+      {% if page.layout == "post" %}
+        <li class="breadcrumb-item"><a href="{{ '/blog/' | absolute_url }}">Blog</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+
+      {% elsif page.category %}
+        <li class="breadcrumb-item"><a href="{{ '/blog/' | absolute_url }}">Categories</a></li>
+        <li class="breadcrumb-item">
+          <a href="{{ '/categories/' | append: page.category | relative_url }}">
+            {{ page.category | capitalize }}
+          </a>
+        </li>
+        {% if page.paginator and page.paginator.page > 1 %}
+          <li class="breadcrumb-item active" aria-current="page">Page {{ page.paginator.page }}</li>
+        {% endif %}
+
+      {% elsif page.tag %}
+        <li class="breadcrumb-item"><a href="{{ '/blog/' | absolute_url }}">Tags</a></li>
+        <li class="breadcrumb-item">
+          <a href="{{ '/tags/' | append: page.tag | relative_url }}">
+            {{ page.tag | capitalize }}
+          </a>
+        </li>
+        {% if page.paginator and page.paginator.page > 1 %}
+          <li class="breadcrumb-item active" aria-current="page">Page {{ page.paginator.page }}</li>
+        {% endif %}
+
+      {% elsif page.url contains '/categories/' or page.url contains '/tags/' %}
+        <!-- Top-level /categories/ or /tags/ pages go to blog -->
+        <li class="breadcrumb-item active" aria-current="page">
+          <a href="{{ '/blog/' | absolute_url }}">Blog</a>
+        </li>
+
+      {% elsif paginator and paginator.page > 1 %}
+        <li class="breadcrumb-item"><a href="{{ '/blog/' | absolute_url }}">Blog</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Page {{ paginator.page }}</li>
+
+      {% elsif page.url == "/blog/" or page.url == "/blog/index.html" %}
+        <li class="breadcrumb-item active" aria-current="page">Blog</li>
+
+      {% else %}
+        {% assign crumbs = page.url | split:'/' | reject:'' %}
+        {% assign path = "" %}
+        {% for crumb in crumbs offset:1 %}
+          {% assign path = path | append:'/' | append:crumb %}
+          {% if forloop.last %}
+            <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+          {% else %}
+            {% case crumb %}
+              {% when "services" %}
+                <li class="breadcrumb-item">
+                  <a href="{{ '/services/guestwifi/' | absolute_url }}">Services</a>
+                </li>
+              {% when "industry" %}
+                <li class="breadcrumb-item">
+                  <a href="{{ '/industry/shoppingmall/' | absolute_url }}">Industry</a>
+                </li>
+              {% else %}
+                <li class="breadcrumb-item">
+                  <a href="{{ path | absolute_url }}">{{ crumb | replace:'-',' ' | capitalize }}</a>
+                </li>
+            {% endcase %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </ul>
+  </nav>
+</div>
+
+
+
+  </div>
 </section>
+
 {% include headercurve.html %}

@@ -1,14 +1,18 @@
-title: >
-      BuWiFi: WiFi Marketing Solution
-description: BuWiFi - WiFi Marketing Solution. Understand Your Customers and Engage Better. Transform your guest WiFi into a powerful WiFi marketing tool
+# ----------------------------
+# SITE META
+# ----------------------------
+title: "BuWiFi: WiFi Marketing Solution"
+description: >
+  BuWiFi - WiFi Marketing Solution. Understand Your Customers and Engage Better.
+  Transform your guest WiFi into a powerful WiFi marketing tool.
 web: https://buwifi.com
 keywords: Guest WiFi, Analytics, Personalization, WiFi Marketing, CDP, CRM
 name: BuWiFi
 product_name: BuWiFi
 author: Murat Eren
 email: info@buwifi.com
-address: Yoğurtçubaşı Sok. No 18/1 D13<br>Kadıköy, 34726, İstanbul, Türkiye
-phone: +90 (532) 170 3160
+address: "Yoğurtçubaşı Sok. No 18/1 D13, Kadıköy, 34726, İstanbul, Türkiye"
+phone: "+90 (532) 170 3160"
 logo: images/BuWiFi-logo-black.svg
 logowhite: images/BuWiFi-logo-white.svg
 favicon: images/BuWiFi.ico
@@ -17,109 +21,69 @@ twitter: "https://www.twitter.com/buwifi/"
 twitter_username: buwifi
 linkedin: "https://www.linkedin.com/company/buwifi/"
 instagram: "https://www.instagram.com/buwifi/"
-telephone: +905321703160
-jdlocation: https://maps.google.com/maps?q=Fenerbah%C3%A7e,%20Yo%C4%9Furt%C3%A7uba%C5%9F%C4%B1%20Sokak%2018-1,%20Kad%C4%B1k%C3%B6y/%C4%B0stanbul&t=&z=13&ie=UTF8&iwloc=&output=embed
+telephone: "+905321703160"
+jdlocation: "https://maps.google.com/maps?q=Fenerbah%C3%A7e,%20Yo%C4%9Furt%C3%A7uba%C5%9F%C4%B1%20Sokak%2018-1,%20Kad%C4%B1k%C3%B6y/%C4%B0stanbul&t=&z=13&ie=UTF8&iwloc=&output=embed"
 og_image: images/company/wifi-shopping-mall.jpg
 
-google_analytics: G-CQBBWRN64F #Tracking ID
+google_analytics: G-CQBBWRN64F
 
-#MEASUREMENT ID G-CQBBWRN64F
-#STREAM ID 3461594235
+debug: false
 
-#author:
-#  name: Murat Eren
-#  twitter: erenm
-#  image: images/company/murat.png
-#twitter:
-#  username: erenm
-#  card: images/company/murat.png
-#social:
-#  name: Murat Eren
-#  links:
-#    - https://www.linkedin.com/company/BuWiFi/
-#    - https://www.twitter.com/BuWiFi/
-#    - https://www.instagram.com/buwifi/
-
-############################################################
-# 1. Uncomment Prod or Dev
-# 2. verify-google-recaptcha.php de prod or dev seç
-
+# ----------------------------
+# URL & BASEURL
+# ----------------------------
+# Uncomment production/development
 # PRODUCTION
-#url    : "https://BuWiFi.com"
-#baseurl: ""
-#recaptcha2_sitekey: 6Leo-3IiAAAAANO2sQOcwv1-3LrK49YCMr3lYlH3
-
-# DEVELOPMEN
-url    : "https://buwifi.github.io"
-baseurl: ""
-#recaptcha2_sitekey: 6LcldnIiAAAAAK1Nl81Hj0cTqpgBlX4YCYp6yfUn
-############################################################
-
-
-#exclude:
-#  - images
-#keep_files:
-#  - images
-#  - php
-#  - js
-#  - scss
-
-############################################################
-
-# BASEURL usage
-# the root folder of your Jekyll site.
-# The site’s base URL is only to be used when the resulting site lives at a subpath of the domain.
-# Otherwise, the subpath should be nil, not /.
-# Example 1: If your site lives at example.com/blog, you should have a baseurl of /blog.
-# Example 2: If your site lives at example.com, you should not set a baseurl. Not even /.
-# <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-# <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-
-# https://username.github.io/myProject
-# http://127.0.0.1:4000/myProject/
-# baseurl to /myProject
-
-# http://localhost
-# url: https://localhost
+# url: "https://BuWiFi.com"
 # baseurl: ""
+# recaptcha2_sitekey: 6Leo-3IiAAAAANO2sQOcwv1-3LrK49YCMr3lYlH3
 
-# https://username.github.io/myProject.
-# url: https://username.github.io
-# baseurl: /myProject
+# DEVELOPMENT
+url: "http://localhost:4000"
+baseurl: ""
+# recaptcha2_sitekey: 6LcldnIiAAAAAK1Nl81Hj0cTqpgBlX4YCYp6yfUn
 
-
-
-
-
+# ----------------------------
+# SASS/SCSS
+# ----------------------------
 sass:
-  style_dir:  _scss
-  sass_dir:   _scss
-  style:      :expanded 
+  style_dir: _scss
+  sass_dir: _scss
+  style: :expanded
 
-#keep_files: [php]
-
-# Build settings
+# ----------------------------
+# MARKDOWN
+# ----------------------------
 markdown: kramdown
-
+# ----------------------------
+# PLUGINS
+# ----------------------------
 plugins:
-  - jekyll-paginate
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-seo-tag  
+  - jekyll-seo-tag
   - jekyll-sass-converter
+  - jekyll-paginate-v2
+  - jekyll-archives
 
-paginate: 6
-paginate_path: /blog/page:num/
+# ----------------------------
+# Main blog pagination
+# ----------------------------
+paginate_path: "/blog/page:num/"
+pagination:
+  enabled: true
+  per_page: 4
+  sort_field: 'date'
+  sort_reverse: true
 
-#permalink: /:categories/:title/
+# ----------------------------
+# Jekyll Archives for categories & tags
+# ----------------------------
 
+# ----------------------------
+# COLLECTIONS
+# ----------------------------
 collections:
-  tags:
-    output: true
-    permalink: tags/:path/
-  category:
-    output: true
-    permalink: category/:path/
   services:
     output: true
     order: 
@@ -150,4 +114,3 @@ collections:
     order: 
       - teknosa.md
       - emaar.md
-

@@ -6,7 +6,7 @@ background: images/company/benefits-analytics.jpg
 heroimage: images/company/bwireless6.png
 thumbnail: 
 share: 
-category: [Analytics]
+categories: [Analytics]
 tags: [Data]
 alt: Blog Post Thumbnail 1
 author: Murat Eren

@@ -39,8 +39,8 @@ debug: true
 # recaptcha2_sitekey: 6Leo-3IiAAAAANO2sQOcwv1-3LrK49YCMr3lYlH3
 
 # DEVELOPMENT
-#url: "http://localhost:4000"
-url: "https://buwifi.github.io"
+url: "http://localhost:4000"
+#url: "https://buwifi.github.io"
 baseurl: ""
 # recaptcha2_sitekey: 6LcldnIiAAAAAK1Nl81Hj0cTqpgBlX4YCYp6yfUn
 
@@ -64,22 +64,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-sass-converter
-  - jekyll-paginate-v2
-  - jekyll-archives
-
-# ----------------------------
-# Main blog pagination
-# ----------------------------
-paginate_path: "/blog/page:num/"
-pagination:
-  enabled: true
-  per_page: 4
-  sort_field: 'date'
-  sort_reverse: true
-
-# ----------------------------
-# Jekyll Archives for categories & tags
-# ----------------------------
 
 # ----------------------------
 # COLLECTIONS

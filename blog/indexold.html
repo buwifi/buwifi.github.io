@@ -1,11 +1,13 @@
 ---
 layout: services
-slogan: "Posts in {{ page.name }}"
+title: Blog
+background: images/blurcustomer.jpg
+slogan: Learn more about how to leverage your WiFi network
 ---
+
 <section class="section">
   <div class="container">
     <div class="row">
-      <!-- Category Posts -->
       <div class="col-lg-8 col-md-6">
         <div class="row">
           {% for post in page.paginator.posts %}
@@ -13,7 +15,8 @@ slogan: "Posts in {{ page.name }}"
           {% endfor %}
         </div>
 
-        {% include pagination_cat.html %}
+        <!-- Pagination -->
+        {% include pagination.html %}
       </div>
 
       <!-- Sidebar -->

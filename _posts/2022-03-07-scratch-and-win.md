@@ -10,13 +10,12 @@ categories: [Marketing]
 tags: [Gamification]
 alt: Blog Post Thumbnail 1
 author: Murat Eren
-date: 07 Mar 2022
+date: 2022-03-07
 document: documents/JD BuWiFi Userguide.pdf
 localvideo_cover: images/company/kazikazanekran.jpg
 localvideo: images/video/KaziKazan.mp4
 youtubevideo: bAiFcFQRx0Q
 blogimg1: images/company/kazikazanpop.jpg
-
 ---
 # {{ page.title }}
 {:.markdown-h1}
@@ -49,7 +48,7 @@ With Scratch & Win game, Teknosa collects valuable presence and opt-in data and 
 4. Scratch & Win SMS is sent to successfully registered customers
 
 <p align="center">
-<img src="{{ site.baseurl }}/{{page.blogimg1}}" alt="drawing" width="350"/>
+<img src="{{ page.blogimg1 | relative_url }}" alt="drawing" width="350"/>
 </p>
 {: .img-fluid.rounded :}
 
@@ -57,7 +56,7 @@ Here is a short demo video explaining the flow:
 
 <div class="position-relative">
 <div class="bg-overlay rounded-md"></div>
- <img src="{{ site.baseurl }}/{{page.localvideo_cover}}" class="rounded img-fluid mx-auto d-block" alt="">
+ <img src="{{ page.localvideo_cover | relative_url }}" class="rounded img-fluid mx-auto d-block" alt="">
  <div class="play-icon">
 	<a href="#!" data-type="youtube" data-id="{{page.youtubevideo}}" class="play-btn lightbox">
 		<i class="mdi mdi-play text-primary rounded-circle bg-white shadow"></i>

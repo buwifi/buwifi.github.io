@@ -8,7 +8,7 @@ slogan: "Posts in {{ page.name }}"
       <!-- Category Posts -->
       <div class="col-lg-8 col-md-6">
         <div class="row">
-          {% for post in paginator.posts %}
+          {% for post in page.posts %}
             {% include post-card.html post=post %}
           {% endfor %}
         </div>

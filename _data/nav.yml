@@ -5,34 +5,34 @@ navigation:
     url: javascript:void(0)
     children:
       - title: Guest WiFi
-        url: /services/guestwifi.html
+        url: /services/guestwifi/
       - title: Analytics
-        url: /services/analytics.html
+        url: /services/analytics/
       - title: Communication
-        url: /services/communication.html
+        url: /services/communication/
       - title: CDP
-        url: /services/cdp.html
+        url: /services/cdp/
       - title: Data Integration
-        url: /services/dataintegration.html
+        url: /services/dataintegration/
       - title: Network Management
-        url: /services/networkmanagement.html
+        url: /services/networkmanagement/
       - title: UpWiFi
-        url: /services/upwifi.html
+        url: /services/upwifi/
   - title: Industries
     url: javascript:void(0)
     children:
       - title: Shopping Mall
-        url: /industry/shoppingmall.html
+        url: /industry/shoppingmall/
       - title: Retail Chain
-        url: /industry/retailchain.html
+        url: /industry/retailchain/
       - title: Restaurant
-        url: /industry/restaurant.html
+        url: /industry/restaurant/
       - title: Hospitality
-        url: /industry/hospitality.html
+        url: /industry/hospitality/
       - title: Venue
-        url: /industry/venues.html
+        url: /industry/venues/
       - title: Transportation
-        url: /industry/transportation.html
+        url: /industry/transportation/
   - title: Pricing
     url: /pricing.html
   - title: Company
@@ -44,9 +44,9 @@ navigation:
         url: /casestudy.html
         children:
           - title: Teknosa
-            url: /customers/teknosa.html
+            url: /customers/teknosa/
           - title: Emaar Square Mall 
-            url: /customers/emaar.html
+            url: /customers/emaar/
       - title: Careers
         url: /careers.html
   - title: Blog

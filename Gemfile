@@ -2,23 +2,15 @@
 
 source "https://rubygems.org"
 
-# git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+# Use GitHub Pages gem (includes Jekyll and all supported plugins)
+gem "github-pages", "~> 232", group: :jekyll_plugins
 
-# gem "rails"
+# Needed for Ruby 3.0+ to run local `bundle exec jekyll serve`
+gem "webrick", "~> 1.9"
 
-gem "jekyll", "~> 4.2"
+# Optional: Windows file watcher
+gem "wdm", "~> 0.2", :platforms => [:mingw, :x64_mingw, :mswin]
 
-#gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-gem "wdm", "~> 0.1", :platforms => [:mingw, :x64_mingw, :mswin]
-
-gem "webrick"
-
-gem "jekyll-sass-converter", ">= 2.0", "< 3.0"
-
-group :jekyll_plugins do
-    gem "jekyll-paginate-v2"
-    gem 'jekyll-sitemap'
-    gem 'jekyll-feed'
-    gem 'jekyll-seo-tag'
-    gem "jekyll-archives"
-end
+# Additional plugins (latest stable)
+gem "jekyll-archives", "~> 2.3", group: :jekyll_plugins
+gem "jekyll-paginate", "~> 1.1", group: :jekyll_plugins

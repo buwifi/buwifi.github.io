@@ -22,7 +22,7 @@ twitter_username: buwifi
 linkedin: "https://www.linkedin.com/company/buwifi/"
 instagram: "https://www.instagram.com/buwifi/"
 telephone: "+905321703160"
-jdlocation: "https://maps.google.com/maps?q=Fenerbah%C3%A7e,%20Yo%C4%9Furt%C3%A7uba%C5%9F%C4%B1%20Sokak%2018-1,%20Kad%C4%B1k%C3%B6y/%C4%B0stanbul&t=&z=13&ie=UTF8&iwloc=&output=embed"
+jdlocation: "https://maps.google.com/maps?q=Fenerbah%C3%A7e,%20Yo%C4%9Furt%C3%A7uba%C5%9F%C4%B1%20Sokak%2018-1,%20Kadıköy/%C4%B0stanbul&t=&z=13&ie=UTF8&iwloc=&output=embed"
 og_image: images/company/wifi-shopping-mall.jpg
 
 google_analytics: G-CQBBWRN64F
@@ -31,8 +31,9 @@ debug: true
 # ----------------------------
 # URL & BASEURL
 # ----------------------------
-url: "https://buwifi.github.io"  # or your custom domain
-baseurl: ""                     # leave blank for root
+#url: "https://buwifi.github.io"
+url: "http://localhost:4000"
+baseurl: ""
 
 # ----------------------------
 # SASS/SCSS
@@ -48,14 +49,34 @@ sass:
 markdown: kramdown
 
 # ----------------------------
-# PLUGINS
+# PLUGINS (whitelisted by GitHub Pages)
 # ----------------------------
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-paginate-v2
-  - jekyll-sass-converter
+  - jekyll-paginate
+  - jekyll-archives
+
+# ----------------------------
+# PAGINATION (jekyll-paginate)
+# ----------------------------
+paginate: 4
+paginate_path: "/blog/page:num/"
+
+# ----------------------------
+# ARCHIVES (categories & tags)
+# ----------------------------
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: category_index
+    tag: tag_index
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 # ----------------------------
 # COLLECTIONS
@@ -63,6 +84,7 @@ plugins:
 collections:
   services:
     output: true
+    permalink: /services/:name/
     order:
       - guestwifi.md
       - analytics.md
@@ -73,6 +95,7 @@ collections:
       - speedtest.md
   industry:
     output: true
+    permalink: /industry/:name/
     order:
       - shoppingmall.md
       - retailchain.md
@@ -82,38 +105,14 @@ collections:
       - transportation.md
   jobs:
     output: true
+    permalink: /jobs/:name/
     order:
       - pythondeveloper.md
       - radiusengineer.md
       - frontend.md
   customers:
     output: true
+    permalink: /customers/:name/
     order:
       - teknosa.md
       - emaar.md
-
-# ----------------------------
-# PAGINATION (jekyll-paginate-v2)
-# ----------------------------
-pagination:
-  enabled: true
-  per_page: 4
-  title: ":title - page :num"
-  permalink: "/blog/page:num/"
-  sort_field: "date"
-  sort_reverse: true
-  collection: "posts"
-
-  # Category pagination
-  categories:
-    enabled: true
-    per_page: 4
-    title: "Category: :name - page :num"
-    permalink: "/categories/:name/page:num/"
-
-  # Tag pagination
-  tags:
-    enabled: true
-    per_page: 4
-    title: "Tag: :name - page :num"
-    permalink: "/tags/:name/page:num/"

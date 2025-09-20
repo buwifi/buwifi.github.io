@@ -7,17 +7,37 @@ layout: default
 <h3>DEBUG: services.html</h3>
 <ul>
   <li>page.path: {{ page.path }}</li>
+  <li>page.type: {{ page.type }}</li>
   <li>page.url: {{ page.url }}</li>
   <li>page.collection: {{ page.collection }}</li>
   <li>page.layout: {{ page.layout }}</li>
-  <li>Type: {{ page.type }}</li>
   <li>page.title: {{ page.title }}</li>
-  <li>page.previous: {{ page.previous }}</li>
-  <li>page.next: {{ page.next }}</li>
+
+  <li>page.previous: 
+    {% if page.previous %}
+      {{ page.previous.title | default: "no title" }}
+    {% else %}
+      none
+    {% endif %}
+  </li>
+
+  <li>page.next: 
+    {% if page.next %}
+      {{ page.next.title | default: "no title" }}
+    {% else %}
+      none
+    {% endif %}
+  </li>
+
+
   <li>page.pagination: {{ page.pagination }}</li>
-  <li>paginator? {% if paginator %}
-           YES (page {{ paginator.page }} of {{ paginator.total_pages }}) — showing {{ paginator.posts | size }} posts
-           {% else %}NO{% endif %}</li>
+  <li>paginator? 
+    {% if paginator %}
+      YES (page {{ paginator.page }} of {{ paginator.total_pages }}) — showing {{ paginator.posts | size }} posts
+    {% else %}
+      NO
+    {% endif %}
+  </li>
 </ul>
 {% endif %}
 
@@ -29,7 +49,7 @@ layout: default
   {% include whatisit.html %}
   {% include rtlindustry2.html %}
 
-{% elsif page.paginator %}
+{% elsif paginator %}
   <section class="section">
     <div class="container">
       <div class="row">

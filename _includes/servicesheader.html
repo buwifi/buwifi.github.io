@@ -1,16 +1,4 @@
-{% assign bg = page.background %}
-
-{% if page.type == "category" %}
-  {% assign first_post = site.categories[page.title] | first %}
-{% elsif page.type == "tag" %}
-  {% assign first_post = site.tags[page.title] | first %}
-{% endif %}
-
-{% if first_post and first_post.heroimage %}
-  {% assign bg = first_post.heroimage %}
-{% endif %}
-
-{% assign bg = bg | default: "/images/blurcustomer.jpg" %}
+{% assign bg = page.background | default: "/images/blurcustomer.jpg" %}
 
 <section class="bg-half-170 d-table w-100" style="background: url('{{ bg | relative_url }}') center center / cover no-repeat;">
   <div class="bg-overlay"></div>

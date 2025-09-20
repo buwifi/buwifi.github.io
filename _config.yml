@@ -31,8 +31,8 @@ debug: true
 # ----------------------------
 # URL & BASEURL
 # ----------------------------
-#url: "https://buwifi.github.io"
-url: "http://localhost:4000"
+url: "https://buwifi.github.io"
+#url: "http://localhost:4000"
 baseurl: ""
 
 # ----------------------------

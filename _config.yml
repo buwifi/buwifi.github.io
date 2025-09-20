@@ -26,7 +26,7 @@ jdlocation: "https://maps.google.com/maps?q=Fenerbah%C3%A7e,%20Yo%C4%9Furt%C3%A7
 og_image: images/company/wifi-shopping-mall.jpg
 
 google_analytics: G-CQBBWRN64F
-debug: true
+debug: false
 
 # ----------------------------
 # URL & BASEURL
